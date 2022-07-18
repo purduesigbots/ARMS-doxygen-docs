@@ -1,0 +1,40 @@
+\hypertarget{odom_8h_source}{}\doxysection{odom.\+h}
+\label{odom_8h_source}\index{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h@{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h}}
+\mbox{\hyperlink{odom_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_ARMS\_ODOM\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_ARMS\_ODOM\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{point_8h}{ARMS/point.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacearms_1_1odom}{arms::odom}} \{}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{enum} \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661}{EncoderType}} \{ \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0}{ENCODER\_ADI}}, \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661aac7a104ec9f22417440f3a83458396e3}{ENCODER\_ROTATION}} \};}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{comment}{// sensors}}
+\DoxyCodeLine{11 \textcolor{keyword}{extern} std::shared\_ptr<okapi::ContinuousRotarySensor> \mbox{\hyperlink{namespacearms_1_1odom_af830ed6caff5c8cebb5b779c376405ac}{leftEncoder}};}
+\DoxyCodeLine{12 \textcolor{keyword}{extern} std::shared\_ptr<okapi::ContinuousRotarySensor> \mbox{\hyperlink{namespacearms_1_1odom_a56f7f8be7a34876b917edee1de3828b7}{rightEncoder}};}
+\DoxyCodeLine{13 \textcolor{keyword}{extern} std::shared\_ptr<okapi::ContinuousRotarySensor> \mbox{\hyperlink{namespacearms_1_1odom_a45f0eb97d78573950f4a23f215ee5a35}{middleEncoder}};}
+\DoxyCodeLine{14 \textcolor{keyword}{extern} std::shared\_ptr<pros::Imu> \mbox{\hyperlink{namespacearms_1_1odom_aa8b803bcb9c0ecba9313c4b169f25445}{imu}};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19 \mbox{\hyperlink{unionarms_1_1_point}{Point}} \mbox{\hyperlink{namespacearms_1_1odom_a62475e8febf63d60ad6f18e9c78b9798}{getPosition}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{24 \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1odom_a3c93c929fa68dd28cd6f11b2d30a2e7f}{getHeading}}(\textcolor{keywordtype}{bool} radians = \textcolor{keyword}{false});}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{29 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}{reset}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} point = \{0, 0\});}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}{reset}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} point, \textcolor{keywordtype}{double} angle);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{39 \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1odom_a3b2219fefea35a2253b175dc0859a57d}{getAngleError}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} point);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{44 \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1odom_ab27a6c5acaf34ee089c969e23bce9ba4}{getDistanceError}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} point);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{49 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1odom_aab9427d851e49af68d483b0a9a2df71b}{init}}(\textcolor{keywordtype}{bool} debug, \textcolor{keywordtype}{int} encoderType, std::array<int, 3> encoderPorts,}
+\DoxyCodeLine{50           \textcolor{keywordtype}{int} expanderPort, \textcolor{keywordtype}{int} imuPort, \textcolor{keywordtype}{double} left\_right\_distance,}
+\DoxyCodeLine{51           \textcolor{keywordtype}{double} middle\_distance, \textcolor{keywordtype}{double} left\_right\_tpi, \textcolor{keywordtype}{double} middle\_tpi);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \} \textcolor{comment}{// namespace arms::odom}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

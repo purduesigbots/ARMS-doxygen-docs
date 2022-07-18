@@ -1,0 +1,96 @@
+.TH "arms::odom" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arms::odom
+.SH SYNOPSIS
+.br
+.PP
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBEncoderType\fP { \fBENCODER_ADI\fP, \fBENCODER_ROTATION\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP \fBgetPosition\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetHeading\fP (bool radians=false)"
+.br
+.ti -1c
+.RI "void \fBreset\fP (\fBPoint\fP point={0, 0})"
+.br
+.ti -1c
+.RI "void \fBreset\fP (\fBPoint\fP point, double angle)"
+.br
+.ti -1c
+.RI "double \fBgetAngleError\fP (\fBPoint\fP point)"
+.br
+.ti -1c
+.RI "double \fBgetDistanceError\fP (\fBPoint\fP point)"
+.br
+.ti -1c
+.RI "void \fBinit\fP (bool debug, int encoderType, std::array< int, 3 > encoderPorts, int expanderPort, int imuPort, double left_right_distance, double middle_distance, double left_right_tpi, double middle_tpi)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBleftEncoder\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBrightEncoder\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBmiddleEncoder\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< pros::Imu > \fBimu\fP"
+.br
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBarms::odom::EncoderType\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIENCODER_ADI \fP\fP
+.TP
+\fB\fIENCODER_ROTATION \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "double arms::odom::getAngleError (\fBPoint\fP point)"
+Return the angle between the robots current heading and a point 
+.SS "double arms::odom::getDistanceError (\fBPoint\fP point)"
+Return the distance between the robot and a point 
+.SS "double arms::odom::getHeading (bool radians = \fCfalse\fP)"
+Return the robot heading 
+.SS "\fBPoint\fP arms::odom::getPosition ()"
+Return the robot position coordinates 
+.SS "void arms::odom::init (bool debug, int encoderType, std::array< int, 3 > encoderPorts, int expanderPort, int imuPort, double left_right_distance, double middle_distance, double left_right_tpi, double middle_tpi)"
+Initialize the odometry 
+.SS "void arms::odom::reset (\fBPoint\fP point, double angle)"
+Reset the robot position and heading to desired values 
+.SS "void arms::odom::reset (\fBPoint\fP point = \fC{0, 0}\fP)"
+Reset the robot position to a desired coordinate 
+.SH "Variable Documentation"
+.PP 
+.SS "std::shared_ptr<pros::Imu> arms::odom::imu\fC [extern]\fP"
+
+.SS "std::shared_ptr<okapi::ContinuousRotarySensor> arms::odom::leftEncoder\fC [extern]\fP"
+
+.SS "std::shared_ptr<okapi::ContinuousRotarySensor> arms::odom::middleEncoder\fC [extern]\fP"
+
+.SS "std::shared_ptr<okapi::ContinuousRotarySensor> arms::odom::rightEncoder\fC [extern]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ARMS from the source code\&.

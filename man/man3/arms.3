@@ -1,0 +1,159 @@
+.TH "arms" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arms
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBchassis\fP"
+.br
+.ti -1c
+.RI "namespace \fBodom\fP"
+.br
+.ti -1c
+.RI "namespace \fBpid\fP"
+.br
+.ti -1c
+.RI "namespace \fBselector\fP"
+.br
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBMoveFlags\fP"
+.br
+.ti -1c
+.RI "union \fBPoint\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "\fBMoveFlags\fP \fBoperator|\fP (const \fBMoveFlags\fP &f, \fBMoveFlags\fP &o)"
+.br
+.ti -1c
+.RI "\fBMoveFlags\fP \fBoperator&\fP (const \fBMoveFlags\fP &f, \fBMoveFlags\fP &o)"
+.br
+.ti -1c
+.RI "\fBMoveFlags\fP \fBoperator|\fP (const \fBMoveFlags\fP &f, const \fBMoveFlags\fP &o)"
+.br
+.ti -1c
+.RI "\fBMoveFlags\fP \fBoperator&\fP (const \fBMoveFlags\fP &f, const \fBMoveFlags\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator*\fP (double s, const \fBPoint\fP &v)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator*\fP (const \fBPoint\fP &v, double s)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator/\fP (const \fBPoint\fP &v, double s)"
+.br
+.ti -1c
+.RI "\fBPoint\fP & \fBoperator*=\fP (\fBPoint\fP &v, double s)"
+.br
+.ti -1c
+.RI "\fBPoint\fP & \fBoperator/=\fP (\fBPoint\fP &v, double s)"
+.br
+.ti -1c
+.RI "double \fBdot\fP (\fBPoint\fP &a, \fBPoint\fP &b)"
+.br
+.ti -1c
+.RI "double \fBlength2\fP (\fBPoint\fP &p)"
+.br
+.ti -1c
+.RI "double \fBlength2\fP (\fBPoint\fP &&p)"
+.br
+.ti -1c
+.RI "double \fBlength\fP (\fBPoint\fP &p)"
+.br
+.ti -1c
+.RI "double \fBlength\fP (\fBPoint\fP &&p)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBnormalize\fP (\fBPoint\fP &a)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBnormalize\fP (\fBPoint\fP &&a)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const \fBMoveFlags\fP \fBNONE\fP = {false, false, false, false}"
+.br
+.ti -1c
+.RI "const \fBMoveFlags\fP \fBASYNC\fP = {true, false, false, false}"
+.br
+.ti -1c
+.RI "const \fBMoveFlags\fP \fBRELATIVE\fP = {false, true, false, false}"
+.br
+.ti -1c
+.RI "const \fBMoveFlags\fP \fBTHRU\fP = {false, false, true, false}"
+.br
+.ti -1c
+.RI "const \fBMoveFlags\fP \fBREVERSE\fP = {false, false, false, true}"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "double arms::dot (\fBPoint\fP & a, \fBPoint\fP & b)\fC [inline]\fP"
+
+.SS "void arms::init ()\fC [inline]\fP"
+
+.SS "double arms::length (\fBPoint\fP && p)\fC [inline]\fP"
+
+.SS "double arms::length (\fBPoint\fP & p)\fC [inline]\fP"
+
+.SS "double arms::length2 (\fBPoint\fP && p)\fC [inline]\fP"
+
+.SS "double arms::length2 (\fBPoint\fP & p)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::normalize (\fBPoint\fP && a)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::normalize (\fBPoint\fP & a)\fC [inline]\fP"
+
+.SS "\fBMoveFlags\fP arms::operator& (const \fBMoveFlags\fP & f, const \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SS "\fBMoveFlags\fP arms::operator& (const \fBMoveFlags\fP & f, \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::operator* (const \fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::operator* (double s, const \fBPoint\fP & v)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::operator*= (\fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::operator/ (const \fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::operator/= (\fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "\fBMoveFlags\fP arms::operator| (const \fBMoveFlags\fP & f, const \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SS "\fBMoveFlags\fP arms::operator| (const \fBMoveFlags\fP & f, \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SH "Variable Documentation"
+.PP 
+.SS "const \fBMoveFlags\fP arms::ASYNC = {true, false, false, false}"
+
+.SS "const \fBMoveFlags\fP arms::NONE = {false, false, false, false}"
+
+.SS "const \fBMoveFlags\fP arms::RELATIVE = {false, true, false, false}"
+
+.SS "const \fBMoveFlags\fP arms::REVERSE = {false, false, false, true}"
+
+.SS "const \fBMoveFlags\fP arms::THRU = {false, false, true, false}"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ARMS from the source code\&.

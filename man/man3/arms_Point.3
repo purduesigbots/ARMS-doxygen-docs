@@ -1,0 +1,109 @@
+.TH "arms::Point" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arms::Point
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <point\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPoint\fP \fBoperator\-\fP ()"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator+\fP (const \fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator\-\fP (const \fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator*\fP (const \fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP \fBoperator/\fP (const \fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP & \fBoperator+=\fP (\fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP & \fBoperator\-=\fP (\fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP & \fBoperator*=\fP (\fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "\fBPoint\fP & \fBoperator/=\fP (\fBPoint\fP &o)"
+.br
+.ti -1c
+.RI "double & \fBoperator[]\fP (unsigned int index)"
+.br
+.ti -1c
+.RI "std::array< double, 2 > \fBstd\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "struct {"
+.br
+.ti -1c
+.RI "   double \fBx\fP"
+.br
+.ti -1c
+.RI "   double \fBy\fP"
+.br
+.ti -1c
+.RI "}; "
+.br
+.ti -1c
+.RI "double \fBdata\fP [2]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is a helper union that defines a 2d point or vector\&. It defines a set of operators that can be used to perform vector operations more consisely\&.
+.PP
+A union was chosen to represent the point so that a couple different names can be used to access the same elements\&. For example: point\&.x, point\&.data[0], and point[0] refer to the same variable\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBPoint\fP arms::Point::operator* (const \fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::Point::operator*= (\fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::Point::operator+ (const \fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::Point::operator+= (\fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::Point::operator\- ()\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::Point::operator\- (const \fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::Point::operator\-= (\fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::Point::operator/ (const \fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::Point::operator/= (\fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "double & arms::Point::operator[] (unsigned int index)\fC [inline]\fP"
+
+.SS "std::array< double, 2 > arms::Point::std ()\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "struct  { \&.\&.\&. }  arms::Point::@1"
+
+.SS "double arms::Point::data[2]"
+
+.SS "double arms::Point::x"
+
+.SS "double arms::Point::y"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ARMS from the source code\&.

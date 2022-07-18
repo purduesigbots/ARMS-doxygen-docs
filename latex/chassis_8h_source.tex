@@ -1,0 +1,70 @@
+\hypertarget{chassis_8h_source}{}\doxysection{chassis.\+h}
+\label{chassis_8h_source}\index{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h@{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h}}
+\mbox{\hyperlink{chassis_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_ARMS\_CHASSIS\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_ARMS\_CHASSIS\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{flags_8h}{ARMS/flags.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{point_8h}{ARMS/point.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}okapi/api.hpp"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacearms_1_1chassis}{arms::chassis}} \{}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{extern} \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1chassis_a802f92d38221fce32bd5c79ce488ed7f}{maxSpeed}};}
+\DoxyCodeLine{11 \textcolor{keyword}{extern} \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1chassis_a9ed6e6d0a9c15d6e63bd44a0658ed81c}{leftPrev}};}
+\DoxyCodeLine{12 \textcolor{keyword}{extern} \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1chassis_a5164c7a5aa17196f2ae0f49401c4f379}{rightPrev}};}
+\DoxyCodeLine{13 \textcolor{keyword}{extern} \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1chassis_a1f27dda0cdad307f8441321b9cd37f56}{slew\_step}};}
+\DoxyCodeLine{14 \textcolor{keyword}{extern} std::shared\_ptr<okapi::MotorGroup> \mbox{\hyperlink{namespacearms_1_1chassis_a6c6ea8360c1feafe6472bb8207f24176}{leftMotors}};}
+\DoxyCodeLine{15 \textcolor{keyword}{extern} std::shared\_ptr<okapi::MotorGroup> \mbox{\hyperlink{namespacearms_1_1chassis_af4ce4fa16227da9afcf9500684672164}{rightMotors}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{20 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a5353af955fcc2ebde42619446419149a}{motorMove}}(std::shared\_ptr<okapi::MotorGroup> motor, \textcolor{keywordtype}{double} speed,}
+\DoxyCodeLine{21                \textcolor{keywordtype}{bool} vel);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a198bb953528b09c362efae6d5ca09f85}{setBrakeMode}}(okapi::AbstractMotor::brakeMode b);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{31 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a18102e095cb8afdc46c39a178c4973cd}{resetAngle}}(\textcolor{keywordtype}{double} angle = 0);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{36 \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1chassis_a3aabecd3fd1b26896dfab122e335abc3}{limitSpeed}}(\textcolor{keywordtype}{double} speed, \textcolor{keywordtype}{double} max);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41 \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1chassis_a7e3685526c1117f29634441966af7237}{slew}}(\textcolor{keywordtype}{double} speed, \textcolor{keywordtype}{double} step, \textcolor{keywordtype}{double} prev);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{46 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}{settled}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{51 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a957a311132c02e2cca3f4d757fabd578}{waitUntilFinished}}(\textcolor{keywordtype}{double} exit\_error);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}{move}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \textcolor{keywordtype}{double} max, \textcolor{keywordtype}{double} exit\_error,}
+\DoxyCodeLine{57           \textcolor{keywordtype}{double} lp, \textcolor{keywordtype}{double} ap, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{58 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}{move}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \textcolor{keywordtype}{double} max, \textcolor{keywordtype}{double} exit\_error,}
+\DoxyCodeLine{59           \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{60 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}{move}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \textcolor{keywordtype}{double} max, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{61 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}{move}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{66 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\textcolor{keywordtype}{double} target, \textcolor{keywordtype}{double} max, \textcolor{keywordtype}{double} exit\_error, \textcolor{keywordtype}{double} ap,}
+\DoxyCodeLine{67           \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{68 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\textcolor{keywordtype}{double} target, \textcolor{keywordtype}{double} max, \textcolor{keywordtype}{double} exit\_error, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{69 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\textcolor{keywordtype}{double} target, \textcolor{keywordtype}{double} max, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{70 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\textcolor{keywordtype}{double} target, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{75 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \textcolor{keywordtype}{double} max, \textcolor{keywordtype}{double} exit\_error, \textcolor{keywordtype}{double} ap,}
+\DoxyCodeLine{76           \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{77 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \textcolor{keywordtype}{double} max, \textcolor{keywordtype}{double} exit\_error, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{78 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \textcolor{keywordtype}{double} max, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{79 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{turn}}(\mbox{\hyperlink{unionarms_1_1_point}{Point}} target, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} = \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}});}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{84 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}{tank}}(\textcolor{keywordtype}{double} left, \textcolor{keywordtype}{double} right, \textcolor{keywordtype}{bool} velocity = \textcolor{keyword}{false});}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{89 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}{arcade}}(\textcolor{keywordtype}{double} vertical, \textcolor{keywordtype}{double} horizontal, \textcolor{keywordtype}{bool} velocity = \textcolor{keyword}{false});}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{94 \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_1_1chassis_a29da4d3878dc33fdb40c14e683b49966}{init}}(std::initializer\_list<okapi::Motor> \mbox{\hyperlink{namespacearms_1_1chassis_a6c6ea8360c1feafe6472bb8207f24176}{leftMotors}},}
+\DoxyCodeLine{95           std::initializer\_list<okapi::Motor> \mbox{\hyperlink{namespacearms_1_1chassis_af4ce4fa16227da9afcf9500684672164}{rightMotors}}, \textcolor{keywordtype}{int} gearset,}
+\DoxyCodeLine{96           \textcolor{keywordtype}{double} distance\_constant, \textcolor{keywordtype}{double} degree\_constant, \textcolor{keywordtype}{double} \mbox{\hyperlink{namespacearms_1_1chassis_a1f27dda0cdad307f8441321b9cd37f56}{slew\_step}},}
+\DoxyCodeLine{97           \textcolor{keywordtype}{double} linear\_exit\_error, \textcolor{keywordtype}{double} angular\_exit\_error, }
+\DoxyCodeLine{98           \textcolor{keywordtype}{double} settle\_thresh\_linear, \textcolor{keywordtype}{double} settle\_thresh\_angular,}
+\DoxyCodeLine{99           \textcolor{keywordtype}{int} settle\_time);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 \} \textcolor{comment}{// namespace arms::chassis}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

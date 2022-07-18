@@ -1,0 +1,72 @@
+.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'ARMS/point\&.h'\fP
+.br
+
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBarms\fP"
+.br
+.ti -1c
+.RI "namespace \fBarms::odom\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBarms::odom::EncoderType\fP { \fBarms::odom::ENCODER_ADI\fP, \fBarms::odom::ENCODER_ROTATION\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "Point \fBarms::odom::getPosition\fP ()"
+.br
+.ti -1c
+.RI "double \fBarms::odom::getHeading\fP (bool radians=false)"
+.br
+.ti -1c
+.RI "void \fBarms::odom::reset\fP (Point point={0, 0})"
+.br
+.ti -1c
+.RI "void \fBarms::odom::reset\fP (Point point, double angle)"
+.br
+.ti -1c
+.RI "double \fBarms::odom::getAngleError\fP (Point point)"
+.br
+.ti -1c
+.RI "double \fBarms::odom::getDistanceError\fP (Point point)"
+.br
+.ti -1c
+.RI "void \fBarms::odom::init\fP (bool debug, int encoderType, std::array< int, 3 > encoderPorts, int expanderPort, int imuPort, double left_right_distance, double middle_distance, double left_right_tpi, double middle_tpi)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBarms::odom::leftEncoder\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBarms::odom::rightEncoder\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBarms::odom::middleEncoder\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< pros::Imu > \fBarms::odom::imu\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ARMS from the source code\&.

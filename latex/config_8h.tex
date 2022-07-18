@@ -1,0 +1,260 @@
+\hypertarget{config_8h}{}\doxysection{C\+:/\+Users/btdav/\+Documents/\+COURSES/\+SIGBOTS/\+SOFTWARE/\+ARMS/include/\+ARMS/config.h File Reference}
+\label{config_8h}\index{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h@{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h}}
+{\ttfamily \#include \char`\"{}ARMS/lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}okapi/api.\+hpp\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacearms}{arms}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}{ODOM\+\_\+\+DEBUG}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_a2e60beeff7a71953041ffff21f206b3e}{LEFT\+\_\+\+MOTORS}}~1, 2
+\item 
+\#define \mbox{\hyperlink{config_8h_afff6b6b092bf0b931ae68ada63421323}{RIGHT\+\_\+\+MOTORS}}~-\/3, -\/4
+\item 
+\#define \mbox{\hyperlink{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}{GEARSET}}~200
+\item 
+\#define \mbox{\hyperlink{config_8h_a4c62861b9004c412afcddd5106aebdb8}{DISTANCE\+\_\+\+CONSTANT}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_a706e95b2206b89cf34997d7876bf1969}{DEGREE\+\_\+\+CONSTANT}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}{IMU\+\_\+\+PORT}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}{ENCODER\+\_\+\+PORTS}}~0, 0, 0
+\item 
+\#define \mbox{\hyperlink{config_8h_abb795e3cc6ab99d205689e39ef042174}{EXPANDER\+\_\+\+PORT}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{ENCODER\+\_\+\+TYPE}}~\mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0}{arms\+::odom\+::\+ENCODER\+\_\+\+ADI}}
+\item 
+\#define \mbox{\hyperlink{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}{LEFT\+\_\+\+RIGHT\+\_\+\+DISTANCE}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_afdd50cee75b22705fc0898a24d31a091}{MIDDLE\+\_\+\+DISTANCE}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_a1b9d08eb0eec6a4a0e52a2ea68120ec2}{MIDDLE\+\_\+\+TPI}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}{SLEW\+\_\+\+STEP}}~8
+\item 
+\#define \mbox{\hyperlink{config_8h_aee67e5b2ba2e050782b4e743b1263c11}{LINEAR\+\_\+\+EXIT\+\_\+\+ERROR}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_a2878f395ee2ca22b557caa1621391db2}{ANGULAR\+\_\+\+EXIT\+\_\+\+ERROR}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_a4d2e07a7f5b2c23e59cdf1f59109a044}{SETTLE\+\_\+\+THRESH\+\_\+\+LINEAR}}~.\+5
+\item 
+\#define \mbox{\hyperlink{config_8h_a037c0fd6c971b10cffeefdf11650ada1}{SETTLE\+\_\+\+THRESH\+\_\+\+ANGULAR}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_a629a8fbfb3eef8f7a89a7cdfdea65ac6}{SETTLE\+\_\+\+TIME}}~250
+\item 
+\#define \mbox{\hyperlink{config_8h_a57b7dce77c54af308e3e05045e12189d}{LINEAR\+\_\+\+KP}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_a4bc667e2e955d8fa3231a4512c48f674}{LINEAR\+\_\+\+KI}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_ac51945e0d198c31ec86504e6ab56091a}{LINEAR\+\_\+\+KD}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_a3b2fa757042b25df3b72adfc22595886}{TRACKING\+\_\+\+KP}}~60
+\item 
+\#define \mbox{\hyperlink{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}{ANGULAR\+\_\+\+KP}}~1
+\item 
+\#define \mbox{\hyperlink{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}{ANGULAR\+\_\+\+KI}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_abdf82441d0c29e44532f62be7db57c2d}{ANGULAR\+\_\+\+KD}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_a80c2c0cbab028b3b18d7c7c521815721}{MIN\+\_\+\+ERROR}}~5
+\item 
+\#define \mbox{\hyperlink{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}{AUTONS}}~\char`\"{}Front\char`\"{}, \char`\"{}Back\char`\"{}, \char`\"{}Do Nothing\char`\"{}
+\item 
+\#define \mbox{\hyperlink{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}{HUE}}~0
+\item 
+\#define \mbox{\hyperlink{config_8h_a3da44afeba217135a680a7477b5e3ce3}{DEFAULT}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms\+::init}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{config_8h_a2878f395ee2ca22b557caa1621391db2}\label{config_8h_a2878f395ee2ca22b557caa1621391db2}} 
+\index{config.h@{config.h}!ANGULAR\_EXIT\_ERROR@{ANGULAR\_EXIT\_ERROR}}
+\index{ANGULAR\_EXIT\_ERROR@{ANGULAR\_EXIT\_ERROR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_EXIT\_ERROR}{ANGULAR\_EXIT\_ERROR}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+EXIT\+\_\+\+ERROR~1}
+
+\mbox{\Hypertarget{config_8h_abdf82441d0c29e44532f62be7db57c2d}\label{config_8h_abdf82441d0c29e44532f62be7db57c2d}} 
+\index{config.h@{config.h}!ANGULAR\_KD@{ANGULAR\_KD}}
+\index{ANGULAR\_KD@{ANGULAR\_KD}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_KD}{ANGULAR\_KD}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KD~0}
+
+\mbox{\Hypertarget{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}\label{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}} 
+\index{config.h@{config.h}!ANGULAR\_KI@{ANGULAR\_KI}}
+\index{ANGULAR\_KI@{ANGULAR\_KI}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_KI}{ANGULAR\_KI}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KI~0}
+
+\mbox{\Hypertarget{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}\label{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}} 
+\index{config.h@{config.h}!ANGULAR\_KP@{ANGULAR\_KP}}
+\index{ANGULAR\_KP@{ANGULAR\_KP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_KP}{ANGULAR\_KP}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KP~1}
+
+\mbox{\Hypertarget{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}\label{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}} 
+\index{config.h@{config.h}!AUTONS@{AUTONS}}
+\index{AUTONS@{AUTONS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AUTONS}{AUTONS}}
+{\footnotesize\ttfamily \#define AUTONS~\char`\"{}Front\char`\"{}, \char`\"{}Back\char`\"{}, \char`\"{}Do Nothing\char`\"{}}
+
+\mbox{\Hypertarget{config_8h_a3da44afeba217135a680a7477b5e3ce3}\label{config_8h_a3da44afeba217135a680a7477b5e3ce3}} 
+\index{config.h@{config.h}!DEFAULT@{DEFAULT}}
+\index{DEFAULT@{DEFAULT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT}{DEFAULT}}
+{\footnotesize\ttfamily \#define DEFAULT~1}
+
+\mbox{\Hypertarget{config_8h_a706e95b2206b89cf34997d7876bf1969}\label{config_8h_a706e95b2206b89cf34997d7876bf1969}} 
+\index{config.h@{config.h}!DEGREE\_CONSTANT@{DEGREE\_CONSTANT}}
+\index{DEGREE\_CONSTANT@{DEGREE\_CONSTANT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{DEGREE\_CONSTANT}{DEGREE\_CONSTANT}}
+{\footnotesize\ttfamily \#define DEGREE\+\_\+\+CONSTANT~1}
+
+\mbox{\Hypertarget{config_8h_a4c62861b9004c412afcddd5106aebdb8}\label{config_8h_a4c62861b9004c412afcddd5106aebdb8}} 
+\index{config.h@{config.h}!DISTANCE\_CONSTANT@{DISTANCE\_CONSTANT}}
+\index{DISTANCE\_CONSTANT@{DISTANCE\_CONSTANT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{DISTANCE\_CONSTANT}{DISTANCE\_CONSTANT}}
+{\footnotesize\ttfamily \#define DISTANCE\+\_\+\+CONSTANT~1}
+
+\mbox{\Hypertarget{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}\label{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}} 
+\index{config.h@{config.h}!ENCODER\_PORTS@{ENCODER\_PORTS}}
+\index{ENCODER\_PORTS@{ENCODER\_PORTS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ENCODER\_PORTS}{ENCODER\_PORTS}}
+{\footnotesize\ttfamily \#define ENCODER\+\_\+\+PORTS~0, 0, 0}
+
+\mbox{\Hypertarget{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}\label{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}} 
+\index{config.h@{config.h}!ENCODER\_TYPE@{ENCODER\_TYPE}}
+\index{ENCODER\_TYPE@{ENCODER\_TYPE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ENCODER\_TYPE}{ENCODER\_TYPE}}
+{\footnotesize\ttfamily \#define ENCODER\+\_\+\+TYPE~\mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0}{arms\+::odom\+::\+ENCODER\+\_\+\+ADI}}}
+
+\mbox{\Hypertarget{config_8h_abb795e3cc6ab99d205689e39ef042174}\label{config_8h_abb795e3cc6ab99d205689e39ef042174}} 
+\index{config.h@{config.h}!EXPANDER\_PORT@{EXPANDER\_PORT}}
+\index{EXPANDER\_PORT@{EXPANDER\_PORT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{EXPANDER\_PORT}{EXPANDER\_PORT}}
+{\footnotesize\ttfamily \#define EXPANDER\+\_\+\+PORT~0}
+
+\mbox{\Hypertarget{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}\label{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}} 
+\index{config.h@{config.h}!GEARSET@{GEARSET}}
+\index{GEARSET@{GEARSET}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{GEARSET}{GEARSET}}
+{\footnotesize\ttfamily \#define GEARSET~200}
+
+\mbox{\Hypertarget{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}\label{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}} 
+\index{config.h@{config.h}!HUE@{HUE}}
+\index{HUE@{HUE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{HUE}{HUE}}
+{\footnotesize\ttfamily \#define HUE~0}
+
+\mbox{\Hypertarget{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}\label{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}} 
+\index{config.h@{config.h}!IMU\_PORT@{IMU\_PORT}}
+\index{IMU\_PORT@{IMU\_PORT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{IMU\_PORT}{IMU\_PORT}}
+{\footnotesize\ttfamily \#define IMU\+\_\+\+PORT~0}
+
+\mbox{\Hypertarget{config_8h_a2e60beeff7a71953041ffff21f206b3e}\label{config_8h_a2e60beeff7a71953041ffff21f206b3e}} 
+\index{config.h@{config.h}!LEFT\_MOTORS@{LEFT\_MOTORS}}
+\index{LEFT\_MOTORS@{LEFT\_MOTORS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LEFT\_MOTORS}{LEFT\_MOTORS}}
+{\footnotesize\ttfamily \#define LEFT\+\_\+\+MOTORS~1, 2}
+
+\mbox{\Hypertarget{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}\label{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}} 
+\index{config.h@{config.h}!LEFT\_RIGHT\_DISTANCE@{LEFT\_RIGHT\_DISTANCE}}
+\index{LEFT\_RIGHT\_DISTANCE@{LEFT\_RIGHT\_DISTANCE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LEFT\_RIGHT\_DISTANCE}{LEFT\_RIGHT\_DISTANCE}}
+{\footnotesize\ttfamily \#define LEFT\+\_\+\+RIGHT\+\_\+\+DISTANCE~0}
+
+\mbox{\Hypertarget{config_8h_aee67e5b2ba2e050782b4e743b1263c11}\label{config_8h_aee67e5b2ba2e050782b4e743b1263c11}} 
+\index{config.h@{config.h}!LINEAR\_EXIT\_ERROR@{LINEAR\_EXIT\_ERROR}}
+\index{LINEAR\_EXIT\_ERROR@{LINEAR\_EXIT\_ERROR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_EXIT\_ERROR}{LINEAR\_EXIT\_ERROR}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+EXIT\+\_\+\+ERROR~1}
+
+\mbox{\Hypertarget{config_8h_ac51945e0d198c31ec86504e6ab56091a}\label{config_8h_ac51945e0d198c31ec86504e6ab56091a}} 
+\index{config.h@{config.h}!LINEAR\_KD@{LINEAR\_KD}}
+\index{LINEAR\_KD@{LINEAR\_KD}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_KD}{LINEAR\_KD}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KD~0}
+
+\mbox{\Hypertarget{config_8h_a4bc667e2e955d8fa3231a4512c48f674}\label{config_8h_a4bc667e2e955d8fa3231a4512c48f674}} 
+\index{config.h@{config.h}!LINEAR\_KI@{LINEAR\_KI}}
+\index{LINEAR\_KI@{LINEAR\_KI}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_KI}{LINEAR\_KI}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KI~0}
+
+\mbox{\Hypertarget{config_8h_a57b7dce77c54af308e3e05045e12189d}\label{config_8h_a57b7dce77c54af308e3e05045e12189d}} 
+\index{config.h@{config.h}!LINEAR\_KP@{LINEAR\_KP}}
+\index{LINEAR\_KP@{LINEAR\_KP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_KP}{LINEAR\_KP}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KP~1}
+
+\mbox{\Hypertarget{config_8h_afdd50cee75b22705fc0898a24d31a091}\label{config_8h_afdd50cee75b22705fc0898a24d31a091}} 
+\index{config.h@{config.h}!MIDDLE\_DISTANCE@{MIDDLE\_DISTANCE}}
+\index{MIDDLE\_DISTANCE@{MIDDLE\_DISTANCE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{MIDDLE\_DISTANCE}{MIDDLE\_DISTANCE}}
+{\footnotesize\ttfamily \#define MIDDLE\+\_\+\+DISTANCE~0}
+
+\mbox{\Hypertarget{config_8h_a1b9d08eb0eec6a4a0e52a2ea68120ec2}\label{config_8h_a1b9d08eb0eec6a4a0e52a2ea68120ec2}} 
+\index{config.h@{config.h}!MIDDLE\_TPI@{MIDDLE\_TPI}}
+\index{MIDDLE\_TPI@{MIDDLE\_TPI}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{MIDDLE\_TPI}{MIDDLE\_TPI}}
+{\footnotesize\ttfamily \#define MIDDLE\+\_\+\+TPI~1}
+
+\mbox{\Hypertarget{config_8h_a80c2c0cbab028b3b18d7c7c521815721}\label{config_8h_a80c2c0cbab028b3b18d7c7c521815721}} 
+\index{config.h@{config.h}!MIN\_ERROR@{MIN\_ERROR}}
+\index{MIN\_ERROR@{MIN\_ERROR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_ERROR}{MIN\_ERROR}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+ERROR~5}
+
+\mbox{\Hypertarget{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}\label{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}} 
+\index{config.h@{config.h}!ODOM\_DEBUG@{ODOM\_DEBUG}}
+\index{ODOM\_DEBUG@{ODOM\_DEBUG}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ODOM\_DEBUG}{ODOM\_DEBUG}}
+{\footnotesize\ttfamily \#define ODOM\+\_\+\+DEBUG~0}
+
+\mbox{\Hypertarget{config_8h_afff6b6b092bf0b931ae68ada63421323}\label{config_8h_afff6b6b092bf0b931ae68ada63421323}} 
+\index{config.h@{config.h}!RIGHT\_MOTORS@{RIGHT\_MOTORS}}
+\index{RIGHT\_MOTORS@{RIGHT\_MOTORS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_MOTORS}{RIGHT\_MOTORS}}
+{\footnotesize\ttfamily \#define RIGHT\+\_\+\+MOTORS~-\/3, -\/4}
+
+\mbox{\Hypertarget{config_8h_a037c0fd6c971b10cffeefdf11650ada1}\label{config_8h_a037c0fd6c971b10cffeefdf11650ada1}} 
+\index{config.h@{config.h}!SETTLE\_THRESH\_ANGULAR@{SETTLE\_THRESH\_ANGULAR}}
+\index{SETTLE\_THRESH\_ANGULAR@{SETTLE\_THRESH\_ANGULAR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{SETTLE\_THRESH\_ANGULAR}{SETTLE\_THRESH\_ANGULAR}}
+{\footnotesize\ttfamily \#define SETTLE\+\_\+\+THRESH\+\_\+\+ANGULAR~1}
+
+\mbox{\Hypertarget{config_8h_a4d2e07a7f5b2c23e59cdf1f59109a044}\label{config_8h_a4d2e07a7f5b2c23e59cdf1f59109a044}} 
+\index{config.h@{config.h}!SETTLE\_THRESH\_LINEAR@{SETTLE\_THRESH\_LINEAR}}
+\index{SETTLE\_THRESH\_LINEAR@{SETTLE\_THRESH\_LINEAR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{SETTLE\_THRESH\_LINEAR}{SETTLE\_THRESH\_LINEAR}}
+{\footnotesize\ttfamily \#define SETTLE\+\_\+\+THRESH\+\_\+\+LINEAR~.\+5}
+
+\mbox{\Hypertarget{config_8h_a629a8fbfb3eef8f7a89a7cdfdea65ac6}\label{config_8h_a629a8fbfb3eef8f7a89a7cdfdea65ac6}} 
+\index{config.h@{config.h}!SETTLE\_TIME@{SETTLE\_TIME}}
+\index{SETTLE\_TIME@{SETTLE\_TIME}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{SETTLE\_TIME}{SETTLE\_TIME}}
+{\footnotesize\ttfamily \#define SETTLE\+\_\+\+TIME~250}
+
+\mbox{\Hypertarget{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}\label{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}} 
+\index{config.h@{config.h}!SLEW\_STEP@{SLEW\_STEP}}
+\index{SLEW\_STEP@{SLEW\_STEP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{SLEW\_STEP}{SLEW\_STEP}}
+{\footnotesize\ttfamily \#define SLEW\+\_\+\+STEP~8}
+
+\mbox{\Hypertarget{config_8h_a3b2fa757042b25df3b72adfc22595886}\label{config_8h_a3b2fa757042b25df3b72adfc22595886}} 
+\index{config.h@{config.h}!TRACKING\_KP@{TRACKING\_KP}}
+\index{TRACKING\_KP@{TRACKING\_KP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{TRACKING\_KP}{TRACKING\_KP}}
+{\footnotesize\ttfamily \#define TRACKING\+\_\+\+KP~60}
+

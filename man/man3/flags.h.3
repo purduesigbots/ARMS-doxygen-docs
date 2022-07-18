@@ -1,0 +1,60 @@
+.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/flags.h" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/flags.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBarms::MoveFlags\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBarms\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "MoveFlags \fBarms::operator|\fP (const MoveFlags &f, MoveFlags &o)"
+.br
+.ti -1c
+.RI "MoveFlags \fBarms::operator&\fP (const MoveFlags &f, MoveFlags &o)"
+.br
+.ti -1c
+.RI "MoveFlags \fBarms::operator|\fP (const MoveFlags &f, const MoveFlags &o)"
+.br
+.ti -1c
+.RI "MoveFlags \fBarms::operator&\fP (const MoveFlags &f, const MoveFlags &o)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const MoveFlags \fBarms::NONE\fP = {false, false, false, false}"
+.br
+.ti -1c
+.RI "const MoveFlags \fBarms::ASYNC\fP = {true, false, false, false}"
+.br
+.ti -1c
+.RI "const MoveFlags \fBarms::RELATIVE\fP = {false, true, false, false}"
+.br
+.ti -1c
+.RI "const MoveFlags \fBarms::THRU\fP = {false, false, true, false}"
+.br
+.ti -1c
+.RI "const MoveFlags \fBarms::REVERSE\fP = {false, false, false, true}"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ARMS from the source code\&.
