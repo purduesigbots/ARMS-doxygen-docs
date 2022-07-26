@@ -1,4 +1,4 @@
-.TH "arms::MoveFlags" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.TH "arms::MoveFlags" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -45,15 +45,15 @@ arms::MoveFlags
 .in -1c
 .SH "Member Function Documentation"
 .PP 
-.SS "arms::MoveFlags::operator bool ()\fC [inline]\fP"
-
-.SS "\fBMoveFlags\fP arms::MoveFlags::operator& (const \fBMoveFlags\fP & o)\fC [inline]\fP"
+.SS "\fBMoveFlags\fP arms::MoveFlags::operator| (\fBMoveFlags\fP & o)\fC [inline]\fP"
 
 .SS "\fBMoveFlags\fP arms::MoveFlags::operator& (\fBMoveFlags\fP & o)\fC [inline]\fP"
 
 .SS "\fBMoveFlags\fP arms::MoveFlags::operator| (const \fBMoveFlags\fP & o)\fC [inline]\fP"
 
-.SS "\fBMoveFlags\fP arms::MoveFlags::operator| (\fBMoveFlags\fP & o)\fC [inline]\fP"
+.SS "\fBMoveFlags\fP arms::MoveFlags::operator& (const \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SS "arms::MoveFlags::operator bool ()\fC [inline]\fP"
 
 .SH "Member Data Documentation"
 .PP 
@@ -61,9 +61,9 @@ arms::MoveFlags
 
 .SS "bool arms::MoveFlags::relative"
 
-.SS "bool arms::MoveFlags::reverse"
-
 .SS "bool arms::MoveFlags::thru"
+
+.SS "bool arms::MoveFlags::reverse"
 
 
 .SH "Author"

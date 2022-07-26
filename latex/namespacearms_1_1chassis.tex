@@ -1,5 +1,10 @@
 \hypertarget{namespacearms_1_1chassis}{}\doxysection{arms\+::chassis Namespace Reference}
 \label{namespacearms_1_1chassis}\index{arms::chassis@{arms::chassis}}
+
+
+The chassis subsystem.  
+
+
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,32 +69,55 @@ std\+::shared\+\_\+ptr$<$ okapi\+::\+Motor\+Group $>$ \mbox{\hyperlink{namespace
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+The chassis subsystem. 
+
+This namespace stores all functions and motors used to control the chassis. 
+
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}\label{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}} 
-\index{arms::chassis@{arms::chassis}!arcade@{arcade}}
-\index{arcade@{arcade}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{arcade()}{arcade()}}
-{\footnotesize\ttfamily void arms\+::chassis\+::arcade (\begin{DoxyParamCaption}\item[{double}]{vertical,  }\item[{double}]{horizontal,  }\item[{bool}]{velocity = {\ttfamily false} }\end{DoxyParamCaption})}
-
-Assign a vertical and horizontal power to the motors \mbox{\Hypertarget{namespacearms_1_1chassis_a29da4d3878dc33fdb40c14e683b49966}\label{namespacearms_1_1chassis_a29da4d3878dc33fdb40c14e683b49966}} 
-\index{arms::chassis@{arms::chassis}!init@{init}}
-\index{init@{init}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily void arms\+::chassis\+::init (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ okapi\+::\+Motor $>$}]{left\+Motors,  }\item[{std\+::initializer\+\_\+list$<$ okapi\+::\+Motor $>$}]{right\+Motors,  }\item[{int}]{gearset,  }\item[{double}]{distance\+\_\+constant,  }\item[{double}]{degree\+\_\+constant,  }\item[{double}]{slew\+\_\+step,  }\item[{double}]{linear\+\_\+exit\+\_\+error,  }\item[{double}]{angular\+\_\+exit\+\_\+error,  }\item[{double}]{settle\+\_\+thresh\+\_\+linear,  }\item[{double}]{settle\+\_\+thresh\+\_\+angular,  }\item[{int}]{settle\+\_\+time }\end{DoxyParamCaption})}
-
-initialize the chassis \mbox{\Hypertarget{namespacearms_1_1chassis_a3aabecd3fd1b26896dfab122e335abc3}\label{namespacearms_1_1chassis_a3aabecd3fd1b26896dfab122e335abc3}} 
-\index{arms::chassis@{arms::chassis}!limitSpeed@{limitSpeed}}
-\index{limitSpeed@{limitSpeed}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{limitSpeed()}{limitSpeed()}}
-{\footnotesize\ttfamily double arms\+::chassis\+::limit\+Speed (\begin{DoxyParamCaption}\item[{double}]{speed,  }\item[{double}]{max }\end{DoxyParamCaption})}
-
-Reduce an input speed if it exceeds the max value \mbox{\Hypertarget{namespacearms_1_1chassis_a5353af955fcc2ebde42619446419149a}\label{namespacearms_1_1chassis_a5353af955fcc2ebde42619446419149a}} 
+\mbox{\Hypertarget{namespacearms_1_1chassis_a5353af955fcc2ebde42619446419149a}\label{namespacearms_1_1chassis_a5353af955fcc2ebde42619446419149a}} 
 \index{arms::chassis@{arms::chassis}!motorMove@{motorMove}}
 \index{motorMove@{motorMove}!arms::chassis@{arms::chassis}}
 \doxysubsubsection{\texorpdfstring{motorMove()}{motorMove()}}
 {\footnotesize\ttfamily void arms\+::chassis\+::motor\+Move (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ okapi\+::\+Motor\+Group $>$}]{motor,  }\item[{double}]{speed,  }\item[{bool}]{vel }\end{DoxyParamCaption})}
 
-Set the speed of target motor \mbox{\Hypertarget{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}\label{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}} 
+Set the speed of target motor \mbox{\Hypertarget{namespacearms_1_1chassis_a198bb953528b09c362efae6d5ca09f85}\label{namespacearms_1_1chassis_a198bb953528b09c362efae6d5ca09f85}} 
+\index{arms::chassis@{arms::chassis}!setBrakeMode@{setBrakeMode}}
+\index{setBrakeMode@{setBrakeMode}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{setBrakeMode()}{setBrakeMode()}}
+{\footnotesize\ttfamily void arms\+::chassis\+::set\+Brake\+Mode (\begin{DoxyParamCaption}\item[{okapi\+::\+Abstract\+Motor\+::brake\+Mode}]{b }\end{DoxyParamCaption})}
+
+Set the brake mode for all chassis motors \mbox{\Hypertarget{namespacearms_1_1chassis_a18102e095cb8afdc46c39a178c4973cd}\label{namespacearms_1_1chassis_a18102e095cb8afdc46c39a178c4973cd}} 
+\index{arms::chassis@{arms::chassis}!resetAngle@{resetAngle}}
+\index{resetAngle@{resetAngle}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{resetAngle()}{resetAngle()}}
+{\footnotesize\ttfamily void arms\+::chassis\+::reset\+Angle (\begin{DoxyParamCaption}\item[{double}]{angle = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Reset imu if it is being used \mbox{\Hypertarget{namespacearms_1_1chassis_a3aabecd3fd1b26896dfab122e335abc3}\label{namespacearms_1_1chassis_a3aabecd3fd1b26896dfab122e335abc3}} 
+\index{arms::chassis@{arms::chassis}!limitSpeed@{limitSpeed}}
+\index{limitSpeed@{limitSpeed}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{limitSpeed()}{limitSpeed()}}
+{\footnotesize\ttfamily double arms\+::chassis\+::limit\+Speed (\begin{DoxyParamCaption}\item[{double}]{speed,  }\item[{double}]{max }\end{DoxyParamCaption})}
+
+Reduce an input speed if it exceeds the max value \mbox{\Hypertarget{namespacearms_1_1chassis_a7e3685526c1117f29634441966af7237}\label{namespacearms_1_1chassis_a7e3685526c1117f29634441966af7237}} 
+\index{arms::chassis@{arms::chassis}!slew@{slew}}
+\index{slew@{slew}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{slew()}{slew()}}
+{\footnotesize\ttfamily double arms\+::chassis\+::slew (\begin{DoxyParamCaption}\item[{double}]{speed,  }\item[{double}]{step,  }\item[{double}]{prev }\end{DoxyParamCaption})}
+
+Get a gradually accelerating speed towards the target input \mbox{\Hypertarget{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}\label{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}} 
+\index{arms::chassis@{arms::chassis}!settled@{settled}}
+\index{settled@{settled}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{settled()}{settled()}}
+{\footnotesize\ttfamily bool arms\+::chassis\+::settled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return true of the chassis is not moving \mbox{\Hypertarget{namespacearms_1_1chassis_a957a311132c02e2cca3f4d757fabd578}\label{namespacearms_1_1chassis_a957a311132c02e2cca3f4d757fabd578}} 
+\index{arms::chassis@{arms::chassis}!waitUntilFinished@{waitUntilFinished}}
+\index{waitUntilFinished@{waitUntilFinished}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{waitUntilFinished()}{waitUntilFinished()}}
+{\footnotesize\ttfamily void arms\+::chassis\+::wait\+Until\+Finished (\begin{DoxyParamCaption}\item[{double}]{exit\+\_\+error }\end{DoxyParamCaption})}
+
+Wait for the chassis to complete the current movement \mbox{\Hypertarget{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}\label{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}} 
 \index{arms::chassis@{arms::chassis}!move@{move}}
 \index{move@{move}!arms::chassis@{arms::chassis}}
 \doxysubsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
@@ -113,37 +141,7 @@ Perform a chassis movement \mbox{\Hypertarget{namespacearms_1_1chassis_a91a1dd25
 \doxysubsubsection{\texorpdfstring{move()}{move()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily void arms\+::chassis\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unionarms_1_1_point}{Point}}}]{target,  }\item[{\mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}}}]{ = {\ttfamily \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}}} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespacearms_1_1chassis_a18102e095cb8afdc46c39a178c4973cd}\label{namespacearms_1_1chassis_a18102e095cb8afdc46c39a178c4973cd}} 
-\index{arms::chassis@{arms::chassis}!resetAngle@{resetAngle}}
-\index{resetAngle@{resetAngle}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{resetAngle()}{resetAngle()}}
-{\footnotesize\ttfamily void arms\+::chassis\+::reset\+Angle (\begin{DoxyParamCaption}\item[{double}]{angle = {\ttfamily 0} }\end{DoxyParamCaption})}
-
-Reset imu if it is being used \mbox{\Hypertarget{namespacearms_1_1chassis_a198bb953528b09c362efae6d5ca09f85}\label{namespacearms_1_1chassis_a198bb953528b09c362efae6d5ca09f85}} 
-\index{arms::chassis@{arms::chassis}!setBrakeMode@{setBrakeMode}}
-\index{setBrakeMode@{setBrakeMode}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{setBrakeMode()}{setBrakeMode()}}
-{\footnotesize\ttfamily void arms\+::chassis\+::set\+Brake\+Mode (\begin{DoxyParamCaption}\item[{okapi\+::\+Abstract\+Motor\+::brake\+Mode}]{b }\end{DoxyParamCaption})}
-
-Set the brake mode for all chassis motors \mbox{\Hypertarget{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}\label{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}} 
-\index{arms::chassis@{arms::chassis}!settled@{settled}}
-\index{settled@{settled}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{settled()}{settled()}}
-{\footnotesize\ttfamily bool arms\+::chassis\+::settled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Return true of the chassis is not moving \mbox{\Hypertarget{namespacearms_1_1chassis_a7e3685526c1117f29634441966af7237}\label{namespacearms_1_1chassis_a7e3685526c1117f29634441966af7237}} 
-\index{arms::chassis@{arms::chassis}!slew@{slew}}
-\index{slew@{slew}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{slew()}{slew()}}
-{\footnotesize\ttfamily double arms\+::chassis\+::slew (\begin{DoxyParamCaption}\item[{double}]{speed,  }\item[{double}]{step,  }\item[{double}]{prev }\end{DoxyParamCaption})}
-
-Get a gradually accelerating speed towards the target input \mbox{\Hypertarget{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}\label{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}} 
-\index{arms::chassis@{arms::chassis}!tank@{tank}}
-\index{tank@{tank}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{tank()}{tank()}}
-{\footnotesize\ttfamily void arms\+::chassis\+::tank (\begin{DoxyParamCaption}\item[{double}]{left,  }\item[{double}]{right,  }\item[{bool}]{velocity = {\ttfamily false} }\end{DoxyParamCaption})}
-
-Assign a power to the left and right motors \mbox{\Hypertarget{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}\label{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}} 
+\mbox{\Hypertarget{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}\label{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}} 
 \index{arms::chassis@{arms::chassis}!turn@{turn}}
 \index{turn@{turn}!arms::chassis@{arms::chassis}}
 \doxysubsubsection{\texorpdfstring{turn()}{turn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
@@ -191,38 +189,38 @@ Turn to face a point \mbox{\Hypertarget{namespacearms_1_1chassis_a515f520a99bcb8
 \doxysubsubsection{\texorpdfstring{turn()}{turn()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
 {\footnotesize\ttfamily void arms\+::chassis\+::turn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unionarms_1_1_point}{Point}}}]{target,  }\item[{\mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}}}]{ = {\ttfamily \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}}} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespacearms_1_1chassis_a957a311132c02e2cca3f4d757fabd578}\label{namespacearms_1_1chassis_a957a311132c02e2cca3f4d757fabd578}} 
-\index{arms::chassis@{arms::chassis}!waitUntilFinished@{waitUntilFinished}}
-\index{waitUntilFinished@{waitUntilFinished}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{waitUntilFinished()}{waitUntilFinished()}}
-{\footnotesize\ttfamily void arms\+::chassis\+::wait\+Until\+Finished (\begin{DoxyParamCaption}\item[{double}]{exit\+\_\+error }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}\label{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}} 
+\index{arms::chassis@{arms::chassis}!tank@{tank}}
+\index{tank@{tank}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{tank()}{tank()}}
+{\footnotesize\ttfamily void arms\+::chassis\+::tank (\begin{DoxyParamCaption}\item[{double}]{left,  }\item[{double}]{right,  }\item[{bool}]{velocity = {\ttfamily false} }\end{DoxyParamCaption})}
 
-Wait for the chassis to complete the current movement 
+Assign a power to the left and right motors \mbox{\Hypertarget{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}\label{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}} 
+\index{arms::chassis@{arms::chassis}!arcade@{arcade}}
+\index{arcade@{arcade}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{arcade()}{arcade()}}
+{\footnotesize\ttfamily void arms\+::chassis\+::arcade (\begin{DoxyParamCaption}\item[{double}]{vertical,  }\item[{double}]{horizontal,  }\item[{bool}]{velocity = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Assign a vertical and horizontal power to the motors \mbox{\Hypertarget{namespacearms_1_1chassis_a29da4d3878dc33fdb40c14e683b49966}\label{namespacearms_1_1chassis_a29da4d3878dc33fdb40c14e683b49966}} 
+\index{arms::chassis@{arms::chassis}!init@{init}}
+\index{init@{init}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void arms\+::chassis\+::init (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ okapi\+::\+Motor $>$}]{left\+Motors,  }\item[{std\+::initializer\+\_\+list$<$ okapi\+::\+Motor $>$}]{right\+Motors,  }\item[{int}]{gearset,  }\item[{double}]{distance\+\_\+constant,  }\item[{double}]{degree\+\_\+constant,  }\item[{double}]{slew\+\_\+step,  }\item[{double}]{linear\+\_\+exit\+\_\+error,  }\item[{double}]{angular\+\_\+exit\+\_\+error,  }\item[{double}]{settle\+\_\+thresh\+\_\+linear,  }\item[{double}]{settle\+\_\+thresh\+\_\+angular,  }\item[{int}]{settle\+\_\+time }\end{DoxyParamCaption})}
+
+initialize the chassis 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{namespacearms_1_1chassis_a6c6ea8360c1feafe6472bb8207f24176}\label{namespacearms_1_1chassis_a6c6ea8360c1feafe6472bb8207f24176}} 
-\index{arms::chassis@{arms::chassis}!leftMotors@{leftMotors}}
-\index{leftMotors@{leftMotors}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{leftMotors}{leftMotors}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Motor\+Group$>$ arms\+::chassis\+::left\+Motors\hspace{0.3cm}{\ttfamily [extern]}}
-
-\mbox{\Hypertarget{namespacearms_1_1chassis_a9ed6e6d0a9c15d6e63bd44a0658ed81c}\label{namespacearms_1_1chassis_a9ed6e6d0a9c15d6e63bd44a0658ed81c}} 
-\index{arms::chassis@{arms::chassis}!leftPrev@{leftPrev}}
-\index{leftPrev@{leftPrev}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{leftPrev}{leftPrev}}
-{\footnotesize\ttfamily double arms\+::chassis\+::left\+Prev\hspace{0.3cm}{\ttfamily [extern]}}
-
 \mbox{\Hypertarget{namespacearms_1_1chassis_a802f92d38221fce32bd5c79ce488ed7f}\label{namespacearms_1_1chassis_a802f92d38221fce32bd5c79ce488ed7f}} 
 \index{arms::chassis@{arms::chassis}!maxSpeed@{maxSpeed}}
 \index{maxSpeed@{maxSpeed}!arms::chassis@{arms::chassis}}
 \doxysubsubsection{\texorpdfstring{maxSpeed}{maxSpeed}}
 {\footnotesize\ttfamily double arms\+::chassis\+::max\+Speed\hspace{0.3cm}{\ttfamily [extern]}}
 
-\mbox{\Hypertarget{namespacearms_1_1chassis_af4ce4fa16227da9afcf9500684672164}\label{namespacearms_1_1chassis_af4ce4fa16227da9afcf9500684672164}} 
-\index{arms::chassis@{arms::chassis}!rightMotors@{rightMotors}}
-\index{rightMotors@{rightMotors}!arms::chassis@{arms::chassis}}
-\doxysubsubsection{\texorpdfstring{rightMotors}{rightMotors}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Motor\+Group$>$ arms\+::chassis\+::right\+Motors\hspace{0.3cm}{\ttfamily [extern]}}
+\mbox{\Hypertarget{namespacearms_1_1chassis_a9ed6e6d0a9c15d6e63bd44a0658ed81c}\label{namespacearms_1_1chassis_a9ed6e6d0a9c15d6e63bd44a0658ed81c}} 
+\index{arms::chassis@{arms::chassis}!leftPrev@{leftPrev}}
+\index{leftPrev@{leftPrev}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{leftPrev}{leftPrev}}
+{\footnotesize\ttfamily double arms\+::chassis\+::left\+Prev\hspace{0.3cm}{\ttfamily [extern]}}
 
 \mbox{\Hypertarget{namespacearms_1_1chassis_a5164c7a5aa17196f2ae0f49401c4f379}\label{namespacearms_1_1chassis_a5164c7a5aa17196f2ae0f49401c4f379}} 
 \index{arms::chassis@{arms::chassis}!rightPrev@{rightPrev}}
@@ -235,4 +233,16 @@ Wait for the chassis to complete the current movement
 \index{slew\_step@{slew\_step}!arms::chassis@{arms::chassis}}
 \doxysubsubsection{\texorpdfstring{slew\_step}{slew\_step}}
 {\footnotesize\ttfamily double arms\+::chassis\+::slew\+\_\+step\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{namespacearms_1_1chassis_a6c6ea8360c1feafe6472bb8207f24176}\label{namespacearms_1_1chassis_a6c6ea8360c1feafe6472bb8207f24176}} 
+\index{arms::chassis@{arms::chassis}!leftMotors@{leftMotors}}
+\index{leftMotors@{leftMotors}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{leftMotors}{leftMotors}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Motor\+Group$>$ arms\+::chassis\+::left\+Motors\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{namespacearms_1_1chassis_af4ce4fa16227da9afcf9500684672164}\label{namespacearms_1_1chassis_af4ce4fa16227da9afcf9500684672164}} 
+\index{arms::chassis@{arms::chassis}!rightMotors@{rightMotors}}
+\index{rightMotors@{rightMotors}!arms::chassis@{arms::chassis}}
+\doxysubsubsection{\texorpdfstring{rightMotors}{rightMotors}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Motor\+Group$>$ arms\+::chassis\+::right\+Motors\hspace{0.3cm}{\ttfamily [extern]}}
 

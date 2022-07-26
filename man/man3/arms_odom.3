@@ -1,4 +1,4 @@
-.TH "arms::odom" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.TH "arms::odom" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -67,29 +67,29 @@ arms::odom
 \fB\fIENCODER_ROTATION \fP\fP
 .SH "Function Documentation"
 .PP 
+.SS "\fBPoint\fP arms::odom::getPosition ()"
+Return the robot position coordinates 
+.SS "double arms::odom::getHeading (bool radians = \fCfalse\fP)"
+Return the robot heading 
+.SS "void arms::odom::reset (\fBPoint\fP point = \fC{0, 0}\fP)"
+Reset the robot position to a desired coordinate 
+.SS "void arms::odom::reset (\fBPoint\fP point, double angle)"
+Reset the robot position and heading to desired values 
 .SS "double arms::odom::getAngleError (\fBPoint\fP point)"
 Return the angle between the robots current heading and a point 
 .SS "double arms::odom::getDistanceError (\fBPoint\fP point)"
 Return the distance between the robot and a point 
-.SS "double arms::odom::getHeading (bool radians = \fCfalse\fP)"
-Return the robot heading 
-.SS "\fBPoint\fP arms::odom::getPosition ()"
-Return the robot position coordinates 
 .SS "void arms::odom::init (bool debug, int encoderType, std::array< int, 3 > encoderPorts, int expanderPort, int imuPort, double left_right_distance, double middle_distance, double left_right_tpi, double middle_tpi)"
 Initialize the odometry 
-.SS "void arms::odom::reset (\fBPoint\fP point, double angle)"
-Reset the robot position and heading to desired values 
-.SS "void arms::odom::reset (\fBPoint\fP point = \fC{0, 0}\fP)"
-Reset the robot position to a desired coordinate 
 .SH "Variable Documentation"
 .PP 
-.SS "std::shared_ptr<pros::Imu> arms::odom::imu\fC [extern]\fP"
-
 .SS "std::shared_ptr<okapi::ContinuousRotarySensor> arms::odom::leftEncoder\fC [extern]\fP"
+
+.SS "std::shared_ptr<okapi::ContinuousRotarySensor> arms::odom::rightEncoder\fC [extern]\fP"
 
 .SS "std::shared_ptr<okapi::ContinuousRotarySensor> arms::odom::middleEncoder\fC [extern]\fP"
 
-.SS "std::shared_ptr<okapi::ContinuousRotarySensor> arms::odom::rightEncoder\fC [extern]\fP"
+.SS "std::shared_ptr<pros::Imu> arms::odom::imu\fC [extern]\fP"
 
 .SH "Author"
 .PP 

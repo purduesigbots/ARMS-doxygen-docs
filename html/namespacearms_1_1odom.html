@@ -129,6 +129,91 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a62475e8febf63d60ad6f18e9c78b9798" name="a62475e8febf63d60ad6f18e9c78b9798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62475e8febf63d60ad6f18e9c78b9798">&#9670;&nbsp;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionarms_1_1_point.html">Point</a> arms::odom::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Return the robot position coordinates </p>
+
+</div>
+</div>
+<a id="a3c93c929fa68dd28cd6f11b2d30a2e7f" name="a3c93c929fa68dd28cd6f11b2d30a2e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c93c929fa68dd28cd6f11b2d30a2e7f">&#9670;&nbsp;</a></span>getHeading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double arms::odom::getHeading </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>radians</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Return the robot heading </p>
+
+</div>
+</div>
+<a id="a2d8d53ed65237a92ac9c4e6eb945c55b" name="a2d8d53ed65237a92ac9c4e6eb945c55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8d53ed65237a92ac9c4e6eb945c55b">&#9670;&nbsp;</a></span>reset() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arms::odom::reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
+          <td class="paramname"><em>point</em> = <code>{0,&#160;0}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Reset the robot position to a desired coordinate </p>
+
+</div>
+</div>
+<a id="a04f9212b0b768f8a8afdcdee793180a9" name="a04f9212b0b768f8a8afdcdee793180a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f9212b0b768f8a8afdcdee793180a9">&#9670;&nbsp;</a></span>reset() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arms::odom::reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Reset the robot position and heading to desired values </p>
+
+</div>
+</div>
 <a id="a3b2219fefea35a2253b175dc0859a57d" name="a3b2219fefea35a2253b175dc0859a57d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b2219fefea35a2253b175dc0859a57d">&#9670;&nbsp;</a></span>getAngleError()</h2>
 
@@ -164,43 +249,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Return the distance between the robot and a point </p>
-
-</div>
-</div>
-<a id="a3c93c929fa68dd28cd6f11b2d30a2e7f" name="a3c93c929fa68dd28cd6f11b2d30a2e7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c93c929fa68dd28cd6f11b2d30a2e7f">&#9670;&nbsp;</a></span>getHeading()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double arms::odom::getHeading </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>radians</em> = <code>false</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return the robot heading </p>
-
-</div>
-</div>
-<a id="a62475e8febf63d60ad6f18e9c78b9798" name="a62475e8febf63d60ad6f18e9c78b9798"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62475e8febf63d60ad6f18e9c78b9798">&#9670;&nbsp;</a></span>getPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="unionarms_1_1_point.html">Point</a> arms::odom::getPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return the robot position coordinates </p>
 
 </div>
 </div>
@@ -275,77 +323,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a04f9212b0b768f8a8afdcdee793180a9" name="a04f9212b0b768f8a8afdcdee793180a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04f9212b0b768f8a8afdcdee793180a9">&#9670;&nbsp;</a></span>reset() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::odom::reset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Reset the robot position and heading to desired values </p>
-
-</div>
-</div>
-<a id="a2d8d53ed65237a92ac9c4e6eb945c55b" name="a2d8d53ed65237a92ac9c4e6eb945c55b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d8d53ed65237a92ac9c4e6eb945c55b">&#9670;&nbsp;</a></span>reset() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::odom::reset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>point</em> = <code>{0,&#160;0}</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Reset the robot position to a desired coordinate </p>
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aa8b803bcb9c0ecba9313c4b169f25445" name="aa8b803bcb9c0ecba9313c4b169f25445"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8b803bcb9c0ecba9313c4b169f25445">&#9670;&nbsp;</a></span>imu</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;pros::Imu&gt; arms::odom::imu</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af830ed6caff5c8cebb5b779c376405ac" name="af830ed6caff5c8cebb5b779c376405ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af830ed6caff5c8cebb5b779c376405ac">&#9670;&nbsp;</a></span>leftEncoder</h2>
 
@@ -357,6 +335,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt;okapi::ContinuousRotarySensor&gt; arms::odom::leftEncoder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56f7f8be7a34876b917edee1de3828b7" name="a56f7f8be7a34876b917edee1de3828b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f7f8be7a34876b917edee1de3828b7">&#9670;&nbsp;</a></span>rightEncoder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;okapi::ContinuousRotarySensor&gt; arms::odom::rightEncoder</td>
         </tr>
       </table>
   </td>
@@ -390,8 +390,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a56f7f8be7a34876b917edee1de3828b7" name="a56f7f8be7a34876b917edee1de3828b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56f7f8be7a34876b917edee1de3828b7">&#9670;&nbsp;</a></span>rightEncoder</h2>
+<a id="aa8b803bcb9c0ecba9313c4b169f25445" name="aa8b803bcb9c0ecba9313c4b169f25445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b803bcb9c0ecba9313c4b169f25445">&#9670;&nbsp;</a></span>imu</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +400,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;okapi::ContinuousRotarySensor&gt; arms::odom::rightEncoder</td>
+          <td class="memname">std::shared_ptr&lt;pros::Imu&gt; arms::odom::imu</td>
         </tr>
       </table>
   </td>

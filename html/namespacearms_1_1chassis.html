@@ -72,6 +72,9 @@ $(function() {
   <div class="headertitle"><div class="title">arms::chassis Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The chassis subsystem.  
+<a href="namespacearms_1_1chassis.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -135,154 +138,10 @@ Variables</h2></td></tr>
 <tr class="memitem:af4ce4fa16227da9afcf9500684672164"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; okapi::MotorGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#af4ce4fa16227da9afcf9500684672164">rightMotors</a></td></tr>
 <tr class="separator:af4ce4fa16227da9afcf9500684672164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a32c8ef43d23b13f4248ad0c5d2a88767" name="a32c8ef43d23b13f4248ad0c5d2a88767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32c8ef43d23b13f4248ad0c5d2a88767">&#9670;&nbsp;</a></span>arcade()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::arcade </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vertical</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>horizontal</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>velocity</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Assign a vertical and horizontal power to the motors </p>
-
-</div>
-</div>
-<a id="a29da4d3878dc33fdb40c14e683b49966" name="a29da4d3878dc33fdb40c14e683b49966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29da4d3878dc33fdb40c14e683b49966">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::init </td>
-          <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; okapi::Motor &gt;&#160;</td>
-          <td class="paramname"><em>leftMotors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::initializer_list&lt; okapi::Motor &gt;&#160;</td>
-          <td class="paramname"><em>rightMotors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>gearset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>distance_constant</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>degree_constant</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>slew_step</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>linear_exit_error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angular_exit_error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>settle_thresh_linear</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>settle_thresh_angular</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>settle_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >initialize the chassis </p>
-
-</div>
-</div>
-<a id="a3aabecd3fd1b26896dfab122e335abc3" name="a3aabecd3fd1b26896dfab122e335abc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aabecd3fd1b26896dfab122e335abc3">&#9670;&nbsp;</a></span>limitSpeed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double arms::chassis::limitSpeed </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Reduce an input speed if it exceeds the max value </p>
-
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The chassis subsystem. </p>
+<p >This namespace stores all functions and motors used to control the chassis. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5353af955fcc2ebde42619446419149a" name="a5353af955fcc2ebde42619446419149a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5353af955fcc2ebde42619446419149a">&#9670;&nbsp;</a></span>motorMove()</h2>
 
@@ -315,6 +174,145 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Set the speed of target motor </p>
+
+</div>
+</div>
+<a id="a198bb953528b09c362efae6d5ca09f85" name="a198bb953528b09c362efae6d5ca09f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198bb953528b09c362efae6d5ca09f85">&#9670;&nbsp;</a></span>setBrakeMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arms::chassis::setBrakeMode </td>
+          <td>(</td>
+          <td class="paramtype">okapi::AbstractMotor::brakeMode&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Set the brake mode for all chassis motors </p>
+
+</div>
+</div>
+<a id="a18102e095cb8afdc46c39a178c4973cd" name="a18102e095cb8afdc46c39a178c4973cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18102e095cb8afdc46c39a178c4973cd">&#9670;&nbsp;</a></span>resetAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arms::chassis::resetAngle </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Reset imu if it is being used </p>
+
+</div>
+</div>
+<a id="a3aabecd3fd1b26896dfab122e335abc3" name="a3aabecd3fd1b26896dfab122e335abc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aabecd3fd1b26896dfab122e335abc3">&#9670;&nbsp;</a></span>limitSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double arms::chassis::limitSpeed </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Reduce an input speed if it exceeds the max value </p>
+
+</div>
+</div>
+<a id="a7e3685526c1117f29634441966af7237" name="a7e3685526c1117f29634441966af7237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3685526c1117f29634441966af7237">&#9670;&nbsp;</a></span>slew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double arms::chassis::slew </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>prev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Get a gradually accelerating speed towards the target input </p>
+
+</div>
+</div>
+<a id="ae596453708b28b60af7b44168c634e41" name="ae596453708b28b60af7b44168c634e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae596453708b28b60af7b44168c634e41">&#9670;&nbsp;</a></span>settled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool arms::chassis::settled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Return true of the chassis is not moving </p>
+
+</div>
+</div>
+<a id="a957a311132c02e2cca3f4d757fabd578" name="a957a311132c02e2cca3f4d757fabd578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957a311132c02e2cca3f4d757fabd578">&#9670;&nbsp;</a></span>waitUntilFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arms::chassis::waitUntilFinished </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>exit_error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Wait for the chassis to complete the current movement </p>
 
 </div>
 </div>
@@ -470,132 +468,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a18102e095cb8afdc46c39a178c4973cd" name="a18102e095cb8afdc46c39a178c4973cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18102e095cb8afdc46c39a178c4973cd">&#9670;&nbsp;</a></span>resetAngle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::resetAngle </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angle</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Reset imu if it is being used </p>
-
-</div>
-</div>
-<a id="a198bb953528b09c362efae6d5ca09f85" name="a198bb953528b09c362efae6d5ca09f85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a198bb953528b09c362efae6d5ca09f85">&#9670;&nbsp;</a></span>setBrakeMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::setBrakeMode </td>
-          <td>(</td>
-          <td class="paramtype">okapi::AbstractMotor::brakeMode&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the brake mode for all chassis motors </p>
-
-</div>
-</div>
-<a id="ae596453708b28b60af7b44168c634e41" name="ae596453708b28b60af7b44168c634e41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae596453708b28b60af7b44168c634e41">&#9670;&nbsp;</a></span>settled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool arms::chassis::settled </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Return true of the chassis is not moving </p>
-
-</div>
-</div>
-<a id="a7e3685526c1117f29634441966af7237" name="a7e3685526c1117f29634441966af7237"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e3685526c1117f29634441966af7237">&#9670;&nbsp;</a></span>slew()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double arms::chassis::slew </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>step</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>prev</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Get a gradually accelerating speed towards the target input </p>
-
-</div>
-</div>
-<a id="a4d5f53e5cae3eb5f6f07cfb67e253a1d" name="a4d5f53e5cae3eb5f6f07cfb67e253a1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d5f53e5cae3eb5f6f07cfb67e253a1d">&#9670;&nbsp;</a></span>tank()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::tank </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>right</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>velocity</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Assign a power to the left and right motors </p>
 
 </div>
 </div>
@@ -897,70 +769,160 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a957a311132c02e2cca3f4d757fabd578" name="a957a311132c02e2cca3f4d757fabd578"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a957a311132c02e2cca3f4d757fabd578">&#9670;&nbsp;</a></span>waitUntilFinished()</h2>
+<a id="a4d5f53e5cae3eb5f6f07cfb67e253a1d" name="a4d5f53e5cae3eb5f6f07cfb67e253a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5f53e5cae3eb5f6f07cfb67e253a1d">&#9670;&nbsp;</a></span>tank()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void arms::chassis::waitUntilFinished </td>
+          <td class="memname">void arms::chassis::tank </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>exit_error</em></td><td>)</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>velocity</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Wait for the chassis to complete the current movement </p>
+<p >Assign a power to the left and right motors </p>
+
+</div>
+</div>
+<a id="a32c8ef43d23b13f4248ad0c5d2a88767" name="a32c8ef43d23b13f4248ad0c5d2a88767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c8ef43d23b13f4248ad0c5d2a88767">&#9670;&nbsp;</a></span>arcade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arms::chassis::arcade </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vertical</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>horizontal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>velocity</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Assign a vertical and horizontal power to the motors </p>
+
+</div>
+</div>
+<a id="a29da4d3878dc33fdb40c14e683b49966" name="a29da4d3878dc33fdb40c14e683b49966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29da4d3878dc33fdb40c14e683b49966">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arms::chassis::init </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; okapi::Motor &gt;&#160;</td>
+          <td class="paramname"><em>leftMotors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::initializer_list&lt; okapi::Motor &gt;&#160;</td>
+          <td class="paramname"><em>rightMotors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gearset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance_constant</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>degree_constant</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>slew_step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>linear_exit_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angular_exit_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>settle_thresh_linear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>settle_thresh_angular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>settle_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >initialize the chassis </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a6c6ea8360c1feafe6472bb8207f24176" name="a6c6ea8360c1feafe6472bb8207f24176"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c6ea8360c1feafe6472bb8207f24176">&#9670;&nbsp;</a></span>leftMotors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;okapi::MotorGroup&gt; arms::chassis::leftMotors</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ed6e6d0a9c15d6e63bd44a0658ed81c" name="a9ed6e6d0a9c15d6e63bd44a0658ed81c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ed6e6d0a9c15d6e63bd44a0658ed81c">&#9670;&nbsp;</a></span>leftPrev</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double arms::chassis::leftPrev</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a802f92d38221fce32bd5c79ce488ed7f" name="a802f92d38221fce32bd5c79ce488ed7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a802f92d38221fce32bd5c79ce488ed7f">&#9670;&nbsp;</a></span>maxSpeed</h2>
 
@@ -983,8 +945,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af4ce4fa16227da9afcf9500684672164" name="af4ce4fa16227da9afcf9500684672164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ce4fa16227da9afcf9500684672164">&#9670;&nbsp;</a></span>rightMotors</h2>
+<a id="a9ed6e6d0a9c15d6e63bd44a0658ed81c" name="a9ed6e6d0a9c15d6e63bd44a0658ed81c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed6e6d0a9c15d6e63bd44a0658ed81c">&#9670;&nbsp;</a></span>leftPrev</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -993,7 +955,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;okapi::MotorGroup&gt; arms::chassis::rightMotors</td>
+          <td class="memname">double arms::chassis::leftPrev</td>
         </tr>
       </table>
   </td>
@@ -1038,6 +1000,50 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double arms::chassis::slew_step</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c6ea8360c1feafe6472bb8207f24176" name="a6c6ea8360c1feafe6472bb8207f24176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c6ea8360c1feafe6472bb8207f24176">&#9670;&nbsp;</a></span>leftMotors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;okapi::MotorGroup&gt; arms::chassis::leftMotors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4ce4fa16227da9afcf9500684672164" name="af4ce4fa16227da9afcf9500684672164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ce4fa16227da9afcf9500684672164">&#9670;&nbsp;</a></span>rightMotors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;okapi::MotorGroup&gt; arms::chassis::rightMotors</td>
         </tr>
       </table>
   </td>

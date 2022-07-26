@@ -1,16 +1,12 @@
-.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h
+C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h \- \fBThe ARMS configuration file\&. This file is where you setup everything about your chassis, including the motors, the sensors, and constants\&. This is also where you will setup autonomous selector\&.\fP  
+
 .SH SYNOPSIS
 .br
 .PP
-\fC#include 'ARMS/lib\&.h'\fP
-.br
-\fC#include 'okapi/api\&.hpp'\fP
-.br
-
 .SS "Namespaces"
 
 .in +1c
@@ -22,35 +18,44 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h
 
 .in +1c
 .ti -1c
-.RI "#define \fBODOM_DEBUG\fP   0"
+.RI "#define \fBODOM_DEBUG\fP   db"
 .br
+.RI "Odom debug mode\&. "
 .ti -1c
-.RI "#define \fBLEFT_MOTORS\fP   1, 2"
+.RI "#define \fBLEFT_MOTORS\fP   ports"
 .br
+.RI "Left chassis motors\&. "
 .ti -1c
-.RI "#define \fBRIGHT_MOTORS\fP   \-3, \-4"
+.RI "#define \fBRIGHT_MOTORS\fP   ports"
 .br
+.RI "Right chassis motors\&. "
 .ti -1c
-.RI "#define \fBGEARSET\fP   200"
+.RI "#define \fBGEARSET\fP   rpm"
 .br
+.RI "Chassis gearset\&. "
 .ti -1c
-.RI "#define \fBDISTANCE_CONSTANT\fP   1"
+.RI "#define \fBDISTANCE_CONSTANT\fP   dist"
 .br
+.RI "Distance Constant\&. "
 .ti -1c
-.RI "#define \fBDEGREE_CONSTANT\fP   1"
+.RI "#define \fBDEGREE_CONSTANT\fP   deg"
 .br
+.RI "Degree Constant\&. "
 .ti -1c
 .RI "#define \fBIMU_PORT\fP   0"
 .br
+.RI "IMU Port\&. "
 .ti -1c
-.RI "#define \fBENCODER_PORTS\fP   0, 0, 0"
+.RI "#define \fBENCODER_PORTS\fP   left, middle, right"
 .br
+.RI "Encoder Ports\&. "
 .ti -1c
 .RI "#define \fBEXPANDER_PORT\fP   0"
 .br
 .ti -1c
 .RI "#define \fBENCODER_TYPE\fP   \fBarms::odom::ENCODER_ADI\fP"
 .br
+.RI "Encoder Type\&. "
 .ti -1c
 .RI "#define \fBLEFT_RIGHT_DISTANCE\fP   0"
 .br
@@ -119,67 +124,297 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h
 .RI "void \fBarms::init\fP ()"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+\fBThe ARMS configuration file\&. This file is where you setup everything about your chassis, including the motors, the sensors, and constants\&. This is also where you will setup autonomous selector\&.\fP 
+
+
 .SH "Macro Definition Documentation"
 .PP 
-.SS "#define ANGULAR_EXIT_ERROR   1"
+.SS "#define ODOM_DEBUG   db"
 
-.SS "#define ANGULAR_KD   0"
+.PP
+Odom debug mode\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdb\fP Enable/disable odom debug
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//enable odom debug messages
+#define ODOM_DEBUG 1
 
-.SS "#define ANGULAR_KI   0"
+.fi
+.PP
+ \fBExample 2:\fP 
+.PP
+.nf
+//disable odom debug messages
+#define ODOM_DEBUG 0
 
-.SS "#define ANGULAR_KP   1"
+.fi
+.PP
+.PP
+Enable/disable odometry debugging messages being sent to the terminal\&. This can be useful when trying to troubleshoot chassis movements\&. 
+.SS "#define LEFT_MOTORS   ports"
 
-.SS "#define AUTONS   'Front', 'Back', 'Do Nothing'"
+.PP
+Left chassis motors\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIports\fP the motor ports on the right side of the chassis
+.RE
+.PP
+\fB Example 1: \fP 
+.PP
+.nf
+// two motors on the left side of the chassis in ports 4 and 5
+#define LEFT_MOTORS 4, 5
 
-.SS "#define DEFAULT   1"
+.fi
+.PP
+.PP
+\fB Example 2: \fP 
+.PP
+.nf
+// three motors on the left side of the chassis in ports 4, 5, and 6\&. the motor in port 5 is reversed
+#define LEFT_MOTORS 4, -5, 6
 
-.SS "#define DEGREE_CONSTANT   1"
+.fi
+.PP
+.PP
+Comma seperated ports that the chassis's left motors are in\&. Negative values reverse the motor on that port\&. 
+.SS "#define RIGHT_MOTORS   ports"
 
-.SS "#define DISTANCE_CONSTANT   1"
+.PP
+Right chassis motors\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIports\fP the motor ports on the right side of the chassis
+.RE
+.PP
+\fB Example 1: \fP 
+.PP
+.nf
+// two motors on the right side of the chassis in ports 1 and 2
+#define RIGHT_MOTORS 1, 2
 
-.SS "#define ENCODER_PORTS   0, 0, 0"
+.fi
+.PP
+.PP
+\fB Example 2: \fP 
+.PP
+.nf
+// three motors on the right side of the chassis in ports 1, 2, and 3\&. the motor in port 2 is reversed
+#define RIGHT_MOTORS 1, -2, 3
+
+.fi
+.PP
+.PP
+Comma seperated ports that the chassis's right motors are in\&. Negative values reverse the motor on that port\&. 
+.SS "#define GEARSET   rpm"
+
+.PP
+Chassis gearset\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrpm\fP the rpm of the chassis's motors
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using 200 rpm cartridges
+#define GEARSET 200
+
+.fi
+.PP
+.PP
+Sets the robot's chassis gearset to \fIrpm\fP\&. 
+.SS "#define DISTANCE_CONSTANT   dist"
+
+.PP
+Distance Constant\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdist\fP the robot's distance constant
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//use 60 encoder ticks per unit
+#define DISTANCE_CONSTANT 60
+
+.fi
+.PP
+.PP
+Sets the robot's distance constant to \fIdist\fP\&. 
+.SS "#define DEGREE_CONSTANT   deg"
+
+.PP
+Degree Constant\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdeg\fP the robot's degree constant
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using an IMU for robot's heading
+#define DEGREE_CONSTANT 1
+
+.fi
+.PP
+ \fBExample 2:\fP 
+.PP
+.nf
+//use 15 encoder ticks per degree
+#define DEGREE_CONSTANT 15
+
+.fi
+.PP
+.PP
+Sets the robot's degree constant to \fIdeg\fP\&. 
+.SS "#define IMU_PORT   0"
+
+.PP
+IMU Port\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP the port the imu is plugged into\&. Set to 0 for disabled
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using an IMU in port 8
+#define IMU_PORT 8
+
+.fi
+.PP
+ \fBExample 2:\fP 
+.PP
+.nf
+//don't use an IMU 
+#define IMU_PORT 0
+
+.fi
+.PP
+.PP
+Sets the chassis' imu to the sensor in port \fIp\fP\&. 
+.SS "#define ENCODER_PORTS   left, middle, right"
+
+.PP
+Encoder Ports\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIleft\fP the port the left encoder is plugged into\&. 0 for disabled\&.
+.br
+\fImiddle\fP the port the middle encoder is plugged into\&. 0 for disabled\&.
+.br
+\fIright\fP the port the right encoder is plugged into\&. 0 for disabled\&.
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using one parrallel encoder\&. IMU for heading and not worried about sidways movement
+#define ENCODER_PORTS 1
+
+.fi
+.PP
+ \fBExample 2:\fP 
+.PP
+.nf
+//don't use an IMU 
+#define IMU_PORT 0
+
+.fi
+.PP
+.PP
+Sets up the 1-3 encoders being used on the bot\&. At least 1 encoder parrallel to the chassis must be used for odometry to work\&. If either left or right encoder is blank, an IMU must also be used\&. An encoder perpindicular to the chassis (middle) should be used if the robot is expected to be pushed sideways\&. Negative values reverse the direction of the encoder\&. The values should be valid smart ports if using the V5 rotation sensor, or odd numbered adi ports if using the optical shaft encoders\&. This is configured at \fBENCODER_TYPE\fP 
+.SS "#define EXPANDER_PORT   0"
 
 .SS "#define ENCODER_TYPE   \fBarms::odom::ENCODER_ADI\fP"
 
-.SS "#define EXPANDER_PORT   0"
+.PP
+Encoder Type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItype\fP The type of encoder being used
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using the new V5 Rotation sensors
+#define ENCODER_TYPE arms::odom::ENCODER_ROTATION
 
-.SS "#define GEARSET   200"
+.fi
+.PP
+.PP
+\fBExample 2:\fP 
+.PP
+.nf
+//using the old Optical Shaft Encoders
+#define ENCODER_TYPE arms::odom::ENCODER_ADI
 
-.SS "#define HUE   0"
-
-.SS "#define IMU_PORT   0"
-
-.SS "#define LEFT_MOTORS   1, 2"
-
+.fi
+.PP
+.PP
+Which type of vex encoder is being used on the chassis\&. Using a mixture of encoder types is not currently supported\&. This influences what the valid values for \fBENCODER_PORTS\fP are\&. 
 .SS "#define LEFT_RIGHT_DISTANCE   0"
-
-.SS "#define LINEAR_EXIT_ERROR   1"
-
-.SS "#define LINEAR_KD   0"
-
-.SS "#define LINEAR_KI   0"
-
-.SS "#define LINEAR_KP   1"
 
 .SS "#define MIDDLE_DISTANCE   0"
 
 .SS "#define MIDDLE_TPI   1"
 
-.SS "#define MIN_ERROR   5"
+.SS "#define SLEW_STEP   8"
 
-.SS "#define ODOM_DEBUG   0"
+.SS "#define LINEAR_EXIT_ERROR   1"
 
-.SS "#define RIGHT_MOTORS   \-3, \-4"
-
-.SS "#define SETTLE_THRESH_ANGULAR   1"
+.SS "#define ANGULAR_EXIT_ERROR   1"
 
 .SS "#define SETTLE_THRESH_LINEAR   \&.5"
 
+.SS "#define SETTLE_THRESH_ANGULAR   1"
+
 .SS "#define SETTLE_TIME   250"
 
-.SS "#define SLEW_STEP   8"
+.SS "#define LINEAR_KP   1"
+
+.SS "#define LINEAR_KI   0"
+
+.SS "#define LINEAR_KD   0"
 
 .SS "#define TRACKING_KP   60"
+
+.SS "#define ANGULAR_KP   1"
+
+.SS "#define ANGULAR_KI   0"
+
+.SS "#define ANGULAR_KD   0"
+
+.SS "#define MIN_ERROR   5"
+
+.SS "#define AUTONS   'Front', 'Back', 'Do Nothing'"
+
+.SS "#define HUE   0"
+
+.SS "#define DEFAULT   1"
 
 .SH "Author"
 .PP 

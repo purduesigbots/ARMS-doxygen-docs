@@ -57,7 +57,31 @@ ENCODER\+\_\+\+ROTATION&\\
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespacearms_1_1odom_a3b2219fefea35a2253b175dc0859a57d}\label{namespacearms_1_1odom_a3b2219fefea35a2253b175dc0859a57d}} 
+\mbox{\Hypertarget{namespacearms_1_1odom_a62475e8febf63d60ad6f18e9c78b9798}\label{namespacearms_1_1odom_a62475e8febf63d60ad6f18e9c78b9798}} 
+\index{arms::odom@{arms::odom}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!arms::odom@{arms::odom}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{unionarms_1_1_point}{Point}} arms\+::odom\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the robot position coordinates \mbox{\Hypertarget{namespacearms_1_1odom_a3c93c929fa68dd28cd6f11b2d30a2e7f}\label{namespacearms_1_1odom_a3c93c929fa68dd28cd6f11b2d30a2e7f}} 
+\index{arms::odom@{arms::odom}!getHeading@{getHeading}}
+\index{getHeading@{getHeading}!arms::odom@{arms::odom}}
+\doxysubsubsection{\texorpdfstring{getHeading()}{getHeading()}}
+{\footnotesize\ttfamily double arms\+::odom\+::get\+Heading (\begin{DoxyParamCaption}\item[{bool}]{radians = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Return the robot heading \mbox{\Hypertarget{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}\label{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}} 
+\index{arms::odom@{arms::odom}!reset@{reset}}
+\index{reset@{reset}!arms::odom@{arms::odom}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void arms\+::odom\+::reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unionarms_1_1_point}{Point}}}]{point = {\ttfamily \{0,~0\}} }\end{DoxyParamCaption})}
+
+Reset the robot position to a desired coordinate \mbox{\Hypertarget{namespacearms_1_1odom_a04f9212b0b768f8a8afdcdee793180a9}\label{namespacearms_1_1odom_a04f9212b0b768f8a8afdcdee793180a9}} 
+\index{arms::odom@{arms::odom}!reset@{reset}}
+\index{reset@{reset}!arms::odom@{arms::odom}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void arms\+::odom\+::reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unionarms_1_1_point}{Point}}}]{point,  }\item[{double}]{angle }\end{DoxyParamCaption})}
+
+Reset the robot position and heading to desired values \mbox{\Hypertarget{namespacearms_1_1odom_a3b2219fefea35a2253b175dc0859a57d}\label{namespacearms_1_1odom_a3b2219fefea35a2253b175dc0859a57d}} 
 \index{arms::odom@{arms::odom}!getAngleError@{getAngleError}}
 \index{getAngleError@{getAngleError}!arms::odom@{arms::odom}}
 \doxysubsubsection{\texorpdfstring{getAngleError()}{getAngleError()}}
@@ -69,50 +93,26 @@ Return the angle between the robots current heading and a point \mbox{\Hypertarg
 \doxysubsubsection{\texorpdfstring{getDistanceError()}{getDistanceError()}}
 {\footnotesize\ttfamily double arms\+::odom\+::get\+Distance\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unionarms_1_1_point}{Point}}}]{point }\end{DoxyParamCaption})}
 
-Return the distance between the robot and a point \mbox{\Hypertarget{namespacearms_1_1odom_a3c93c929fa68dd28cd6f11b2d30a2e7f}\label{namespacearms_1_1odom_a3c93c929fa68dd28cd6f11b2d30a2e7f}} 
-\index{arms::odom@{arms::odom}!getHeading@{getHeading}}
-\index{getHeading@{getHeading}!arms::odom@{arms::odom}}
-\doxysubsubsection{\texorpdfstring{getHeading()}{getHeading()}}
-{\footnotesize\ttfamily double arms\+::odom\+::get\+Heading (\begin{DoxyParamCaption}\item[{bool}]{radians = {\ttfamily false} }\end{DoxyParamCaption})}
-
-Return the robot heading \mbox{\Hypertarget{namespacearms_1_1odom_a62475e8febf63d60ad6f18e9c78b9798}\label{namespacearms_1_1odom_a62475e8febf63d60ad6f18e9c78b9798}} 
-\index{arms::odom@{arms::odom}!getPosition@{getPosition}}
-\index{getPosition@{getPosition}!arms::odom@{arms::odom}}
-\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{unionarms_1_1_point}{Point}} arms\+::odom\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Return the robot position coordinates \mbox{\Hypertarget{namespacearms_1_1odom_aab9427d851e49af68d483b0a9a2df71b}\label{namespacearms_1_1odom_aab9427d851e49af68d483b0a9a2df71b}} 
+Return the distance between the robot and a point \mbox{\Hypertarget{namespacearms_1_1odom_aab9427d851e49af68d483b0a9a2df71b}\label{namespacearms_1_1odom_aab9427d851e49af68d483b0a9a2df71b}} 
 \index{arms::odom@{arms::odom}!init@{init}}
 \index{init@{init}!arms::odom@{arms::odom}}
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void arms\+::odom\+::init (\begin{DoxyParamCaption}\item[{bool}]{debug,  }\item[{int}]{encoder\+Type,  }\item[{std\+::array$<$ int, 3 $>$}]{encoder\+Ports,  }\item[{int}]{expander\+Port,  }\item[{int}]{imu\+Port,  }\item[{double}]{left\+\_\+right\+\_\+distance,  }\item[{double}]{middle\+\_\+distance,  }\item[{double}]{left\+\_\+right\+\_\+tpi,  }\item[{double}]{middle\+\_\+tpi }\end{DoxyParamCaption})}
 
-Initialize the odometry \mbox{\Hypertarget{namespacearms_1_1odom_a04f9212b0b768f8a8afdcdee793180a9}\label{namespacearms_1_1odom_a04f9212b0b768f8a8afdcdee793180a9}} 
-\index{arms::odom@{arms::odom}!reset@{reset}}
-\index{reset@{reset}!arms::odom@{arms::odom}}
-\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void arms\+::odom\+::reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unionarms_1_1_point}{Point}}}]{point,  }\item[{double}]{angle }\end{DoxyParamCaption})}
-
-Reset the robot position and heading to desired values \mbox{\Hypertarget{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}\label{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}} 
-\index{arms::odom@{arms::odom}!reset@{reset}}
-\index{reset@{reset}!arms::odom@{arms::odom}}
-\doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void arms\+::odom\+::reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{unionarms_1_1_point}{Point}}}]{point = {\ttfamily \{0,~0\}} }\end{DoxyParamCaption})}
-
-Reset the robot position to a desired coordinate 
+Initialize the odometry 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{namespacearms_1_1odom_aa8b803bcb9c0ecba9313c4b169f25445}\label{namespacearms_1_1odom_aa8b803bcb9c0ecba9313c4b169f25445}} 
-\index{arms::odom@{arms::odom}!imu@{imu}}
-\index{imu@{imu}!arms::odom@{arms::odom}}
-\doxysubsubsection{\texorpdfstring{imu}{imu}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$pros\+::\+Imu$>$ arms\+::odom\+::imu\hspace{0.3cm}{\ttfamily [extern]}}
-
 \mbox{\Hypertarget{namespacearms_1_1odom_af830ed6caff5c8cebb5b779c376405ac}\label{namespacearms_1_1odom_af830ed6caff5c8cebb5b779c376405ac}} 
 \index{arms::odom@{arms::odom}!leftEncoder@{leftEncoder}}
 \index{leftEncoder@{leftEncoder}!arms::odom@{arms::odom}}
 \doxysubsubsection{\texorpdfstring{leftEncoder}{leftEncoder}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Continuous\+Rotary\+Sensor$>$ arms\+::odom\+::left\+Encoder\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{namespacearms_1_1odom_a56f7f8be7a34876b917edee1de3828b7}\label{namespacearms_1_1odom_a56f7f8be7a34876b917edee1de3828b7}} 
+\index{arms::odom@{arms::odom}!rightEncoder@{rightEncoder}}
+\index{rightEncoder@{rightEncoder}!arms::odom@{arms::odom}}
+\doxysubsubsection{\texorpdfstring{rightEncoder}{rightEncoder}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Continuous\+Rotary\+Sensor$>$ arms\+::odom\+::right\+Encoder\hspace{0.3cm}{\ttfamily [extern]}}
 
 \mbox{\Hypertarget{namespacearms_1_1odom_a45f0eb97d78573950f4a23f215ee5a35}\label{namespacearms_1_1odom_a45f0eb97d78573950f4a23f215ee5a35}} 
 \index{arms::odom@{arms::odom}!middleEncoder@{middleEncoder}}
@@ -120,9 +120,9 @@ Reset the robot position to a desired coordinate
 \doxysubsubsection{\texorpdfstring{middleEncoder}{middleEncoder}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Continuous\+Rotary\+Sensor$>$ arms\+::odom\+::middle\+Encoder\hspace{0.3cm}{\ttfamily [extern]}}
 
-\mbox{\Hypertarget{namespacearms_1_1odom_a56f7f8be7a34876b917edee1de3828b7}\label{namespacearms_1_1odom_a56f7f8be7a34876b917edee1de3828b7}} 
-\index{arms::odom@{arms::odom}!rightEncoder@{rightEncoder}}
-\index{rightEncoder@{rightEncoder}!arms::odom@{arms::odom}}
-\doxysubsubsection{\texorpdfstring{rightEncoder}{rightEncoder}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$okapi\+::\+Continuous\+Rotary\+Sensor$>$ arms\+::odom\+::right\+Encoder\hspace{0.3cm}{\ttfamily [extern]}}
+\mbox{\Hypertarget{namespacearms_1_1odom_aa8b803bcb9c0ecba9313c4b169f25445}\label{namespacearms_1_1odom_aa8b803bcb9c0ecba9313c4b169f25445}} 
+\index{arms::odom@{arms::odom}!imu@{imu}}
+\index{imu@{imu}!arms::odom@{arms::odom}}
+\doxysubsubsection{\texorpdfstring{imu}{imu}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$pros\+::\+Imu$>$ arms\+::odom\+::imu\hspace{0.3cm}{\ttfamily [extern]}}
 

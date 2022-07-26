@@ -1,4 +1,4 @@
-.TH "arms" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.TH "arms" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,6 +12,7 @@ arms
 .ti -1c
 .RI "namespace \fBchassis\fP"
 .br
+.RI "The chassis subsystem\&. "
 .ti -1c
 .RI "namespace \fBodom\fP"
 .br
@@ -108,51 +109,51 @@ arms
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "double arms::dot (\fBPoint\fP & a, \fBPoint\fP & b)\fC [inline]\fP"
-
 .SS "void arms::init ()\fC [inline]\fP"
-
-.SS "double arms::length (\fBPoint\fP && p)\fC [inline]\fP"
-
-.SS "double arms::length (\fBPoint\fP & p)\fC [inline]\fP"
-
-.SS "double arms::length2 (\fBPoint\fP && p)\fC [inline]\fP"
-
-.SS "double arms::length2 (\fBPoint\fP & p)\fC [inline]\fP"
-
-.SS "\fBPoint\fP arms::normalize (\fBPoint\fP && a)\fC [inline]\fP"
-
-.SS "\fBPoint\fP arms::normalize (\fBPoint\fP & a)\fC [inline]\fP"
-
-.SS "\fBMoveFlags\fP arms::operator& (const \fBMoveFlags\fP & f, const \fBMoveFlags\fP & o)\fC [inline]\fP"
-
-.SS "\fBMoveFlags\fP arms::operator& (const \fBMoveFlags\fP & f, \fBMoveFlags\fP & o)\fC [inline]\fP"
-
-.SS "\fBPoint\fP arms::operator* (const \fBPoint\fP & v, double s)\fC [inline]\fP"
-
-.SS "\fBPoint\fP arms::operator* (double s, const \fBPoint\fP & v)\fC [inline]\fP"
-
-.SS "\fBPoint\fP & arms::operator*= (\fBPoint\fP & v, double s)\fC [inline]\fP"
-
-.SS "\fBPoint\fP arms::operator/ (const \fBPoint\fP & v, double s)\fC [inline]\fP"
-
-.SS "\fBPoint\fP & arms::operator/= (\fBPoint\fP & v, double s)\fC [inline]\fP"
-
-.SS "\fBMoveFlags\fP arms::operator| (const \fBMoveFlags\fP & f, const \fBMoveFlags\fP & o)\fC [inline]\fP"
 
 .SS "\fBMoveFlags\fP arms::operator| (const \fBMoveFlags\fP & f, \fBMoveFlags\fP & o)\fC [inline]\fP"
 
+.SS "\fBMoveFlags\fP arms::operator& (const \fBMoveFlags\fP & f, \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SS "\fBMoveFlags\fP arms::operator| (const \fBMoveFlags\fP & f, const \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SS "\fBMoveFlags\fP arms::operator& (const \fBMoveFlags\fP & f, const \fBMoveFlags\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::operator* (double s, const \fBPoint\fP & v)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::operator* (const \fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::operator/ (const \fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::operator*= (\fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::operator/= (\fBPoint\fP & v, double s)\fC [inline]\fP"
+
+.SS "double arms::dot (\fBPoint\fP & a, \fBPoint\fP & b)\fC [inline]\fP"
+
+.SS "double arms::length2 (\fBPoint\fP & p)\fC [inline]\fP"
+
+.SS "double arms::length2 (\fBPoint\fP && p)\fC [inline]\fP"
+
+.SS "double arms::length (\fBPoint\fP & p)\fC [inline]\fP"
+
+.SS "double arms::length (\fBPoint\fP && p)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::normalize (\fBPoint\fP & a)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::normalize (\fBPoint\fP && a)\fC [inline]\fP"
+
 .SH "Variable Documentation"
 .PP 
-.SS "const \fBMoveFlags\fP arms::ASYNC = {true, false, false, false}"
-
 .SS "const \fBMoveFlags\fP arms::NONE = {false, false, false, false}"
+
+.SS "const \fBMoveFlags\fP arms::ASYNC = {true, false, false, false}"
 
 .SS "const \fBMoveFlags\fP arms::RELATIVE = {false, true, false, false}"
 
-.SS "const \fBMoveFlags\fP arms::REVERSE = {false, false, false, true}"
-
 .SS "const \fBMoveFlags\fP arms::THRU = {false, false, true, false}"
+
+.SS "const \fBMoveFlags\fP arms::REVERSE = {false, false, false, true}"
 
 .SH "Author"
 .PP 

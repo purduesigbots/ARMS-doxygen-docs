@@ -1,8 +1,9 @@
-.TH "arms::chassis" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.TH "arms::chassis" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-arms::chassis
+arms::chassis \- The chassis subsystem\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -98,16 +99,27 @@ arms::chassis
 .RI "std::shared_ptr< okapi::MotorGroup > \fBrightMotors\fP"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+The chassis subsystem\&. 
+
+This namespace stores all functions and motors used to control the chassis\&. 
 .SH "Function Documentation"
 .PP 
-.SS "void arms::chassis::arcade (double vertical, double horizontal, bool velocity = \fCfalse\fP)"
-Assign a vertical and horizontal power to the motors 
-.SS "void arms::chassis::init (std::initializer_list< okapi::Motor > leftMotors, std::initializer_list< okapi::Motor > rightMotors, int gearset, double distance_constant, double degree_constant, double slew_step, double linear_exit_error, double angular_exit_error, double settle_thresh_linear, double settle_thresh_angular, int settle_time)"
-initialize the chassis 
-.SS "double arms::chassis::limitSpeed (double speed, double max)"
-Reduce an input speed if it exceeds the max value 
 .SS "void arms::chassis::motorMove (std::shared_ptr< okapi::MotorGroup > motor, double speed, bool vel)"
 Set the speed of target motor 
+.SS "void arms::chassis::setBrakeMode (okapi::AbstractMotor::brakeMode b)"
+Set the brake mode for all chassis motors 
+.SS "void arms::chassis::resetAngle (double angle = \fC0\fP)"
+Reset imu if it is being used 
+.SS "double arms::chassis::limitSpeed (double speed, double max)"
+Reduce an input speed if it exceeds the max value 
+.SS "double arms::chassis::slew (double speed, double step, double prev)"
+Get a gradually accelerating speed towards the target input 
+.SS "bool arms::chassis::settled ()"
+Return true of the chassis is not moving 
+.SS "void arms::chassis::waitUntilFinished (double exit_error)"
+Wait for the chassis to complete the current movement 
 .SS "void arms::chassis::move (\fBPoint\fP target, double max, double exit_error, double lp, double ap, \fBMoveFlags\fP = \fC\fBNONE\fP\fP)"
 Perform a chassis movement 
 .SS "void arms::chassis::move (\fBPoint\fP target, double max, double exit_error, \fBMoveFlags\fP = \fC\fBNONE\fP\fP)"
@@ -116,16 +128,6 @@ Perform a chassis movement
 
 .SS "void arms::chassis::move (\fBPoint\fP target, \fBMoveFlags\fP = \fC\fBNONE\fP\fP)"
 
-.SS "void arms::chassis::resetAngle (double angle = \fC0\fP)"
-Reset imu if it is being used 
-.SS "void arms::chassis::setBrakeMode (okapi::AbstractMotor::brakeMode b)"
-Set the brake mode for all chassis motors 
-.SS "bool arms::chassis::settled ()"
-Return true of the chassis is not moving 
-.SS "double arms::chassis::slew (double speed, double step, double prev)"
-Get a gradually accelerating speed towards the target input 
-.SS "void arms::chassis::tank (double left, double right, bool velocity = \fCfalse\fP)"
-Assign a power to the left and right motors 
 .SS "void arms::chassis::turn (double target, double max, double exit_error, double ap, \fBMoveFlags\fP = \fC\fBNONE\fP\fP)"
 Perform a turn movement 
 .SS "void arms::chassis::turn (double target, double max, double exit_error, \fBMoveFlags\fP = \fC\fBNONE\fP\fP)"
@@ -142,21 +144,25 @@ Turn to face a point
 
 .SS "void arms::chassis::turn (\fBPoint\fP target, \fBMoveFlags\fP = \fC\fBNONE\fP\fP)"
 
-.SS "void arms::chassis::waitUntilFinished (double exit_error)"
-Wait for the chassis to complete the current movement 
+.SS "void arms::chassis::tank (double left, double right, bool velocity = \fCfalse\fP)"
+Assign a power to the left and right motors 
+.SS "void arms::chassis::arcade (double vertical, double horizontal, bool velocity = \fCfalse\fP)"
+Assign a vertical and horizontal power to the motors 
+.SS "void arms::chassis::init (std::initializer_list< okapi::Motor > leftMotors, std::initializer_list< okapi::Motor > rightMotors, int gearset, double distance_constant, double degree_constant, double slew_step, double linear_exit_error, double angular_exit_error, double settle_thresh_linear, double settle_thresh_angular, int settle_time)"
+initialize the chassis 
 .SH "Variable Documentation"
 .PP 
-.SS "std::shared_ptr<okapi::MotorGroup> arms::chassis::leftMotors\fC [extern]\fP"
-
-.SS "double arms::chassis::leftPrev\fC [extern]\fP"
-
 .SS "double arms::chassis::maxSpeed\fC [extern]\fP"
 
-.SS "std::shared_ptr<okapi::MotorGroup> arms::chassis::rightMotors\fC [extern]\fP"
+.SS "double arms::chassis::leftPrev\fC [extern]\fP"
 
 .SS "double arms::chassis::rightPrev\fC [extern]\fP"
 
 .SS "double arms::chassis::slew_step\fC [extern]\fP"
+
+.SS "std::shared_ptr<okapi::MotorGroup> arms::chassis::leftMotors\fC [extern]\fP"
+
+.SS "std::shared_ptr<okapi::MotorGroup> arms::chassis::rightMotors\fC [extern]\fP"
 
 .SH "Author"
 .PP 

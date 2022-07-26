@@ -1,7 +1,10 @@
 \hypertarget{config_8h}{}\doxysection{C\+:/\+Users/btdav/\+Documents/\+COURSES/\+SIGBOTS/\+SOFTWARE/\+ARMS/include/\+ARMS/config.h File Reference}
 \label{config_8h}\index{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h@{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h}}
-{\ttfamily \#include \char`\"{}ARMS/lib.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}okapi/api.\+hpp\char`\"{}}\newline
+
+
+{\bfseries{The ARMS configuration file. This file is where you setup everything about your chassis, including the motors, the sensors, and constants. This is also where you will setup autonomous selector.}}  
+
+
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -10,26 +13,26 @@ namespace \mbox{\hyperlink{namespacearms}{arms}}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}{ODOM\+\_\+\+DEBUG}}~0
-\item 
-\#define \mbox{\hyperlink{config_8h_a2e60beeff7a71953041ffff21f206b3e}{LEFT\+\_\+\+MOTORS}}~1, 2
-\item 
-\#define \mbox{\hyperlink{config_8h_afff6b6b092bf0b931ae68ada63421323}{RIGHT\+\_\+\+MOTORS}}~-\/3, -\/4
-\item 
-\#define \mbox{\hyperlink{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}{GEARSET}}~200
-\item 
-\#define \mbox{\hyperlink{config_8h_a4c62861b9004c412afcddd5106aebdb8}{DISTANCE\+\_\+\+CONSTANT}}~1
-\item 
-\#define \mbox{\hyperlink{config_8h_a706e95b2206b89cf34997d7876bf1969}{DEGREE\+\_\+\+CONSTANT}}~1
-\item 
+\#define \mbox{\hyperlink{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}{ODOM\+\_\+\+DEBUG}}~db
+\begin{DoxyCompactList}\small\item\em Odom debug mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a2e60beeff7a71953041ffff21f206b3e}{LEFT\+\_\+\+MOTORS}}~ports
+\begin{DoxyCompactList}\small\item\em Left chassis motors. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_afff6b6b092bf0b931ae68ada63421323}{RIGHT\+\_\+\+MOTORS}}~ports
+\begin{DoxyCompactList}\small\item\em Right chassis motors. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}{GEARSET}}~rpm
+\begin{DoxyCompactList}\small\item\em Chassis gearset. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a4c62861b9004c412afcddd5106aebdb8}{DISTANCE\+\_\+\+CONSTANT}}~dist
+\begin{DoxyCompactList}\small\item\em Distance Constant. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a706e95b2206b89cf34997d7876bf1969}{DEGREE\+\_\+\+CONSTANT}}~deg
+\begin{DoxyCompactList}\small\item\em Degree Constant. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}{IMU\+\_\+\+PORT}}~0
-\item 
-\#define \mbox{\hyperlink{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}{ENCODER\+\_\+\+PORTS}}~0, 0, 0
-\item 
+\begin{DoxyCompactList}\small\item\em IMU Port. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}{ENCODER\+\_\+\+PORTS}}~left, middle, right
+\begin{DoxyCompactList}\small\item\em Encoder Ports. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{config_8h_abb795e3cc6ab99d205689e39ef042174}{EXPANDER\+\_\+\+PORT}}~0
 \item 
 \#define \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{ENCODER\+\_\+\+TYPE}}~\mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0}{arms\+::odom\+::\+ENCODER\+\_\+\+ADI}}
-\item 
+\begin{DoxyCompactList}\small\item\em Encoder Type. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}{LEFT\+\_\+\+RIGHT\+\_\+\+DISTANCE}}~0
 \item 
 \#define \mbox{\hyperlink{config_8h_afdd50cee75b22705fc0898a24d31a091}{MIDDLE\+\_\+\+DISTANCE}}~0
@@ -77,60 +80,245 @@ void \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms\+::i
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+{\bfseries{The ARMS configuration file. This file is where you setup everything about your chassis, including the motors, the sensors, and constants. This is also where you will setup autonomous selector.}} 
+
+
+
 \doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{config_8h_a2878f395ee2ca22b557caa1621391db2}\label{config_8h_a2878f395ee2ca22b557caa1621391db2}} 
-\index{config.h@{config.h}!ANGULAR\_EXIT\_ERROR@{ANGULAR\_EXIT\_ERROR}}
-\index{ANGULAR\_EXIT\_ERROR@{ANGULAR\_EXIT\_ERROR}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{ANGULAR\_EXIT\_ERROR}{ANGULAR\_EXIT\_ERROR}}
-{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+EXIT\+\_\+\+ERROR~1}
+\mbox{\Hypertarget{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}\label{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}} 
+\index{config.h@{config.h}!ODOM\_DEBUG@{ODOM\_DEBUG}}
+\index{ODOM\_DEBUG@{ODOM\_DEBUG}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ODOM\_DEBUG}{ODOM\_DEBUG}}
+{\footnotesize\ttfamily \#define ODOM\+\_\+\+DEBUG~db}
 
-\mbox{\Hypertarget{config_8h_abdf82441d0c29e44532f62be7db57c2d}\label{config_8h_abdf82441d0c29e44532f62be7db57c2d}} 
-\index{config.h@{config.h}!ANGULAR\_KD@{ANGULAR\_KD}}
-\index{ANGULAR\_KD@{ANGULAR\_KD}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{ANGULAR\_KD}{ANGULAR\_KD}}
-{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KD~0}
 
-\mbox{\Hypertarget{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}\label{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}} 
-\index{config.h@{config.h}!ANGULAR\_KI@{ANGULAR\_KI}}
-\index{ANGULAR\_KI@{ANGULAR\_KI}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{ANGULAR\_KI}{ANGULAR\_KI}}
-{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KI~0}
 
-\mbox{\Hypertarget{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}\label{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}} 
-\index{config.h@{config.h}!ANGULAR\_KP@{ANGULAR\_KP}}
-\index{ANGULAR\_KP@{ANGULAR\_KP}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{ANGULAR\_KP}{ANGULAR\_KP}}
-{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KP~1}
+Odom debug mode. 
 
-\mbox{\Hypertarget{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}\label{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}} 
-\index{config.h@{config.h}!AUTONS@{AUTONS}}
-\index{AUTONS@{AUTONS}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{AUTONS}{AUTONS}}
-{\footnotesize\ttfamily \#define AUTONS~\char`\"{}Front\char`\"{}, \char`\"{}Back\char`\"{}, \char`\"{}Do Nothing\char`\"{}}
 
-\mbox{\Hypertarget{config_8h_a3da44afeba217135a680a7477b5e3ce3}\label{config_8h_a3da44afeba217135a680a7477b5e3ce3}} 
-\index{config.h@{config.h}!DEFAULT@{DEFAULT}}
-\index{DEFAULT@{DEFAULT}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{DEFAULT}{DEFAULT}}
-{\footnotesize\ttfamily \#define DEFAULT~1}
+\begin{DoxyParams}{Parameters}
+{\em db} & Enable/disable odom debug\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//enable odom debug messages}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define ODOM\_DEBUG 1}}
 
-\mbox{\Hypertarget{config_8h_a706e95b2206b89cf34997d7876bf1969}\label{config_8h_a706e95b2206b89cf34997d7876bf1969}} 
-\index{config.h@{config.h}!DEGREE\_CONSTANT@{DEGREE\_CONSTANT}}
-\index{DEGREE\_CONSTANT@{DEGREE\_CONSTANT}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{DEGREE\_CONSTANT}{DEGREE\_CONSTANT}}
-{\footnotesize\ttfamily \#define DEGREE\+\_\+\+CONSTANT~1}
+\end{DoxyCode}
+ {\bfseries{Example 2\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//disable odom debug messages}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define ODOM\_DEBUG 0}}
 
-\mbox{\Hypertarget{config_8h_a4c62861b9004c412afcddd5106aebdb8}\label{config_8h_a4c62861b9004c412afcddd5106aebdb8}} 
+\end{DoxyCode}
+
+
+Enable/disable odometry debugging messages being sent to the terminal. This can be useful when trying to troubleshoot chassis movements. \mbox{\Hypertarget{config_8h_a2e60beeff7a71953041ffff21f206b3e}\label{config_8h_a2e60beeff7a71953041ffff21f206b3e}} 
+\index{config.h@{config.h}!LEFT\_MOTORS@{LEFT\_MOTORS}}
+\index{LEFT\_MOTORS@{LEFT\_MOTORS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LEFT\_MOTORS}{LEFT\_MOTORS}}
+{\footnotesize\ttfamily \#define LEFT\+\_\+\+MOTORS~ports}
+
+
+
+Left chassis motors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ports} & the motor ports on the right side of the chassis\\
+\hline
+\end{DoxyParams}
+{\bfseries{ Example 1\+: }} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// two motors on the left side of the chassis in ports 4 and 5}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define LEFT\_MOTORS 4, 5}}
+
+\end{DoxyCode}
+
+
+{\bfseries{ Example 2\+: }} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// three motors on the left side of the chassis in ports 4, 5, and 6. the motor in port 5 is reversed}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define LEFT\_MOTORS 4, -\/5, 6}}
+
+\end{DoxyCode}
+
+
+Comma seperated ports that the chassis\textquotesingle{}s left motors are in. Negative values reverse the motor on that port. \mbox{\Hypertarget{config_8h_afff6b6b092bf0b931ae68ada63421323}\label{config_8h_afff6b6b092bf0b931ae68ada63421323}} 
+\index{config.h@{config.h}!RIGHT\_MOTORS@{RIGHT\_MOTORS}}
+\index{RIGHT\_MOTORS@{RIGHT\_MOTORS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_MOTORS}{RIGHT\_MOTORS}}
+{\footnotesize\ttfamily \#define RIGHT\+\_\+\+MOTORS~ports}
+
+
+
+Right chassis motors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ports} & the motor ports on the right side of the chassis\\
+\hline
+\end{DoxyParams}
+{\bfseries{ Example 1\+: }} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// two motors on the right side of the chassis in ports 1 and 2}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define RIGHT\_MOTORS 1, 2}}
+
+\end{DoxyCode}
+
+
+{\bfseries{ Example 2\+: }} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// three motors on the right side of the chassis in ports 1, 2, and 3. the motor in port 2 is reversed}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define RIGHT\_MOTORS 1, -\/2, 3}}
+
+\end{DoxyCode}
+
+
+Comma seperated ports that the chassis\textquotesingle{}s right motors are in. Negative values reverse the motor on that port. \mbox{\Hypertarget{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}\label{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}} 
+\index{config.h@{config.h}!GEARSET@{GEARSET}}
+\index{GEARSET@{GEARSET}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{GEARSET}{GEARSET}}
+{\footnotesize\ttfamily \#define GEARSET~rpm}
+
+
+
+Chassis gearset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rpm} & the rpm of the chassis\textquotesingle{}s motors\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//using 200 rpm cartridges}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define GEARSET 200}}
+
+\end{DoxyCode}
+
+
+Sets the robot\textquotesingle{}s chassis gearset to {\itshape rpm}. \mbox{\Hypertarget{config_8h_a4c62861b9004c412afcddd5106aebdb8}\label{config_8h_a4c62861b9004c412afcddd5106aebdb8}} 
 \index{config.h@{config.h}!DISTANCE\_CONSTANT@{DISTANCE\_CONSTANT}}
 \index{DISTANCE\_CONSTANT@{DISTANCE\_CONSTANT}!config.h@{config.h}}
 \doxysubsubsection{\texorpdfstring{DISTANCE\_CONSTANT}{DISTANCE\_CONSTANT}}
-{\footnotesize\ttfamily \#define DISTANCE\+\_\+\+CONSTANT~1}
+{\footnotesize\ttfamily \#define DISTANCE\+\_\+\+CONSTANT~dist}
 
-\mbox{\Hypertarget{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}\label{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}} 
+
+
+Distance Constant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & the robot\textquotesingle{}s distance constant\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//use 60 encoder ticks per unit}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define DISTANCE\_CONSTANT 60}}
+
+\end{DoxyCode}
+
+
+Sets the robot\textquotesingle{}s distance constant to {\itshape dist}. \mbox{\Hypertarget{config_8h_a706e95b2206b89cf34997d7876bf1969}\label{config_8h_a706e95b2206b89cf34997d7876bf1969}} 
+\index{config.h@{config.h}!DEGREE\_CONSTANT@{DEGREE\_CONSTANT}}
+\index{DEGREE\_CONSTANT@{DEGREE\_CONSTANT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{DEGREE\_CONSTANT}{DEGREE\_CONSTANT}}
+{\footnotesize\ttfamily \#define DEGREE\+\_\+\+CONSTANT~deg}
+
+
+
+Degree Constant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deg} & the robot\textquotesingle{}s degree constant\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//using an IMU for robot's heading}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define DEGREE\_CONSTANT 1}}
+
+\end{DoxyCode}
+ {\bfseries{Example 2\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//use 15 encoder ticks per degree}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define DEGREE\_CONSTANT 15}}
+
+\end{DoxyCode}
+
+
+Sets the robot\textquotesingle{}s degree constant to {\itshape deg}. \mbox{\Hypertarget{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}\label{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}} 
+\index{config.h@{config.h}!IMU\_PORT@{IMU\_PORT}}
+\index{IMU\_PORT@{IMU\_PORT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{IMU\_PORT}{IMU\_PORT}}
+{\footnotesize\ttfamily \#define IMU\+\_\+\+PORT~0}
+
+
+
+IMU Port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the port the imu is plugged into. Set to 0 for disabled\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//using an IMU in port 8}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define IMU\_PORT 8}}
+
+\end{DoxyCode}
+ {\bfseries{Example 2\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//don't use an IMU }}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define IMU\_PORT 0}}
+
+\end{DoxyCode}
+
+
+Sets the chassis\textquotesingle{} imu to the sensor in port {\itshape p}. \mbox{\Hypertarget{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}\label{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}} 
 \index{config.h@{config.h}!ENCODER\_PORTS@{ENCODER\_PORTS}}
 \index{ENCODER\_PORTS@{ENCODER\_PORTS}!config.h@{config.h}}
 \doxysubsubsection{\texorpdfstring{ENCODER\_PORTS}{ENCODER\_PORTS}}
-{\footnotesize\ttfamily \#define ENCODER\+\_\+\+PORTS~0, 0, 0}
+{\footnotesize\ttfamily \#define ENCODER\+\_\+\+PORTS~left, middle, right}
+
+
+
+Encoder Ports. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & the port the left encoder is plugged into. 0 for disabled.\\
+\hline
+{\em middle} & the port the middle encoder is plugged into. 0 for disabled.\\
+\hline
+{\em right} & the port the right encoder is plugged into. 0 for disabled.\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//using one parrallel encoder. IMU for heading and not worried about sidways movement}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define ENCODER\_PORTS 1}}
+
+\end{DoxyCode}
+ {\bfseries{Example 2\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//don't use an IMU }}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define IMU\_PORT 0}}
+
+\end{DoxyCode}
+
+
+Sets up the 1-\/3 encoders being used on the bot. At least 1 encoder parrallel to the chassis must be used for odometry to work. If either left or right encoder is blank, an IMU must also be used. An encoder perpindicular to the chassis (middle) should be used if the robot is expected to be pushed sideways. Negative values reverse the direction of the encoder. The values should be valid smart ports if using the V5 rotation sensor, or odd numbered adi ports if using the optical shaft encoders. This is configured at \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{ENCODER\+\_\+\+TYPE}} \mbox{\Hypertarget{config_8h_abb795e3cc6ab99d205689e39ef042174}\label{config_8h_abb795e3cc6ab99d205689e39ef042174}} 
+\index{config.h@{config.h}!EXPANDER\_PORT@{EXPANDER\_PORT}}
+\index{EXPANDER\_PORT@{EXPANDER\_PORT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{EXPANDER\_PORT}{EXPANDER\_PORT}}
+{\footnotesize\ttfamily \#define EXPANDER\+\_\+\+PORT~0}
 
 \mbox{\Hypertarget{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}\label{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}} 
 \index{config.h@{config.h}!ENCODER\_TYPE@{ENCODER\_TYPE}}
@@ -138,65 +326,36 @@ void \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms\+::i
 \doxysubsubsection{\texorpdfstring{ENCODER\_TYPE}{ENCODER\_TYPE}}
 {\footnotesize\ttfamily \#define ENCODER\+\_\+\+TYPE~\mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0}{arms\+::odom\+::\+ENCODER\+\_\+\+ADI}}}
 
-\mbox{\Hypertarget{config_8h_abb795e3cc6ab99d205689e39ef042174}\label{config_8h_abb795e3cc6ab99d205689e39ef042174}} 
-\index{config.h@{config.h}!EXPANDER\_PORT@{EXPANDER\_PORT}}
-\index{EXPANDER\_PORT@{EXPANDER\_PORT}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{EXPANDER\_PORT}{EXPANDER\_PORT}}
-{\footnotesize\ttfamily \#define EXPANDER\+\_\+\+PORT~0}
 
-\mbox{\Hypertarget{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}\label{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}} 
-\index{config.h@{config.h}!GEARSET@{GEARSET}}
-\index{GEARSET@{GEARSET}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{GEARSET}{GEARSET}}
-{\footnotesize\ttfamily \#define GEARSET~200}
 
-\mbox{\Hypertarget{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}\label{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}} 
-\index{config.h@{config.h}!HUE@{HUE}}
-\index{HUE@{HUE}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{HUE}{HUE}}
-{\footnotesize\ttfamily \#define HUE~0}
+Encoder Type. 
 
-\mbox{\Hypertarget{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}\label{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}} 
-\index{config.h@{config.h}!IMU\_PORT@{IMU\_PORT}}
-\index{IMU\_PORT@{IMU\_PORT}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{IMU\_PORT}{IMU\_PORT}}
-{\footnotesize\ttfamily \#define IMU\+\_\+\+PORT~0}
 
-\mbox{\Hypertarget{config_8h_a2e60beeff7a71953041ffff21f206b3e}\label{config_8h_a2e60beeff7a71953041ffff21f206b3e}} 
-\index{config.h@{config.h}!LEFT\_MOTORS@{LEFT\_MOTORS}}
-\index{LEFT\_MOTORS@{LEFT\_MOTORS}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{LEFT\_MOTORS}{LEFT\_MOTORS}}
-{\footnotesize\ttfamily \#define LEFT\+\_\+\+MOTORS~1, 2}
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of encoder being used\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//using the new V5 Rotation sensors}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define ENCODER\_TYPE arms::odom::ENCODER\_ROTATION}}
 
-\mbox{\Hypertarget{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}\label{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}} 
+\end{DoxyCode}
+
+
+{\bfseries{Example 2\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//using the old Optical Shaft Encoders}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define ENCODER\_TYPE arms::odom::ENCODER\_ADI}}
+
+\end{DoxyCode}
+
+
+Which type of vex encoder is being used on the chassis. Using a mixture of encoder types is not currently supported. This influences what the valid values for \mbox{\hyperlink{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}{ENCODER\+\_\+\+PORTS}} are. \mbox{\Hypertarget{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}\label{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}} 
 \index{config.h@{config.h}!LEFT\_RIGHT\_DISTANCE@{LEFT\_RIGHT\_DISTANCE}}
 \index{LEFT\_RIGHT\_DISTANCE@{LEFT\_RIGHT\_DISTANCE}!config.h@{config.h}}
 \doxysubsubsection{\texorpdfstring{LEFT\_RIGHT\_DISTANCE}{LEFT\_RIGHT\_DISTANCE}}
 {\footnotesize\ttfamily \#define LEFT\+\_\+\+RIGHT\+\_\+\+DISTANCE~0}
-
-\mbox{\Hypertarget{config_8h_aee67e5b2ba2e050782b4e743b1263c11}\label{config_8h_aee67e5b2ba2e050782b4e743b1263c11}} 
-\index{config.h@{config.h}!LINEAR\_EXIT\_ERROR@{LINEAR\_EXIT\_ERROR}}
-\index{LINEAR\_EXIT\_ERROR@{LINEAR\_EXIT\_ERROR}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{LINEAR\_EXIT\_ERROR}{LINEAR\_EXIT\_ERROR}}
-{\footnotesize\ttfamily \#define LINEAR\+\_\+\+EXIT\+\_\+\+ERROR~1}
-
-\mbox{\Hypertarget{config_8h_ac51945e0d198c31ec86504e6ab56091a}\label{config_8h_ac51945e0d198c31ec86504e6ab56091a}} 
-\index{config.h@{config.h}!LINEAR\_KD@{LINEAR\_KD}}
-\index{LINEAR\_KD@{LINEAR\_KD}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{LINEAR\_KD}{LINEAR\_KD}}
-{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KD~0}
-
-\mbox{\Hypertarget{config_8h_a4bc667e2e955d8fa3231a4512c48f674}\label{config_8h_a4bc667e2e955d8fa3231a4512c48f674}} 
-\index{config.h@{config.h}!LINEAR\_KI@{LINEAR\_KI}}
-\index{LINEAR\_KI@{LINEAR\_KI}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{LINEAR\_KI}{LINEAR\_KI}}
-{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KI~0}
-
-\mbox{\Hypertarget{config_8h_a57b7dce77c54af308e3e05045e12189d}\label{config_8h_a57b7dce77c54af308e3e05045e12189d}} 
-\index{config.h@{config.h}!LINEAR\_KP@{LINEAR\_KP}}
-\index{LINEAR\_KP@{LINEAR\_KP}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{LINEAR\_KP}{LINEAR\_KP}}
-{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KP~1}
 
 \mbox{\Hypertarget{config_8h_afdd50cee75b22705fc0898a24d31a091}\label{config_8h_afdd50cee75b22705fc0898a24d31a091}} 
 \index{config.h@{config.h}!MIDDLE\_DISTANCE@{MIDDLE\_DISTANCE}}
@@ -210,29 +369,23 @@ void \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms\+::i
 \doxysubsubsection{\texorpdfstring{MIDDLE\_TPI}{MIDDLE\_TPI}}
 {\footnotesize\ttfamily \#define MIDDLE\+\_\+\+TPI~1}
 
-\mbox{\Hypertarget{config_8h_a80c2c0cbab028b3b18d7c7c521815721}\label{config_8h_a80c2c0cbab028b3b18d7c7c521815721}} 
-\index{config.h@{config.h}!MIN\_ERROR@{MIN\_ERROR}}
-\index{MIN\_ERROR@{MIN\_ERROR}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{MIN\_ERROR}{MIN\_ERROR}}
-{\footnotesize\ttfamily \#define MIN\+\_\+\+ERROR~5}
+\mbox{\Hypertarget{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}\label{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}} 
+\index{config.h@{config.h}!SLEW\_STEP@{SLEW\_STEP}}
+\index{SLEW\_STEP@{SLEW\_STEP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{SLEW\_STEP}{SLEW\_STEP}}
+{\footnotesize\ttfamily \#define SLEW\+\_\+\+STEP~8}
 
-\mbox{\Hypertarget{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}\label{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}} 
-\index{config.h@{config.h}!ODOM\_DEBUG@{ODOM\_DEBUG}}
-\index{ODOM\_DEBUG@{ODOM\_DEBUG}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{ODOM\_DEBUG}{ODOM\_DEBUG}}
-{\footnotesize\ttfamily \#define ODOM\+\_\+\+DEBUG~0}
+\mbox{\Hypertarget{config_8h_aee67e5b2ba2e050782b4e743b1263c11}\label{config_8h_aee67e5b2ba2e050782b4e743b1263c11}} 
+\index{config.h@{config.h}!LINEAR\_EXIT\_ERROR@{LINEAR\_EXIT\_ERROR}}
+\index{LINEAR\_EXIT\_ERROR@{LINEAR\_EXIT\_ERROR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_EXIT\_ERROR}{LINEAR\_EXIT\_ERROR}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+EXIT\+\_\+\+ERROR~1}
 
-\mbox{\Hypertarget{config_8h_afff6b6b092bf0b931ae68ada63421323}\label{config_8h_afff6b6b092bf0b931ae68ada63421323}} 
-\index{config.h@{config.h}!RIGHT\_MOTORS@{RIGHT\_MOTORS}}
-\index{RIGHT\_MOTORS@{RIGHT\_MOTORS}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{RIGHT\_MOTORS}{RIGHT\_MOTORS}}
-{\footnotesize\ttfamily \#define RIGHT\+\_\+\+MOTORS~-\/3, -\/4}
-
-\mbox{\Hypertarget{config_8h_a037c0fd6c971b10cffeefdf11650ada1}\label{config_8h_a037c0fd6c971b10cffeefdf11650ada1}} 
-\index{config.h@{config.h}!SETTLE\_THRESH\_ANGULAR@{SETTLE\_THRESH\_ANGULAR}}
-\index{SETTLE\_THRESH\_ANGULAR@{SETTLE\_THRESH\_ANGULAR}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{SETTLE\_THRESH\_ANGULAR}{SETTLE\_THRESH\_ANGULAR}}
-{\footnotesize\ttfamily \#define SETTLE\+\_\+\+THRESH\+\_\+\+ANGULAR~1}
+\mbox{\Hypertarget{config_8h_a2878f395ee2ca22b557caa1621391db2}\label{config_8h_a2878f395ee2ca22b557caa1621391db2}} 
+\index{config.h@{config.h}!ANGULAR\_EXIT\_ERROR@{ANGULAR\_EXIT\_ERROR}}
+\index{ANGULAR\_EXIT\_ERROR@{ANGULAR\_EXIT\_ERROR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_EXIT\_ERROR}{ANGULAR\_EXIT\_ERROR}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+EXIT\+\_\+\+ERROR~1}
 
 \mbox{\Hypertarget{config_8h_a4d2e07a7f5b2c23e59cdf1f59109a044}\label{config_8h_a4d2e07a7f5b2c23e59cdf1f59109a044}} 
 \index{config.h@{config.h}!SETTLE\_THRESH\_LINEAR@{SETTLE\_THRESH\_LINEAR}}
@@ -240,21 +393,81 @@ void \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms\+::i
 \doxysubsubsection{\texorpdfstring{SETTLE\_THRESH\_LINEAR}{SETTLE\_THRESH\_LINEAR}}
 {\footnotesize\ttfamily \#define SETTLE\+\_\+\+THRESH\+\_\+\+LINEAR~.\+5}
 
+\mbox{\Hypertarget{config_8h_a037c0fd6c971b10cffeefdf11650ada1}\label{config_8h_a037c0fd6c971b10cffeefdf11650ada1}} 
+\index{config.h@{config.h}!SETTLE\_THRESH\_ANGULAR@{SETTLE\_THRESH\_ANGULAR}}
+\index{SETTLE\_THRESH\_ANGULAR@{SETTLE\_THRESH\_ANGULAR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{SETTLE\_THRESH\_ANGULAR}{SETTLE\_THRESH\_ANGULAR}}
+{\footnotesize\ttfamily \#define SETTLE\+\_\+\+THRESH\+\_\+\+ANGULAR~1}
+
 \mbox{\Hypertarget{config_8h_a629a8fbfb3eef8f7a89a7cdfdea65ac6}\label{config_8h_a629a8fbfb3eef8f7a89a7cdfdea65ac6}} 
 \index{config.h@{config.h}!SETTLE\_TIME@{SETTLE\_TIME}}
 \index{SETTLE\_TIME@{SETTLE\_TIME}!config.h@{config.h}}
 \doxysubsubsection{\texorpdfstring{SETTLE\_TIME}{SETTLE\_TIME}}
 {\footnotesize\ttfamily \#define SETTLE\+\_\+\+TIME~250}
 
-\mbox{\Hypertarget{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}\label{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}} 
-\index{config.h@{config.h}!SLEW\_STEP@{SLEW\_STEP}}
-\index{SLEW\_STEP@{SLEW\_STEP}!config.h@{config.h}}
-\doxysubsubsection{\texorpdfstring{SLEW\_STEP}{SLEW\_STEP}}
-{\footnotesize\ttfamily \#define SLEW\+\_\+\+STEP~8}
+\mbox{\Hypertarget{config_8h_a57b7dce77c54af308e3e05045e12189d}\label{config_8h_a57b7dce77c54af308e3e05045e12189d}} 
+\index{config.h@{config.h}!LINEAR\_KP@{LINEAR\_KP}}
+\index{LINEAR\_KP@{LINEAR\_KP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_KP}{LINEAR\_KP}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KP~1}
+
+\mbox{\Hypertarget{config_8h_a4bc667e2e955d8fa3231a4512c48f674}\label{config_8h_a4bc667e2e955d8fa3231a4512c48f674}} 
+\index{config.h@{config.h}!LINEAR\_KI@{LINEAR\_KI}}
+\index{LINEAR\_KI@{LINEAR\_KI}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_KI}{LINEAR\_KI}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KI~0}
+
+\mbox{\Hypertarget{config_8h_ac51945e0d198c31ec86504e6ab56091a}\label{config_8h_ac51945e0d198c31ec86504e6ab56091a}} 
+\index{config.h@{config.h}!LINEAR\_KD@{LINEAR\_KD}}
+\index{LINEAR\_KD@{LINEAR\_KD}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{LINEAR\_KD}{LINEAR\_KD}}
+{\footnotesize\ttfamily \#define LINEAR\+\_\+\+KD~0}
 
 \mbox{\Hypertarget{config_8h_a3b2fa757042b25df3b72adfc22595886}\label{config_8h_a3b2fa757042b25df3b72adfc22595886}} 
 \index{config.h@{config.h}!TRACKING\_KP@{TRACKING\_KP}}
 \index{TRACKING\_KP@{TRACKING\_KP}!config.h@{config.h}}
 \doxysubsubsection{\texorpdfstring{TRACKING\_KP}{TRACKING\_KP}}
 {\footnotesize\ttfamily \#define TRACKING\+\_\+\+KP~60}
+
+\mbox{\Hypertarget{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}\label{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}} 
+\index{config.h@{config.h}!ANGULAR\_KP@{ANGULAR\_KP}}
+\index{ANGULAR\_KP@{ANGULAR\_KP}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_KP}{ANGULAR\_KP}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KP~1}
+
+\mbox{\Hypertarget{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}\label{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}} 
+\index{config.h@{config.h}!ANGULAR\_KI@{ANGULAR\_KI}}
+\index{ANGULAR\_KI@{ANGULAR\_KI}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_KI}{ANGULAR\_KI}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KI~0}
+
+\mbox{\Hypertarget{config_8h_abdf82441d0c29e44532f62be7db57c2d}\label{config_8h_abdf82441d0c29e44532f62be7db57c2d}} 
+\index{config.h@{config.h}!ANGULAR\_KD@{ANGULAR\_KD}}
+\index{ANGULAR\_KD@{ANGULAR\_KD}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{ANGULAR\_KD}{ANGULAR\_KD}}
+{\footnotesize\ttfamily \#define ANGULAR\+\_\+\+KD~0}
+
+\mbox{\Hypertarget{config_8h_a80c2c0cbab028b3b18d7c7c521815721}\label{config_8h_a80c2c0cbab028b3b18d7c7c521815721}} 
+\index{config.h@{config.h}!MIN\_ERROR@{MIN\_ERROR}}
+\index{MIN\_ERROR@{MIN\_ERROR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_ERROR}{MIN\_ERROR}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+ERROR~5}
+
+\mbox{\Hypertarget{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}\label{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}} 
+\index{config.h@{config.h}!AUTONS@{AUTONS}}
+\index{AUTONS@{AUTONS}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{AUTONS}{AUTONS}}
+{\footnotesize\ttfamily \#define AUTONS~\char`\"{}Front\char`\"{}, \char`\"{}Back\char`\"{}, \char`\"{}Do Nothing\char`\"{}}
+
+\mbox{\Hypertarget{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}\label{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}} 
+\index{config.h@{config.h}!HUE@{HUE}}
+\index{HUE@{HUE}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{HUE}{HUE}}
+{\footnotesize\ttfamily \#define HUE~0}
+
+\mbox{\Hypertarget{config_8h_a3da44afeba217135a680a7477b5e3ce3}\label{config_8h_a3da44afeba217135a680a7477b5e3ce3}} 
+\index{config.h@{config.h}!DEFAULT@{DEFAULT}}
+\index{DEFAULT@{DEFAULT}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT}{DEFAULT}}
+{\footnotesize\ttfamily \#define DEFAULT~1}
 

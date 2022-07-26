@@ -1,4 +1,4 @@
-.TH "arms::Point" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.TH "arms::Point" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -71,21 +71,21 @@ This is a helper union that defines a 2d point or vector\&. It defines a set of 
 A union was chosen to represent the point so that a couple different names can be used to access the same elements\&. For example: point\&.x, point\&.data[0], and point[0] refer to the same variable\&. 
 .SH "Member Function Documentation"
 .PP 
-.SS "\fBPoint\fP arms::Point::operator* (const \fBPoint\fP & o)\fC [inline]\fP"
-
-.SS "\fBPoint\fP & arms::Point::operator*= (\fBPoint\fP & o)\fC [inline]\fP"
+.SS "\fBPoint\fP arms::Point::operator\- ()\fC [inline]\fP"
 
 .SS "\fBPoint\fP arms::Point::operator+ (const \fBPoint\fP & o)\fC [inline]\fP"
 
-.SS "\fBPoint\fP & arms::Point::operator+= (\fBPoint\fP & o)\fC [inline]\fP"
-
-.SS "\fBPoint\fP arms::Point::operator\- ()\fC [inline]\fP"
-
 .SS "\fBPoint\fP arms::Point::operator\- (const \fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::Point::operator* (const \fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP arms::Point::operator/ (const \fBPoint\fP & o)\fC [inline]\fP"
+
+.SS "\fBPoint\fP & arms::Point::operator+= (\fBPoint\fP & o)\fC [inline]\fP"
 
 .SS "\fBPoint\fP & arms::Point::operator\-= (\fBPoint\fP & o)\fC [inline]\fP"
 
-.SS "\fBPoint\fP arms::Point::operator/ (const \fBPoint\fP & o)\fC [inline]\fP"
+.SS "\fBPoint\fP & arms::Point::operator*= (\fBPoint\fP & o)\fC [inline]\fP"
 
 .SS "\fBPoint\fP & arms::Point::operator/= (\fBPoint\fP & o)\fC [inline]\fP"
 
@@ -95,13 +95,13 @@ A union was chosen to represent the point so that a couple different names can b
 
 .SH "Member Data Documentation"
 .PP 
-.SS "struct  { \&.\&.\&. }  arms::Point::@1"
-
-.SS "double arms::Point::data[2]"
-
 .SS "double arms::Point::x"
 
 .SS "double arms::Point::y"
+
+.SS "struct  { \&.\&.\&. }  arms::Point::@1"
+
+.SS "double arms::Point::data[2]"
 
 
 .SH "Author"

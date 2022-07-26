@@ -1,4 +1,4 @@
-.TH "arms::pid" 3 "Mon Jul 18 2022" "ARMS" \" -*- nroff -*-
+.TH "arms::pid" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -70,43 +70,43 @@ arms::pid
 .in -1c
 .SH "Function Documentation"
 .PP 
+.SS "std::array< double, 2 > arms::pid::translational ()"
+
 .SS "std::array< double, 2 > arms::pid::angular ()"
 
 .SS "void arms::pid::init (double linearKP, double linearKI, double linearKD, double angularKP, double angularKI, double angularKD, double trackingKP, double minError)"
 
-.SS "std::array< double, 2 > arms::pid::translational ()"
-
 .SH "Variable Documentation"
 .PP 
-.SS "double arms::pid::angularKD\fC [extern]\fP"
-
-.SS "double arms::pid::angularKI\fC [extern]\fP"
-
-.SS "double arms::pid::angularKP\fC [extern]\fP"
-
-.SS "double arms::pid::angularTarget\fC [extern]\fP"
-
-.SS "double arms::pid::in_ang\fC [extern]\fP"
-
-.SS "double arms::pid::in_lin\fC [extern]\fP"
-
-.SS "double arms::pid::linearKD\fC [extern]\fP"
-
-.SS "double arms::pid::linearKI\fC [extern]\fP"
+.SS "int arms::pid::mode\fC [extern]\fP"
 
 .SS "double arms::pid::linearKP\fC [extern]\fP"
 
+.SS "double arms::pid::linearKI\fC [extern]\fP"
+
+.SS "double arms::pid::linearKD\fC [extern]\fP"
+
+.SS "double arms::pid::angularKP\fC [extern]\fP"
+
+.SS "double arms::pid::angularKI\fC [extern]\fP"
+
+.SS "double arms::pid::angularKD\fC [extern]\fP"
+
+.SS "double arms::pid::trackingKP\fC [extern]\fP"
+
 .SS "double arms::pid::minError\fC [extern]\fP"
 
-.SS "int arms::pid::mode\fC [extern]\fP"
+.SS "double arms::pid::in_lin\fC [extern]\fP"
+
+.SS "double arms::pid::in_ang\fC [extern]\fP"
+
+.SS "double arms::pid::angularTarget\fC [extern]\fP"
 
 .SS "\fBPoint\fP arms::pid::pointTarget\fC [extern]\fP"
 
-.SS "bool arms::pid::reverse\fC [extern]\fP"
-
 .SS "bool arms::pid::thru\fC [extern]\fP"
 
-.SS "double arms::pid::trackingKP\fC [extern]\fP"
+.SS "bool arms::pid::reverse\fC [extern]\fP"
 
 .SH "Author"
 .PP 
