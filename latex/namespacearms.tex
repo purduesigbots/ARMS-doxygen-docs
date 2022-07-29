@@ -22,7 +22,7 @@ union \mbox{\hyperlink{unionarms_1_1_point}{Point}}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize ARMS using the user defined constants {\bfseries{Example 1\+:}} \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}} \mbox{\hyperlink{namespacearms_a1037af635b64545aabfafb4129ffce19}{operator$\vert$}} (const \mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}} \&f, \mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}} \&o)
 \item 
 \mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}} \mbox{\hyperlink{namespacearms_a30d10a019baf5e307e12eeee65954446}{operator\&}} (const \mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}} \&f, \mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}} \&o)
@@ -77,7 +77,19 @@ const \mbox{\hyperlink{structarms_1_1_move_flags}{Move\+Flags}} \mbox{\hyperlink
 \doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void arms\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\Hypertarget{namespacearms_a1037af635b64545aabfafb4129ffce19}\label{namespacearms_a1037af635b64545aabfafb4129ffce19}} 
+
+
+Initialize ARMS using the user defined constants {\bfseries{Example 1\+:}} 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// initalize arms}}
+\DoxyCodeLine{\mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms::init}}();}
+
+\end{DoxyCode}
+
+
+initialize ARMS (pid, chassis, odom, etc) using the defined constants in \mbox{\hyperlink{config_8h}{config.\+h}} \mbox{\Hypertarget{namespacearms_a1037af635b64545aabfafb4129ffce19}\label{namespacearms_a1037af635b64545aabfafb4129ffce19}} 
 \index{arms@{arms}!operator\texttt{"|}@{operator\texttt{"|}}}
 \index{operator\texttt{"|}@{operator\texttt{"|}}!arms@{arms}}
 \doxysubsubsection{\texorpdfstring{operator\texttt{"|}()}{operator|()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}

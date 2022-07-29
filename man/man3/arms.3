@@ -1,4 +1,4 @@
-.TH "arms" 3 "Tue Jul 26 2022" "ARMS" \" -*- nroff -*-
+.TH "arms" 3 "Thu Jul 28 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -39,6 +39,7 @@ arms
 .ti -1c
 .RI "void \fBinit\fP ()"
 .br
+.RI "Initialize ARMS using the user defined constants \fBExample 1:\fP "
 .ti -1c
 .RI "\fBMoveFlags\fP \fBoperator|\fP (const \fBMoveFlags\fP &f, \fBMoveFlags\fP &o)"
 .br
@@ -111,6 +112,17 @@ arms
 .PP 
 .SS "void arms::init ()\fC [inline]\fP"
 
+.PP
+Initialize ARMS using the user defined constants \fBExample 1:\fP 
+.PP
+.nf
+// initalize arms
+arms::init();
+
+.fi
+.PP
+.PP
+initialize ARMS (pid, chassis, odom, etc) using the defined constants in \fBconfig\&.h\fP 
 .SS "\fBMoveFlags\fP arms::operator| (const \fBMoveFlags\fP & f, \fBMoveFlags\fP & o)\fC [inline]\fP"
 
 .SS "\fBMoveFlags\fP arms::operator& (const \fBMoveFlags\fP & f, \fBMoveFlags\fP & o)\fC [inline]\fP"
