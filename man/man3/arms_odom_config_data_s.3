@@ -30,23 +30,20 @@ arms::odom::config_data_s
 .RI "\fBEncoderType_e_t\fP \fBencoderType\fP"
 .br
 .in -1c
-.SH "Detailed Description"
-.PP 
-This struct is used to store the configuration data for the odometry system\&. 
 .SH "Member Data Documentation"
 .PP 
-.SS "int arms::odom::config_data_s::expanderPort = 0"
-
-.SS "int arms::odom::config_data_s::rightEncoderPort = 0"
-
-.SS "int arms::odom::config_data_s::leftEncoderPort = 0"
-
-.SS "int arms::odom::config_data_s::middleEncoderPort = 0"
-
-.SS "int arms::odom::config_data_s::imuPort = 0"
-
-.SS "\fBEncoderType_e_t\fP arms::odom::config_data_s::encoderType"
-
+.SS "arms::odom::config_data_s_t::expanderPort = 0"
+The port that the expander is plugged into 
+.SS "arms::odom::config_data_s_t::rightEncoderPort = 0"
+The port that the right encoder is plugged into 
+.SS "arms::odom::config_data_s_t::leftEncoderPort = 0"
+The port that the left encoder is plugged into 
+.SS "arms::odom::config_data_s_t::middleEncoderPort = 0"
+The port that the middle encoder is plugged into 
+.SS "arms::odom::config_data_s_t::imuPort = 0"
+The port that the IMU is plugged into 
+.SS "arms::odom::config_data_s_t::encoderType"
+The type of encoder used\&. This is used to determine how to read the encoder values 
 
 .SH "Author"
 .PP 

@@ -9,10 +9,15 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structarms_1_1odom_1_1config__data__s.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacearms.html">arms</a></li><li class="navelem"><a class="el" href="namespacearms_1_1odom.html">odom</a></li><li class="navelem"><a class="el" href="structarms_1_1odom_1_1config__data__s.html">config_data_s</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -77,103 +94,107 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1fdc6111034d4ae3fe537b5aa5ac980b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#a1fdc6111034d4ae3fe537b5aa5ac980b">expanderPort</a> = 0</td></tr>
-<tr class="separator:a1fdc6111034d4ae3fe537b5aa5ac980b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095cb1d757ff8ed701c2690f18acc6ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#a095cb1d757ff8ed701c2690f18acc6ca">rightEncoderPort</a> = 0</td></tr>
-<tr class="separator:a095cb1d757ff8ed701c2690f18acc6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d41dab1f77770b19478e68beb027bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#a21d41dab1f77770b19478e68beb027bf">leftEncoderPort</a> = 0</td></tr>
-<tr class="separator:a21d41dab1f77770b19478e68beb027bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433dac426213f35bde6deb8b783bc4bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#a433dac426213f35bde6deb8b783bc4bb">middleEncoderPort</a> = 0</td></tr>
-<tr class="separator:a433dac426213f35bde6deb8b783bc4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803b8c7939902bb6d50cc183c1265797"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#a803b8c7939902bb6d50cc183c1265797">imuPort</a> = 0</td></tr>
-<tr class="separator:a803b8c7939902bb6d50cc183c1265797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab656e0521a70425a652960f0d6ba73b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacearms_1_1odom.html#a089433a5fa5fac27931c8b893d3cb3e6">EncoderType_e_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#ab656e0521a70425a652960f0d6ba73b9">encoderType</a></td></tr>
-<tr class="separator:ab656e0521a70425a652960f0d6ba73b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb312709d566ae1f71d0ae8ea795846"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#abfb312709d566ae1f71d0ae8ea795846">expanderPort</a> = 0</td></tr>
+<tr class="separator:abfb312709d566ae1f71d0ae8ea795846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c9637a0a77e058f7a64b0c70e5e8e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#a64c9637a0a77e058f7a64b0c70e5e8e5">rightEncoderPort</a> = 0</td></tr>
+<tr class="separator:a64c9637a0a77e058f7a64b0c70e5e8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2ec5d4ba9fe2eed83ea76aa1699478"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#afd2ec5d4ba9fe2eed83ea76aa1699478">leftEncoderPort</a> = 0</td></tr>
+<tr class="separator:afd2ec5d4ba9fe2eed83ea76aa1699478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fbab665d2d0f0a0c5183d75ce390455"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#a3fbab665d2d0f0a0c5183d75ce390455">middleEncoderPort</a> = 0</td></tr>
+<tr class="separator:a3fbab665d2d0f0a0c5183d75ce390455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20ec6ee53ca6244511ed6ea2603bd89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#ae20ec6ee53ca6244511ed6ea2603bd89">imuPort</a> = 0</td></tr>
+<tr class="separator:ae20ec6ee53ca6244511ed6ea2603bd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9dff087179da4c587a3a7bc20ea95d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacearms_1_1odom.html#a2dec38e582a802750db2cfb9490968f4">EncoderType_e_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarms_1_1odom_1_1config__data__s.html#add9dff087179da4c587a3a7bc20ea95d">encoderType</a></td></tr>
+<tr class="separator:add9dff087179da4c587a3a7bc20ea95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This struct is used to store the configuration data for the odometry system. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1fdc6111034d4ae3fe537b5aa5ac980b" name="a1fdc6111034d4ae3fe537b5aa5ac980b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fdc6111034d4ae3fe537b5aa5ac980b">&#9670;&nbsp;</a></span>expanderPort</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abfb312709d566ae1f71d0ae8ea795846" name="abfb312709d566ae1f71d0ae8ea795846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb312709d566ae1f71d0ae8ea795846">&#9670;&nbsp;</a></span>expanderPort</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int arms::odom::config_data_s::expanderPort = 0</td>
+          <td class="memname">arms::odom::config_data_s_t::expanderPort = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The port that the expander is plugged into </p>
 
 </div>
 </div>
-<a id="a095cb1d757ff8ed701c2690f18acc6ca" name="a095cb1d757ff8ed701c2690f18acc6ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a095cb1d757ff8ed701c2690f18acc6ca">&#9670;&nbsp;</a></span>rightEncoderPort</h2>
+<a id="a64c9637a0a77e058f7a64b0c70e5e8e5" name="a64c9637a0a77e058f7a64b0c70e5e8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c9637a0a77e058f7a64b0c70e5e8e5">&#9670;&nbsp;</a></span>rightEncoderPort</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int arms::odom::config_data_s::rightEncoderPort = 0</td>
+          <td class="memname">arms::odom::config_data_s_t::rightEncoderPort = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The port that the right encoder is plugged into </p>
 
 </div>
 </div>
-<a id="a21d41dab1f77770b19478e68beb027bf" name="a21d41dab1f77770b19478e68beb027bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d41dab1f77770b19478e68beb027bf">&#9670;&nbsp;</a></span>leftEncoderPort</h2>
+<a id="afd2ec5d4ba9fe2eed83ea76aa1699478" name="afd2ec5d4ba9fe2eed83ea76aa1699478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2ec5d4ba9fe2eed83ea76aa1699478">&#9670;&nbsp;</a></span>leftEncoderPort</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int arms::odom::config_data_s::leftEncoderPort = 0</td>
+          <td class="memname">arms::odom::config_data_s_t::leftEncoderPort = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The port that the left encoder is plugged into </p>
 
 </div>
 </div>
-<a id="a433dac426213f35bde6deb8b783bc4bb" name="a433dac426213f35bde6deb8b783bc4bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a433dac426213f35bde6deb8b783bc4bb">&#9670;&nbsp;</a></span>middleEncoderPort</h2>
+<a id="a3fbab665d2d0f0a0c5183d75ce390455" name="a3fbab665d2d0f0a0c5183d75ce390455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fbab665d2d0f0a0c5183d75ce390455">&#9670;&nbsp;</a></span>middleEncoderPort</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int arms::odom::config_data_s::middleEncoderPort = 0</td>
+          <td class="memname">arms::odom::config_data_s_t::middleEncoderPort = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The port that the middle encoder is plugged into </p>
 
 </div>
 </div>
-<a id="a803b8c7939902bb6d50cc183c1265797" name="a803b8c7939902bb6d50cc183c1265797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a803b8c7939902bb6d50cc183c1265797">&#9670;&nbsp;</a></span>imuPort</h2>
+<a id="ae20ec6ee53ca6244511ed6ea2603bd89" name="ae20ec6ee53ca6244511ed6ea2603bd89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20ec6ee53ca6244511ed6ea2603bd89">&#9670;&nbsp;</a></span>imuPort</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int arms::odom::config_data_s::imuPort = 0</td>
+          <td class="memname">arms::odom::config_data_s_t::imuPort = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The port that the IMU is plugged into </p>
 
 </div>
 </div>
-<a id="ab656e0521a70425a652960f0d6ba73b9" name="ab656e0521a70425a652960f0d6ba73b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab656e0521a70425a652960f0d6ba73b9">&#9670;&nbsp;</a></span>encoderType</h2>
+<a id="add9dff087179da4c587a3a7bc20ea95d" name="add9dff087179da4c587a3a7bc20ea95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9dff087179da4c587a3a7bc20ea95d">&#9670;&nbsp;</a></span>encoderType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacearms_1_1odom.html#a089433a5fa5fac27931c8b893d3cb3e6">EncoderType_e_t</a> arms::odom::config_data_s::encoderType</td>
+          <td class="memname">arms::odom::config_data_s_t::encoderType</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >The type of encoder used. This is used to determine how to read the encoder values </p>
 
 </div>
 </div>
@@ -181,9 +202,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/<a class="el" href="odom_8h_source.html">odom.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacearms.html">arms</a></li><li class="navelem"><a class="el" href="namespacearms_1_1odom.html">odom</a></li><li class="navelem"><a class="el" href="structarms_1_1odom_1_1config__data__s.html">config_data_s</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

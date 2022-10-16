@@ -31,6 +31,7 @@ The {\itshape REVERSE} flag will cause the robot to move towards the movement us
 \DoxyCodeLine{\textcolor{comment}{// create a MoveFlags object that is asynchronous and relative}}
 \DoxyCodeLine{MoveFlags option\_1 = \{\textcolor{keyword}{true}, \textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{false}\}; \textcolor{comment}{// create with vector}}
 \DoxyCodeLine{MoveFlags option\_2 = \mbox{\hyperlink{namespacearms_a29f692834f466360bb95433c896bc3f6}{arms::ASYNC}} | \mbox{\hyperlink{namespacearms_a128e59e572e7e73567aa95537154c76f}{arms::RELATIVE}}; \textcolor{comment}{// create with flags}}
+
 \end{DoxyCode}
 
 
@@ -39,6 +40,7 @@ The {\itshape REVERSE} flag will cause the robot to move towards the movement us
 \DoxyCodeLine{\textcolor{comment}{// perform a chassis movement that is reverse, relative, and asynchronous}}
 \DoxyCodeLine{chassis.move(\{0, 0\}, 100, \{\textcolor{keyword}{true}, \textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{true}\}); \textcolor{comment}{// move with vector}}
 \DoxyCodeLine{chassis.move(\{0, 0\}, 100, \mbox{\hyperlink{namespacearms_a338541fad748b1f1fa4e34a80aaac088}{arms::REVERSE}} | \mbox{\hyperlink{namespacearms_a128e59e572e7e73567aa95537154c76f}{arms::RELATIVE}} | \mbox{\hyperlink{namespacearms_a29f692834f466360bb95433c896bc3f6}{arms::ASYNC}}); \textcolor{comment}{// move with flags}}
+
 \end{DoxyCode}
  
 

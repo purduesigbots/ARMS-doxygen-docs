@@ -1,3 +1,15 @@
 \label{index_md_README}%
 \Hypertarget{index_md_README}%
-Documentation for ARMS template 
+Documentation for ARMS template, made by \href{https://purduesigbots.com/}{\texttt{ Purdue SIGBots}}
+
+This template allows you to quickly setup PID and Odometry on a non-\/holonomic chassis.
+
+The first thing you need to do after applying the template is setting up your robot\textquotesingle{}s configuration in the \mbox{\hyperlink{config_8h}{config.\+h}} file.
+
+After doing this, simply call {\ttfamily \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms\+::init()}}} inside of the {\ttfamily initialize} function in {\ttfamily main.\+cpp} and you can start using ARMS!
+
+Almost everything ARMS related you will need is under the \mbox{\hyperlink{namespacearms_1_1chassis}{arms\+::chassis}} namespace, which contains stuff such as point to point movements and turns.
+
+PID constants and calculations are stored under the \mbox{\hyperlink{namespacearms_1_1pid}{arms\+::pid}} namespace, but you will likely not need to use this namespace in your code.
+
+Odometry setup and information is located under the \mbox{\hyperlink{namespacearms_1_1odom}{arms\+::odom}} namespace, which is where you can get stuff like the robot\textquotesingle{}s current position and heading. 

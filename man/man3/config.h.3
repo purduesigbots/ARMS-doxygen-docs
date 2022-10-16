@@ -2,7 +2,7 @@
 .ad l
 .nh
 .SH NAME
-C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h \- \fBThe ARMS configuration file\&. This file is where you setup everything about your chassis, including the motors, the sensors, and constants\&. This is also where you will setup autonomous selector\&.\fP  
+C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h \- The ARMS configuration file\&. This file is where you setup everything about your chassis, including the motors, the sensors, and constants\&. This is also where you will setup autonomous selector\&.  
 
 .SH SYNOPSIS
 .br
@@ -148,9 +148,9 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h \- 
 .in -1c
 .SH "Detailed Description"
 .PP 
-\fBThe ARMS configuration file\&. This file is where you setup everything about your chassis, including the motors, the sensors, and constants\&. This is also where you will setup autonomous selector\&.\fP 
+The ARMS configuration file\&. This file is where you setup everything about your chassis, including the motors, the sensors, and constants\&. This is also where you will setup autonomous selector\&. 
 
-\fBYOU NEED TO REPLACE ALL OF THESE VALUES WITH THE CORRECT VALUES FOR YOUR ROBOT\&.\fP 
+YOU NEED TO REPLACE ALL OF THESE VALUES WITH THE CORRECT VALUES FOR YOUR ROBOT\&. 
 .SH "Macro Definition Documentation"
 .PP 
 .SS "#define ODOM_DEBUG   0"
@@ -217,16 +217,17 @@ Right chassis motors\&.
 .PP
 \fBParameters\fP
 .RS 4
-\fIports\fP the motor ports on the right side of the chassis 
+\fIports\fP the motor ports on the right side of the chassis
+.RE
+.PP
+\fB Example 1: \fP 
 .PP
 .nf
-<b> Example 1: </b>
 // two motors on the right side of the chassis in ports 1 and 2
 #define RIGHT_MOTORS 1, 2
 
 .fi
 .PP
-.RE
 .PP
 \fB Example 2: \fP 
 .PP
@@ -396,7 +397,7 @@ Encoder Ports\&.
 .fi
 .PP
 .PP
-Sets up the 1-3 encoders being used on the bot\&. At least 1 encoder parrallel to the chassis must be used for odometry to work\&. If either left or right encoder is set to 0, an IMU must also be used\&. An encoder perpindicular to the chassis (middle) should be used if the robot is expected to be pushed sideways\&. Negative values reverse the direction of the encoder\&. A value of 0 disables the encoder\&. The values should be valid smart ports if using the V5 rotation sensor, or odd numbered adi ports if using the optical shaft encoders\&. This is configured at \fBENCODER_TYPE\fP If all encoders are disabled, the integrated encoders in the chassis motors will be used\&. 
+Sets up the 1-3 encoders being used on the bot\&. An \fBIMU_PORT\fP should be set if you do not use all 3 encoders\&. An encoder perpindicular to the chassis (middle) should be used if the robot is expected to be pushed sideways\&. Negative values reverse the direction of the encoder\&. A value of 0 disables the encoder and uses the integrated motor encoders instead\&. The values should be valid smart ports if using the V5 rotation sensor, or odd numbered adi ports if using the optical shaft encoders\&. This is configured at \fBENCODER_TYPE\fP If all encoders are disabled, the integrated encoders in the chassis motors will be used\&. 
 .SS "#define EXPANDER_PORT   0"
 
 .PP

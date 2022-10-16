@@ -61,7 +61,23 @@ This namespace contains all of the functions and variables needed to control the
 .SH "Function Documentation"
 .PP 
 .SS "void arms::chassis::setBrakeMode (pros::motor_brake_mode_e_t b)"
+Sets the chassis's brake mode
+.PP
+\fBParameters\fP
+.RS 4
+\fIbrakeMode\fP The chassis brake mode
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//set the chassis's brake mode to coast
+chassis::setBrakeMode(pros::E_MOTOR_BRAKE_COAST);
 
+.fi
+.PP
+.PP
+Sets the chassis's brake mode to a valid \fCPROS Brake Mode\fP Options are coast, hold, and brake\&. 
 .SS "bool arms::chassis::settled ()"
 
 .PP

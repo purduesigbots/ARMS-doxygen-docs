@@ -8,7 +8,7 @@ struct \mbox{\hyperlink{structarms_1_1odom_1_1config__data__s}{config\+\_\+data\
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef enum \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661}{arms\+::odom\+::\+Encoder\+Type}} \mbox{\hyperlink{namespacearms_1_1odom_a089433a5fa5fac27931c8b893d3cb3e6}{Encoder\+Type\+\_\+e\+\_\+t}}
+typedef enum \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661}{arms\+::odom\+::\+Encoder\+Type}} \mbox{\hyperlink{namespacearms_1_1odom_a2dec38e582a802750db2cfb9490968f4}{Encoder\+Type\+\_\+e\+\_\+t}}
 \item 
 typedef struct \mbox{\hyperlink{structarms_1_1odom_1_1config__data__s}{arms\+::odom\+::config\+\_\+data\+\_\+s}} \mbox{\hyperlink{namespacearms_1_1odom_aa48205a9f15c59fccf2e32ed2bdb64e7}{config\+\_\+data\+\_\+s\+\_\+t}}
 \end{DoxyCompactItemize}
@@ -51,13 +51,15 @@ std\+::shared\+\_\+ptr$<$ pros\+::\+Imu $>$ \mbox{\hyperlink{namespacearms_1_1od
 This namespace deals with the odometry system. It is used to track the robot\textquotesingle{}s position on the field. 
 
 \doxysubsection{Typedef Documentation}
-\mbox{\Hypertarget{namespacearms_1_1odom_a089433a5fa5fac27931c8b893d3cb3e6}\label{namespacearms_1_1odom_a089433a5fa5fac27931c8b893d3cb3e6}} 
+\mbox{\Hypertarget{namespacearms_1_1odom_a2dec38e582a802750db2cfb9490968f4}\label{namespacearms_1_1odom_a2dec38e582a802750db2cfb9490968f4}} 
 \index{arms::odom@{arms::odom}!EncoderType\_e\_t@{EncoderType\_e\_t}}
 \index{EncoderType\_e\_t@{EncoderType\_e\_t}!arms::odom@{arms::odom}}
 \doxysubsubsection{\texorpdfstring{EncoderType\_e\_t}{EncoderType\_e\_t}}
-{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661}{arms\+::odom\+::\+Encoder\+Type}} \mbox{\hyperlink{namespacearms_1_1odom_a089433a5fa5fac27931c8b893d3cb3e6}{arms\+::odom\+::\+Encoder\+Type\+\_\+e\+\_\+t}}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacearms_1_1odom_a2dec38e582a802750db2cfb9490968f4}{arms\+::odom\+::\+Encoder\+Type\+\_\+e\+\_\+t}}}
 
-\mbox{\Hypertarget{namespacearms_1_1odom_aa48205a9f15c59fccf2e32ed2bdb64e7}\label{namespacearms_1_1odom_aa48205a9f15c59fccf2e32ed2bdb64e7}} 
+This enum is used to specify the type of encoder used. The options are\+: ENCODER\+\_\+\+ADI or ENCODER\+\_\+\+ROTATION
+
+This is used for setup in \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{arms\+::config\+::\+ENCODER\+\_\+\+TYPE}} \mbox{\Hypertarget{namespacearms_1_1odom_aa48205a9f15c59fccf2e32ed2bdb64e7}\label{namespacearms_1_1odom_aa48205a9f15c59fccf2e32ed2bdb64e7}} 
 \index{arms::odom@{arms::odom}!config\_data\_s\_t@{config\_data\_s\_t}}
 \index{config\_data\_s\_t@{config\_data\_s\_t}!arms::odom@{arms::odom}}
 \doxysubsubsection{\texorpdfstring{config\_data\_s\_t}{config\_data\_s\_t}}
@@ -72,9 +74,7 @@ This namespace deals with the odometry system. It is used to track the robot\tex
 \doxysubsubsection{\texorpdfstring{EncoderType}{EncoderType}}
 {\footnotesize\ttfamily enum \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661}{arms\+::odom\+::\+Encoder\+Type}}}
 
-This enum is used to specify the type of encoder used. The options are\+: ENCODER\+\_\+\+ADI or ENCODER\+\_\+\+ROTATION
-
-This is used for setup in \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{arms\+::config\+::\+ENCODER\+\_\+\+TYPE}} \begin{DoxyEnumFields}{Enumerator}
+\begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{ENCODER\_ADI@{ENCODER\_ADI}!arms::odom@{arms::odom}}\index{arms::odom@{arms::odom}!ENCODER\_ADI@{ENCODER\_ADI}}}\mbox{\Hypertarget{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0}\label{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0}} 
 ENCODER\+\_\+\+ADI&\\
 \hline
@@ -117,7 +117,12 @@ Return a \mbox{\hyperlink{unionarms_1_1_point}{Point}} representing the robot\te
 \doxysubsubsection{\texorpdfstring{getHeading()}{getHeading()}}
 {\footnotesize\ttfamily double arms\+::odom\+::get\+Heading (\begin{DoxyParamCaption}\item[{bool}]{radians = {\ttfamily false} }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}\label{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}} 
+
+\begin{DoxyParams}{Parameters}
+{\em radians} & If true, the heading will be returned in radians. If false, the heading will be returned in degrees.\\
+\hline
+\end{DoxyParams}
+Return the robot\textquotesingle{}s heading based in degrees or radians, depending on the {\itshape radians} option \mbox{\Hypertarget{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}\label{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}} 
 \index{arms::odom@{arms::odom}!reset@{reset}}
 \index{reset@{reset}!arms::odom@{arms::odom}}
 \doxysubsubsection{\texorpdfstring{reset()}{reset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -132,6 +137,7 @@ Return a \mbox{\hyperlink{unionarms_1_1_point}{Point}} representing the robot\te
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// reset the robot's position to be at x: 24 inches, y: 0 inches }}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}{arms::odom::reset}}(\{24, 0\});}
+
 \end{DoxyCode}
 
 
@@ -152,6 +158,7 @@ Reset the odometry system to the provided position. \mbox{\Hypertarget{namespace
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// reset the robot's position to be at x: 24 inches, y: 0 inches, and angle: 90 degrees}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1odom_a2d8d53ed65237a92ac9c4e6eb945c55b}{arms::odom::reset}}(\{24, 0\}, 90);}
+
 \end{DoxyCode}
 
 
@@ -170,6 +177,7 @@ Reset the odometry system to the provided position and angle. \mbox{\Hypertarget
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// get the angle error of the point (24, 0)}}
 \DoxyCodeLine{\textcolor{keywordtype}{double} error = \mbox{\hyperlink{namespacearms_1_1odom_a3b2219fefea35a2253b175dc0859a57d}{arms::odom::getAngleError}}(\{24, 0\});}
+
 \end{DoxyCode}
 
 
@@ -188,6 +196,7 @@ Return the angle error between the robot\textquotesingle{}s current heading and 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// get the distance error of the point (24, 0)}}
 \DoxyCodeLine{\textcolor{keywordtype}{double} error = \mbox{\hyperlink{namespacearms_1_1odom_ab27a6c5acaf34ee089c969e23bce9ba4}{arms::odom::getDistanceError}}(\{24, 0\});}
+
 \end{DoxyCode}
 
 

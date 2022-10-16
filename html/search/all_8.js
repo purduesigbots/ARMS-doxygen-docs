@@ -2,7 +2,7 @@ var searchData=
 [
   ['lead_5fpct_0',['LEAD_PCT',['../config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70',1,'config.h']]],
   ['left_5fmotors_1',['LEFT_MOTORS',['../config_8h.html#a2e60beeff7a71953041ffff21f206b3e',1,'config.h']]],
-  ['leftencoderport_2',['leftEncoderPort',['../structarms_1_1odom_1_1config__data__s.html#a21d41dab1f77770b19478e68beb027bf',1,'arms::odom::config_data_s']]],
+  ['leftencoderport_2',['leftEncoderPort',['../structarms_1_1odom_1_1config__data__s.html#afd2ec5d4ba9fe2eed83ea76aa1699478',1,'arms::odom::config_data_s']]],
   ['leftmotors_3',['leftMotors',['../namespacearms_1_1chassis.html#ad429af8676d0c9a91962c990035e1d8f',1,'arms::chassis']]],
   ['lib_2eh_4',['lib.h',['../lib_8h.html',1,'']]],
   ['linear_5fexit_5ferror_5',['LINEAR_EXIT_ERROR',['../config_8h.html#aee67e5b2ba2e050782b4e743b1263c11',1,'config.h']]],

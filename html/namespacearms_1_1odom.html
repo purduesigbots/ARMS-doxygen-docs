@@ -9,10 +9,15 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacearms_1_1odom.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacearms.html">arms</a></li><li class="navelem"><a class="el" href="namespacearms_1_1odom.html">odom</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -83,8 +100,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a089433a5fa5fac27931c8b893d3cb3e6"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="namespacearms_1_1odom.html#aadbff82dd390afb0759b9584c4cd8661">arms::odom::EncoderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1odom.html#a089433a5fa5fac27931c8b893d3cb3e6">EncoderType_e_t</a></td></tr>
-<tr class="separator:a089433a5fa5fac27931c8b893d3cb3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dec38e582a802750db2cfb9490968f4"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="namespacearms_1_1odom.html#aadbff82dd390afb0759b9584c4cd8661">arms::odom::EncoderType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1odom.html#a2dec38e582a802750db2cfb9490968f4">EncoderType_e_t</a></td></tr>
+<tr class="separator:a2dec38e582a802750db2cfb9490968f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48205a9f15c59fccf2e32ed2bdb64e7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structarms_1_1odom_1_1config__data__s.html">arms::odom::config_data_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1odom.html#aa48205a9f15c59fccf2e32ed2bdb64e7">config_data_s_t</a></td></tr>
 <tr class="separator:aa48205a9f15c59fccf2e32ed2bdb64e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,17 +141,19 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This namespace deals with the odometry system. It is used to track the robot's position on the field. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a089433a5fa5fac27931c8b893d3cb3e6" name="a089433a5fa5fac27931c8b893d3cb3e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089433a5fa5fac27931c8b893d3cb3e6">&#9670;&nbsp;</a></span>EncoderType_e_t</h2>
+<a id="a2dec38e582a802750db2cfb9490968f4" name="a2dec38e582a802750db2cfb9490968f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dec38e582a802750db2cfb9490968f4">&#9670;&nbsp;</a></span>EncoderType_e_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="namespacearms_1_1odom.html#aadbff82dd390afb0759b9584c4cd8661">arms::odom::EncoderType</a> <a class="el" href="namespacearms_1_1odom.html#a089433a5fa5fac27931c8b893d3cb3e6">arms::odom::EncoderType_e_t</a></td>
+          <td class="memname">enum <a class="el" href="namespacearms_1_1odom.html#a2dec38e582a802750db2cfb9490968f4">arms::odom::EncoderType_e_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This enum is used to specify the type of encoder used. The options are: ENCODER_ADI or ENCODER_ROTATION</p>
+<p >This is used for setup in <a class="el" href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">arms::config::ENCODER_TYPE</a> </p>
 
 </div>
 </div>
@@ -164,8 +183,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >This enum is used to specify the type of encoder used. The options are: ENCODER_ADI or ENCODER_ROTATION</p>
-<p >This is used for setup in <a class="el" href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">arms::config::ENCODER_TYPE</a> </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0" name="aadbff82dd390afb0759b9584c4cd8661a353b9cd84839585491f50d68d21f19c0"></a>ENCODER_ADI&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aadbff82dd390afb0759b9584c4cd8661aac7a104ec9f22417440f3a83458396e3" name="aadbff82dd390afb0759b9584c4cd8661aac7a104ec9f22417440f3a83458396e3"></a>ENCODER_ROTATION&#160;</td><td class="fielddoc"></td></tr>
@@ -261,6 +278,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radians</td><td>If true, the heading will be returned in radians. If false, the heading will be returned in degrees.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Return the robot's heading based in degrees or radians, depending on the <em>radians</em> option </p>
 
 </div>
 </div>
@@ -411,9 +435,13 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacearms.html">arms</a></li><li class="navelem"><a class="el" href="namespacearms_1_1odom.html">odom</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

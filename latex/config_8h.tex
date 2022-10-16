@@ -2,7 +2,7 @@
 \label{config_8h}\index{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h@{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h}}
 
 
-{\bfseries{The ARMS configuration file. This file is where you setup everything about your chassis, including the motors, the sensors, and constants. This is also where you will setup autonomous selector.}}  
+The ARMS configuration file. This file is where you setup everything about your chassis, including the motors, the sensors, and constants. This is also where you will setup autonomous selector.  
 
 
 \doxysubsection*{Namespaces}
@@ -81,9 +81,9 @@ void \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{arms\+::i
 
 
 \doxysubsection{Detailed Description}
-{\bfseries{The ARMS configuration file. This file is where you setup everything about your chassis, including the motors, the sensors, and constants. This is also where you will setup autonomous selector.}} 
+The ARMS configuration file. This file is where you setup everything about your chassis, including the motors, the sensors, and constants. This is also where you will setup autonomous selector. 
 
-{\bfseries{YOU NEED TO REPLACE ALL OF THESE VALUES WITH THE CORRECT VALUES FOR YOUR ROBOT.}} 
+YOU NEED TO REPLACE ALL OF THESE VALUES WITH THE CORRECT VALUES FOR YOUR ROBOT. 
 
 \doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}\label{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}} 
@@ -105,11 +105,13 @@ Odom debug mode.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//enable odom debug messages}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ODOM\_DEBUG 1}}
+
 \end{DoxyCode}
  {\bfseries{Example 2\+:}} 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//disable odom debug messages}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ODOM\_DEBUG 0}}
+
 \end{DoxyCode}
 
 
@@ -132,6 +134,7 @@ Left chassis motors.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// two motors on the left side of the chassis in ports 4 and 5}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define LEFT\_MOTORS 4, 5}}
+
 \end{DoxyCode}
 
 
@@ -139,6 +142,7 @@ Left chassis motors.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// three motors on the left side of the chassis in ports 4, 5, and 6. The motor in port 5 is reversed}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define LEFT\_MOTORS 4, -\/5, 6}}
+
 \end{DoxyCode}
 
 
@@ -154,19 +158,22 @@ Right chassis motors.
 
 
 \begin{DoxyParams}{Parameters}
-{\em ports} & the motor ports on the right side of the chassis 
-\begin{DoxyCode}{1}
-\DoxyCodeLine{<b> Example 1: </b>}
-\DoxyCodeLine{\textcolor{comment}{// two motors on the right side of the chassis in ports 1 and 2}}
-\DoxyCodeLine{\textcolor{preprocessor}{\#define RIGHT\_MOTORS 1, 2}}
-\end{DoxyCode}
-\\
+{\em ports} & the motor ports on the right side of the chassis\\
 \hline
 \end{DoxyParams}
+{\bfseries{ Example 1\+: }} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// two motors on the right side of the chassis in ports 1 and 2}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define RIGHT\_MOTORS 1, 2}}
+
+\end{DoxyCode}
+
+
 {\bfseries{ Example 2\+: }} 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{// three motors on the right side of the chassis in ports 1, 2, and 3. The motor in port 2 is reversed}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define RIGHT\_MOTORS 1, -\/2, 3}}
+
 \end{DoxyCode}
 
 
@@ -189,6 +196,7 @@ Chassis gearset.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using 200 rpm cartridges}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define GEARSET pros::E\_MOTOR\_GEAR\_200}}
+
 \end{DoxyCode}
 
 
@@ -211,6 +219,7 @@ Ticks per Inch.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a tpi of 10.}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define TPI 10}}
+
 \end{DoxyCode}
 
 
@@ -233,6 +242,7 @@ Middle Ticks Per Inch.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a middle tpi of 10.}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define MIDDLE\_TPI}}
+
 \end{DoxyCode}
 
 
@@ -255,6 +265,7 @@ Track Width.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a track width of 16 inches.}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define TRACK\_WIDTH 16}}
+
 \end{DoxyCode}
 
 
@@ -277,6 +288,7 @@ Middle Distance.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a middle distance of 2 inches.}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define MIDDLE\_DISTANCE 2}}
+
 \end{DoxyCode}
  \mbox{\Hypertarget{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}\label{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}} 
 \index{config.h@{config.h}!IMU\_PORT@{IMU\_PORT}}
@@ -297,11 +309,13 @@ IMU Port.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using an IMU in port 8}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define IMU\_PORT 8}}
+
 \end{DoxyCode}
  {\bfseries{Example 2\+:}} 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//don't use an IMU }}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define IMU\_PORT 0}}
+
 \end{DoxyCode}
 
 
@@ -328,15 +342,17 @@ Encoder Ports.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using one parrallel encoder. IMU for heading and not worried about sidways movement}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ENCODER\_PORTS 1, 0, 0}}
+
 \end{DoxyCode}
  {\bfseries{Example 2\+:}} 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using all three encoders. No IMU for heading, so we will need to get our heading through encoders}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ENCODER\_PORTS 1, 3, 5}}
+
 \end{DoxyCode}
 
 
-Sets up the 1-\/3 encoders being used on the bot. At least 1 encoder parrallel to the chassis must be used for odometry to work. If either left or right encoder is set to 0, an IMU must also be used. An encoder perpindicular to the chassis (middle) should be used if the robot is expected to be pushed sideways. Negative values reverse the direction of the encoder. A value of 0 disables the encoder. The values should be valid smart ports if using the V5 rotation sensor, or odd numbered adi ports if using the optical shaft encoders. This is configured at \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{ENCODER\+\_\+\+TYPE}} If all encoders are disabled, the integrated encoders in the chassis motors will be used. \mbox{\Hypertarget{config_8h_abb795e3cc6ab99d205689e39ef042174}\label{config_8h_abb795e3cc6ab99d205689e39ef042174}} 
+Sets up the 1-\/3 encoders being used on the bot. An \mbox{\hyperlink{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}{IMU\+\_\+\+PORT}} should be set if you do not use all 3 encoders. An encoder perpindicular to the chassis (middle) should be used if the robot is expected to be pushed sideways. Negative values reverse the direction of the encoder. A value of 0 disables the encoder and uses the integrated motor encoders instead. The values should be valid smart ports if using the V5 rotation sensor, or odd numbered adi ports if using the optical shaft encoders. This is configured at \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{ENCODER\+\_\+\+TYPE}} If all encoders are disabled, the integrated encoders in the chassis motors will be used. \mbox{\Hypertarget{config_8h_abb795e3cc6ab99d205689e39ef042174}\label{config_8h_abb795e3cc6ab99d205689e39ef042174}} 
 \index{config.h@{config.h}!EXPANDER\_PORT@{EXPANDER\_PORT}}
 \index{EXPANDER\_PORT@{EXPANDER\_PORT}!config.h@{config.h}}
 \doxysubsubsection{\texorpdfstring{EXPANDER\_PORT}{EXPANDER\_PORT}}
@@ -355,11 +371,13 @@ Encoder ADI Expander Port.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using an ADI expander in port 1}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define EXPANDER\_PORT 1}}
+
 \end{DoxyCode}
  {\bfseries{Example 2\+:}} 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//don't use an ADI expander}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define EXPANDER\_PORT 0}}
+
 \end{DoxyCode}
 
 
@@ -382,6 +400,7 @@ Encoder Type.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using the new V5 Rotation sensors}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ENCODER\_TYPE arms::odom::ENCODER\_ROTATION}}
+
 \end{DoxyCode}
 
 
@@ -389,6 +408,7 @@ Encoder Type.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using the old Optical Shaft Encoders}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ENCODER\_TYPE arms::odom::ENCODER\_ADI}}
+
 \end{DoxyCode}
 
 
@@ -411,6 +431,7 @@ Slew Step.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a slew step of 10}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define SLEW\_STEP 10}}
+
 \end{DoxyCode}
 
 
@@ -433,6 +454,7 @@ Linear Exit Error.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using an error of 4 units}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define LINEAR\_EXIT\_ERROR 4}}
+
 \end{DoxyCode}
 
 
@@ -455,6 +477,7 @@ Angular Exit Error.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using an error of 4 units}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ANGULAR\_EXIT\_ERROR 4}}
+
 \end{DoxyCode}
 
 
@@ -477,6 +500,7 @@ Linear Settle Threshold.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a threshold of 1 units}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define SETTLE\_THRESH\_LINEAR 1}}
+
 \end{DoxyCode}
 
 
@@ -499,6 +523,7 @@ Angular settle threshold.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a threshold of 1 units}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define SETTLE\_THRESH\_ANGULAR 1}}
+
 \end{DoxyCode}
 
 
@@ -521,6 +546,7 @@ Settle Time.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a settle time of 150 milliseconds}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define SETTLE\_TIME 150}}
+
 \end{DoxyCode}
 
 
@@ -543,6 +569,7 @@ Linear kP.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a kP of 0.5}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define LINEAR\_KP 0.5}}
+
 \end{DoxyCode}
 
 
@@ -565,6 +592,7 @@ Linear kI.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a ki of 0.5}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define LINEAR\_KI 0.5}}
+
 \end{DoxyCode}
 
 
@@ -587,6 +615,7 @@ Linear kD.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a kd of 0.5}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define LINEAR\_KD 0.5}}
+
 \end{DoxyCode}
 
 
@@ -609,6 +638,7 @@ Tracking kP.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a Tracking kP of 60}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define TRACKING\_KP 60}}
+
 \end{DoxyCode}
 
 
@@ -631,6 +661,7 @@ Angular kP.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a kP of 0.5}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ANGULAR\_KP 0.5}}
+
 \end{DoxyCode}
 
 
@@ -653,6 +684,7 @@ Angular kI.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a ki of 0.5}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ANGULAR\_KI 0.5}}
+
 \end{DoxyCode}
 
 
@@ -675,6 +707,7 @@ Angular kD.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a kd of 0.5}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define ANGULAR\_KD 0.5}}
+
 \end{DoxyCode}
 
 
@@ -697,6 +730,7 @@ Lead Percent.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a pct of 0.3}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define LEAD\_PCT 0.3}}
+
 \end{DoxyCode}
 
 
@@ -719,6 +753,7 @@ Minimum Error.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using a minimum error of 2}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define MIN\_ERROR 2}}
+
 \end{DoxyCode}
 
 
@@ -741,6 +776,7 @@ Auton Selector Routines.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using the autons "{}left"{}, "{}middle"{}, "{}right"{}, and "{}nothing"{}}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define AUTONS "{}left"{}}, "{}middle"{}, "{}right"{}, "{}nothing"{}}
+
 \end{DoxyCode}
 
 
@@ -760,6 +796,7 @@ Autonomous Selctor Hue.
 \begin{DoxyCode}{1}
 \DoxyCodeLine{\textcolor{comment}{//using a hue of 60 (yellow)}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define HUE 0}}
+
 \end{DoxyCode}
 \\
 \hline
@@ -783,6 +820,7 @@ Autonomous Selctor Default Routine.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//using the default auton to be "{}left"{}}}
 \DoxyCodeLine{\textcolor{preprocessor}{\#define DEFAULT\_AUTON 1}}
+
 \end{DoxyCode}
 
 

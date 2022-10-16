@@ -9,10 +9,15 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('config_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_c41e67f05e208ab265e31466ea90818c.html">ARMS</a></li><li class="navelem"><a class="el" href="dir_435cb78e5b80455c8531bf4aaa6ce74e.html">include</a></li><li class="navelem"><a class="el" href="dir_668b70942db42109031d14828f58d1b2.html">ARMS</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">config.h</div></div>
 </div><!--header-->
@@ -82,123 +99,127 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Negative numbers mean reversed motor</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="config_8h.html#a2e60beeff7a71953041ffff21f206b3e">   60</a></span><span class="comment"></span><span class="preprocessor">#define LEFT_MOTORS 0</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="config_8h.html#afff6b6b092bf0b931ae68ada63421323">   81</a></span><span class="preprocessor">#define RIGHT_MOTORS 0</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="config_8h.html#ad6bcc7877fc7d1b3b2cea63cb3bdb303">   96</a></span><span class="preprocessor">#define GEARSET pros::E_MOTOR_GEAR_200 </span><span class="comment">// RPM of chassis motors</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="config_8h.html#a8b4dd00016aed25a0ea54e9a9acd1239">  111</a></span><span class="preprocessor">#define TPI 0                 </span><span class="comment">// Encoder ticks per inch of forward robot movement</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="config_8h.html#a1b9d08eb0eec6a4a0e52a2ea68120ec2">  126</a></span><span class="preprocessor">#define MIDDLE_TPI 0          </span><span class="comment">// Ticks per inch for the middle wheel</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// Tracking wheel distances</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="config_8h.html#aaa2708101c6941b7f207ee73a7234350">  142</a></span><span class="comment"></span><span class="preprocessor">#define TRACK_WIDTH 0         </span><span class="comment">// The distance between left and right wheels (or tracker wheels)</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="config_8h.html#afdd50cee75b22705fc0898a24d31a091">  157</a></span><span class="preprocessor">#define MIDDLE_DISTANCE 0     </span><span class="comment">// Distance from middle wheel to the robot turning center</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">// Sensors</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="config_8h.html#a4a4effc67b5655bd644a1e3f37bfb9ba">  178</a></span><span class="comment"></span><span class="preprocessor">#define IMU_PORT 0                         </span><span class="comment">// Port 0 for disabled</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="config_8h.html#a9e38c96da70b3e9ac3d97e571cc79a70">  207</a></span><span class="preprocessor">#define ENCODER_PORTS 0, 0, 0    </span><span class="comment">// Port 0 for disabled</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="config_8h.html#abb795e3cc6ab99d205689e39ef042174">  228</a></span><span class="preprocessor">#define EXPANDER_PORT 0                     </span><span class="comment">// Port 0 for disabled</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">  249</a></span><span class="preprocessor">#define ENCODER_TYPE arms::odom::ENCODER_ADI </span><span class="comment">// The type of encoders</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">// Movement tuning</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="config_8h.html#a4b71dde3e310f8c2f9fcff76f990ea0d">  265</a></span><span class="comment"></span><span class="preprocessor">#define SLEW_STEP 0         </span><span class="comment">// Encoder ticks to move at each step</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="config_8h.html#aee67e5b2ba2e050782b4e743b1263c11">  281</a></span><span class="preprocessor">#define LINEAR_EXIT_ERROR 0 </span><span class="comment">// Error to use when exiting linear movement</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="config_8h.html#a2878f395ee2ca22b557caa1621391db2">  297</a></span><span class="preprocessor">#define ANGULAR_EXIT_ERROR 0 </span><span class="comment">// default exit distance for angular movements</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno"><a class="line" href="config_8h.html#a4d2e07a7f5b2c23e59cdf1f59109a044">  314</a></span><span class="preprocessor">#define SETTLE_THRESH_LINEAR 0      </span><span class="comment">// amount of linear movement for settling</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="config_8h.html#a037c0fd6c971b10cffeefdf11650ada1">  331</a></span><span class="preprocessor">#define SETTLE_THRESH_ANGULAR 0     </span><span class="comment">// amount of angular movement for settling</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="config_8h.html#a629a8fbfb3eef8f7a89a7cdfdea65ac6">  349</a></span><span class="preprocessor">#define SETTLE_TIME 0      </span><span class="comment">// amount of time to count as settled</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="config_8h.html#a57b7dce77c54af308e3e05045e12189d">  365</a></span><span class="preprocessor">#define LINEAR_KP 0</span></div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="config_8h.html#a4bc667e2e955d8fa3231a4512c48f674">  381</a></span><span class="preprocessor">#define LINEAR_KI 0</span></div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="config_8h.html#ac51945e0d198c31ec86504e6ab56091a">  397</a></span><span class="preprocessor">#define LINEAR_KD 0</span></div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="config_8h.html#a3b2fa757042b25df3b72adfc22595886">  413</a></span><span class="preprocessor">#define TRACKING_KP 0        </span><span class="comment">// point tracking turning strength</span></div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="config_8h.html#a22afecb2d1dd18cff6b6dac95c65a6bb">  429</a></span><span class="preprocessor">#define ANGULAR_KP 0</span></div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="config_8h.html#ac89e674e8f858f5f1aad45bb23b86c63">  445</a></span><span class="preprocessor">#define ANGULAR_KI 0</span></div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span> </div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno"><a class="line" href="config_8h.html#abdf82441d0c29e44532f62be7db57c2d">  461</a></span><span class="preprocessor">#define ANGULAR_KD 0</span></div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span> </div>
-<div class="line"><a id="l00478" name="l00478"></a><span class="lineno"><a class="line" href="config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70">  478</a></span><span class="preprocessor">#define LEAD_PCT 0           </span><span class="comment">// Go-to-pose lead distance ratio (0-1)</span></div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span> </div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno"><a class="line" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">  494</a></span><span class="preprocessor">#define MIN_ERROR 0</span></div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span><span class="comment">// Auton selector configuration constants</span></div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno"><a class="line" href="config_8h.html#ab3ea58dc1c2f5871997a5cc5e7916d03">  513</a></span><span class="comment"></span><span class="preprocessor">#define AUTONS 0 </span><span class="comment">// Names of autonomous routines, up to 10</span></div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno"><a class="line" href="config_8h.html#a73b714d9cb2ce7ba3df02e1bf6d4b9b2">  529</a></span><span class="preprocessor">#define HUE 0     </span><span class="comment">// Color of theme from 0-359(H part of HSV)</span></div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno"><a class="line" href="config_8h.html#a3da44afeba217135a680a7477b5e3ce3">  545</a></span><span class="preprocessor">#define DEFAULT 0 </span><span class="comment">// Default auton selected</span></div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span> </div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="comment">// Initializer</span></div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno"><a class="line" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">  559</a></span><span class="comment"></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">init</a>() {</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">chassis::init</a>({<a class="code hl_define" href="config_8h.html#a2e60beeff7a71953041ffff21f206b3e">LEFT_MOTORS</a>}, {<a class="code hl_define" href="config_8h.html#afff6b6b092bf0b931ae68ada63421323">RIGHT_MOTORS</a>}, <a class="code hl_define" href="config_8h.html#ad6bcc7877fc7d1b3b2cea63cb3bdb303">GEARSET</a>, <a class="code hl_define" href="config_8h.html#a4b71dde3e310f8c2f9fcff76f990ea0d">SLEW_STEP</a>, <a class="code hl_define" href="config_8h.html#aee67e5b2ba2e050782b4e743b1263c11">LINEAR_EXIT_ERROR</a>,</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>                  <a class="code hl_define" href="config_8h.html#a2878f395ee2ca22b557caa1621391db2">ANGULAR_EXIT_ERROR</a>, <a class="code hl_define" href="config_8h.html#a4d2e07a7f5b2c23e59cdf1f59109a044">SETTLE_THRESH_LINEAR</a>, <a class="code hl_define" href="config_8h.html#a037c0fd6c971b10cffeefdf11650ada1">SETTLE_THRESH_ANGULAR</a>, <a class="code hl_define" href="config_8h.html#a629a8fbfb3eef8f7a89a7cdfdea65ac6">SETTLE_TIME</a>);</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">odom::init</a>(<a class="code hl_define" href="config_8h.html#a3933db02ce1f56a330d5ac235ed5fc89">ODOM_DEBUG</a>, <a class="code hl_define" href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">ENCODER_TYPE</a>, {<a class="code hl_define" href="config_8h.html#a9e38c96da70b3e9ac3d97e571cc79a70">ENCODER_PORTS</a>}, <a class="code hl_define" href="config_8h.html#abb795e3cc6ab99d205689e39ef042174">EXPANDER_PORT</a>, <a class="code hl_define" href="config_8h.html#a4a4effc67b5655bd644a1e3f37bfb9ba">IMU_PORT</a>,</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>               <a class="code hl_define" href="config_8h.html#aaa2708101c6941b7f207ee73a7234350">TRACK_WIDTH</a>, <a class="code hl_define" href="config_8h.html#afdd50cee75b22705fc0898a24d31a091">MIDDLE_DISTANCE</a>, <a class="code hl_define" href="config_8h.html#a8b4dd00016aed25a0ea54e9a9acd1239">TPI</a>,</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>               <a class="code hl_define" href="config_8h.html#a1b9d08eb0eec6a4a0e52a2ea68120ec2">MIDDLE_TPI</a>);</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <a class="code hl_function" href="namespacearms_1_1pid.html#aa98a1d7125b65dd2b3f0a434f6bdbc2f">pid::init</a>(<a class="code hl_define" href="config_8h.html#a57b7dce77c54af308e3e05045e12189d">LINEAR_KP</a>, <a class="code hl_define" href="config_8h.html#a4bc667e2e955d8fa3231a4512c48f674">LINEAR_KI</a>, <a class="code hl_define" href="config_8h.html#ac51945e0d198c31ec86504e6ab56091a">LINEAR_KD</a>, <a class="code hl_define" href="config_8h.html#a22afecb2d1dd18cff6b6dac95c65a6bb">ANGULAR_KP</a>, <a class="code hl_define" href="config_8h.html#ac89e674e8f858f5f1aad45bb23b86c63">ANGULAR_KI</a>, <a class="code hl_define" href="config_8h.html#abdf82441d0c29e44532f62be7db57c2d">ANGULAR_KD</a>, <a class="code hl_define" href="config_8h.html#a3b2fa757042b25df3b72adfc22595886">TRACKING_KP</a>, <a class="code hl_define" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">MIN_ERROR</a>, <a class="code hl_define" href="config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70">LEAD_PCT</a>);</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* b[] = {<a class="code hl_define" href="config_8h.html#ab3ea58dc1c2f5871997a5cc5e7916d03">AUTONS</a>, <span class="stringliteral">&quot;&quot;</span>};</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">selector::init</a>(<a class="code hl_define" href="config_8h.html#a73b714d9cb2ce7ba3df02e1bf6d4b9b2">HUE</a>, <a class="code hl_define" href="config_8h.html#a3da44afeba217135a680a7477b5e3ce3">DEFAULT</a>, b);</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span> </div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>}</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>} <span class="comment">// namespace arms</span></div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span> </div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aconfig_8h_html_a037c0fd6c971b10cffeefdf11650ada1"><div class="ttname"><a href="config_8h.html#a037c0fd6c971b10cffeefdf11650ada1">SETTLE_THRESH_ANGULAR</a></div><div class="ttdeci">#define SETTLE_THRESH_ANGULAR</div><div class="ttdoc">Angular settle threshold.</div><div class="ttdef"><b>Definition:</b> config.h:331</div></div>
-<div class="ttc" id="aconfig_8h_html_a1b9d08eb0eec6a4a0e52a2ea68120ec2"><div class="ttname"><a href="config_8h.html#a1b9d08eb0eec6a4a0e52a2ea68120ec2">MIDDLE_TPI</a></div><div class="ttdeci">#define MIDDLE_TPI</div><div class="ttdoc">Middle Ticks Per Inch.</div><div class="ttdef"><b>Definition:</b> config.h:126</div></div>
-<div class="ttc" id="aconfig_8h_html_a1bf20ca2e21bf8aea295dd37bdf11e70"><div class="ttname"><a href="config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70">LEAD_PCT</a></div><div class="ttdeci">#define LEAD_PCT</div><div class="ttdoc">Lead Percent.</div><div class="ttdef"><b>Definition:</b> config.h:478</div></div>
-<div class="ttc" id="aconfig_8h_html_a22afecb2d1dd18cff6b6dac95c65a6bb"><div class="ttname"><a href="config_8h.html#a22afecb2d1dd18cff6b6dac95c65a6bb">ANGULAR_KP</a></div><div class="ttdeci">#define ANGULAR_KP</div><div class="ttdoc">Angular kP.</div><div class="ttdef"><b>Definition:</b> config.h:429</div></div>
-<div class="ttc" id="aconfig_8h_html_a2878f395ee2ca22b557caa1621391db2"><div class="ttname"><a href="config_8h.html#a2878f395ee2ca22b557caa1621391db2">ANGULAR_EXIT_ERROR</a></div><div class="ttdeci">#define ANGULAR_EXIT_ERROR</div><div class="ttdoc">Angular Exit Error.</div><div class="ttdef"><b>Definition:</b> config.h:297</div></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="config_8h.html#afff6b6b092bf0b931ae68ada63421323">   82</a></span><span class="preprocessor">#define RIGHT_MOTORS 0</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="config_8h.html#ad6bcc7877fc7d1b3b2cea63cb3bdb303">   97</a></span><span class="preprocessor">#define GEARSET pros::E_MOTOR_GEAR_200 </span><span class="comment">// RPM of chassis motors</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="config_8h.html#a8b4dd00016aed25a0ea54e9a9acd1239">  112</a></span><span class="preprocessor">#define TPI 0                 </span><span class="comment">// Encoder ticks per inch of forward robot movement</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="config_8h.html#a1b9d08eb0eec6a4a0e52a2ea68120ec2">  127</a></span><span class="preprocessor">#define MIDDLE_TPI 0          </span><span class="comment">// Ticks per inch for the middle wheel</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// Tracking wheel distances</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="config_8h.html#aaa2708101c6941b7f207ee73a7234350">  143</a></span><span class="comment"></span><span class="preprocessor">#define TRACK_WIDTH 0         </span><span class="comment">// The distance between left and right wheels (or tracker wheels)</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="config_8h.html#afdd50cee75b22705fc0898a24d31a091">  158</a></span><span class="preprocessor">#define MIDDLE_DISTANCE 0     </span><span class="comment">// Distance from middle wheel to the robot turning center</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">// Sensors</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="config_8h.html#a4a4effc67b5655bd644a1e3f37bfb9ba">  179</a></span><span class="comment"></span><span class="preprocessor">#define IMU_PORT 0                         </span><span class="comment">// Port 0 for disabled</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="config_8h.html#a9e38c96da70b3e9ac3d97e571cc79a70">  208</a></span><span class="preprocessor">#define ENCODER_PORTS 0, 0, 0    </span><span class="comment">// Port 0 for disabled</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="config_8h.html#abb795e3cc6ab99d205689e39ef042174">  229</a></span><span class="preprocessor">#define EXPANDER_PORT 0                     </span><span class="comment">// Port 0 for disabled</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">  250</a></span><span class="preprocessor">#define ENCODER_TYPE arms::odom::ENCODER_ADI </span><span class="comment">// The type of encoders</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">// Movement tuning</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="config_8h.html#a4b71dde3e310f8c2f9fcff76f990ea0d">  266</a></span><span class="comment"></span><span class="preprocessor">#define SLEW_STEP 0         </span><span class="comment">// Encoder ticks to move at each step</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="config_8h.html#aee67e5b2ba2e050782b4e743b1263c11">  282</a></span><span class="preprocessor">#define LINEAR_EXIT_ERROR 0 </span><span class="comment">// Error to use when exiting linear movement</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="config_8h.html#a2878f395ee2ca22b557caa1621391db2">  298</a></span><span class="preprocessor">#define ANGULAR_EXIT_ERROR 0 </span><span class="comment">// default exit distance for angular movements</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="config_8h.html#a4d2e07a7f5b2c23e59cdf1f59109a044">  315</a></span><span class="preprocessor">#define SETTLE_THRESH_LINEAR 0      </span><span class="comment">// amount of linear movement for settling</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="config_8h.html#a037c0fd6c971b10cffeefdf11650ada1">  332</a></span><span class="preprocessor">#define SETTLE_THRESH_ANGULAR 0     </span><span class="comment">// amount of angular movement for settling</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="config_8h.html#a629a8fbfb3eef8f7a89a7cdfdea65ac6">  350</a></span><span class="preprocessor">#define SETTLE_TIME 0      </span><span class="comment">// amount of time to count as settled</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="config_8h.html#a57b7dce77c54af308e3e05045e12189d">  366</a></span><span class="preprocessor">#define LINEAR_KP 0</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="config_8h.html#a4bc667e2e955d8fa3231a4512c48f674">  382</a></span><span class="preprocessor">#define LINEAR_KI 0</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="config_8h.html#ac51945e0d198c31ec86504e6ab56091a">  398</a></span><span class="preprocessor">#define LINEAR_KD 0</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="config_8h.html#a3b2fa757042b25df3b72adfc22595886">  414</a></span><span class="preprocessor">#define TRACKING_KP 0        </span><span class="comment">// point tracking turning strength</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno"><a class="line" href="config_8h.html#a22afecb2d1dd18cff6b6dac95c65a6bb">  430</a></span><span class="preprocessor">#define ANGULAR_KP 0</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno"><a class="line" href="config_8h.html#ac89e674e8f858f5f1aad45bb23b86c63">  446</a></span><span class="preprocessor">#define ANGULAR_KI 0</span></div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno"><a class="line" href="config_8h.html#abdf82441d0c29e44532f62be7db57c2d">  462</a></span><span class="preprocessor">#define ANGULAR_KD 0</span></div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno"><a class="line" href="config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70">  479</a></span><span class="preprocessor">#define LEAD_PCT 0           </span><span class="comment">// Go-to-pose lead distance ratio (0-1)</span></div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno"><a class="line" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">  495</a></span><span class="preprocessor">#define MIN_ERROR 0</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span><span class="comment">// Auton selector configuration constants</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno"><a class="line" href="config_8h.html#ab3ea58dc1c2f5871997a5cc5e7916d03">  514</a></span><span class="comment"></span><span class="preprocessor">#define AUTONS 0 </span><span class="comment">// Names of autonomous routines, up to 10</span></div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno"><a class="line" href="config_8h.html#a73b714d9cb2ce7ba3df02e1bf6d4b9b2">  530</a></span><span class="preprocessor">#define HUE 0     </span><span class="comment">// Color of theme from 0-359(H part of HSV)</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno"><a class="line" href="config_8h.html#a3da44afeba217135a680a7477b5e3ce3">  546</a></span><span class="preprocessor">#define DEFAULT 0 </span><span class="comment">// Default auton selected</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment">// Initializer</span></div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno"><a class="line" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">  560</a></span><span class="comment"></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">init</a>() {</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">chassis::init</a>({<a class="code hl_define" href="config_8h.html#a2e60beeff7a71953041ffff21f206b3e">LEFT_MOTORS</a>}, {<a class="code hl_define" href="config_8h.html#afff6b6b092bf0b931ae68ada63421323">RIGHT_MOTORS</a>}, <a class="code hl_define" href="config_8h.html#ad6bcc7877fc7d1b3b2cea63cb3bdb303">GEARSET</a>, <a class="code hl_define" href="config_8h.html#a4b71dde3e310f8c2f9fcff76f990ea0d">SLEW_STEP</a>, <a class="code hl_define" href="config_8h.html#aee67e5b2ba2e050782b4e743b1263c11">LINEAR_EXIT_ERROR</a>,</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                  <a class="code hl_define" href="config_8h.html#a2878f395ee2ca22b557caa1621391db2">ANGULAR_EXIT_ERROR</a>, <a class="code hl_define" href="config_8h.html#a4d2e07a7f5b2c23e59cdf1f59109a044">SETTLE_THRESH_LINEAR</a>, <a class="code hl_define" href="config_8h.html#a037c0fd6c971b10cffeefdf11650ada1">SETTLE_THRESH_ANGULAR</a>, <a class="code hl_define" href="config_8h.html#a629a8fbfb3eef8f7a89a7cdfdea65ac6">SETTLE_TIME</a>);</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">odom::init</a>(<a class="code hl_define" href="config_8h.html#a3933db02ce1f56a330d5ac235ed5fc89">ODOM_DEBUG</a>, <a class="code hl_define" href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">ENCODER_TYPE</a>, {<a class="code hl_define" href="config_8h.html#a9e38c96da70b3e9ac3d97e571cc79a70">ENCODER_PORTS</a>}, <a class="code hl_define" href="config_8h.html#abb795e3cc6ab99d205689e39ef042174">EXPANDER_PORT</a>, <a class="code hl_define" href="config_8h.html#a4a4effc67b5655bd644a1e3f37bfb9ba">IMU_PORT</a>,</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>               <a class="code hl_define" href="config_8h.html#aaa2708101c6941b7f207ee73a7234350">TRACK_WIDTH</a>, <a class="code hl_define" href="config_8h.html#afdd50cee75b22705fc0898a24d31a091">MIDDLE_DISTANCE</a>, <a class="code hl_define" href="config_8h.html#a8b4dd00016aed25a0ea54e9a9acd1239">TPI</a>,</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>               <a class="code hl_define" href="config_8h.html#a1b9d08eb0eec6a4a0e52a2ea68120ec2">MIDDLE_TPI</a>);</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <a class="code hl_function" href="namespacearms_1_1pid.html#aa98a1d7125b65dd2b3f0a434f6bdbc2f">pid::init</a>(<a class="code hl_define" href="config_8h.html#a57b7dce77c54af308e3e05045e12189d">LINEAR_KP</a>, <a class="code hl_define" href="config_8h.html#a4bc667e2e955d8fa3231a4512c48f674">LINEAR_KI</a>, <a class="code hl_define" href="config_8h.html#ac51945e0d198c31ec86504e6ab56091a">LINEAR_KD</a>, <a class="code hl_define" href="config_8h.html#a22afecb2d1dd18cff6b6dac95c65a6bb">ANGULAR_KP</a>, <a class="code hl_define" href="config_8h.html#ac89e674e8f858f5f1aad45bb23b86c63">ANGULAR_KI</a>, <a class="code hl_define" href="config_8h.html#abdf82441d0c29e44532f62be7db57c2d">ANGULAR_KD</a>, <a class="code hl_define" href="config_8h.html#a3b2fa757042b25df3b72adfc22595886">TRACKING_KP</a>, <a class="code hl_define" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">MIN_ERROR</a>, <a class="code hl_define" href="config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70">LEAD_PCT</a>);</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* b[] = {<a class="code hl_define" href="config_8h.html#ab3ea58dc1c2f5871997a5cc5e7916d03">AUTONS</a>, <span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    <a class="code hl_function" href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">selector::init</a>(<a class="code hl_define" href="config_8h.html#a73b714d9cb2ce7ba3df02e1bf6d4b9b2">HUE</a>, <a class="code hl_define" href="config_8h.html#a3da44afeba217135a680a7477b5e3ce3">DEFAULT</a>, b);</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>}</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>} <span class="comment">// namespace arms</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aconfig_8h_html_a037c0fd6c971b10cffeefdf11650ada1"><div class="ttname"><a href="config_8h.html#a037c0fd6c971b10cffeefdf11650ada1">SETTLE_THRESH_ANGULAR</a></div><div class="ttdeci">#define SETTLE_THRESH_ANGULAR</div><div class="ttdoc">Angular settle threshold.</div><div class="ttdef"><b>Definition:</b> config.h:332</div></div>
+<div class="ttc" id="aconfig_8h_html_a1b9d08eb0eec6a4a0e52a2ea68120ec2"><div class="ttname"><a href="config_8h.html#a1b9d08eb0eec6a4a0e52a2ea68120ec2">MIDDLE_TPI</a></div><div class="ttdeci">#define MIDDLE_TPI</div><div class="ttdoc">Middle Ticks Per Inch.</div><div class="ttdef"><b>Definition:</b> config.h:127</div></div>
+<div class="ttc" id="aconfig_8h_html_a1bf20ca2e21bf8aea295dd37bdf11e70"><div class="ttname"><a href="config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70">LEAD_PCT</a></div><div class="ttdeci">#define LEAD_PCT</div><div class="ttdoc">Lead Percent.</div><div class="ttdef"><b>Definition:</b> config.h:479</div></div>
+<div class="ttc" id="aconfig_8h_html_a22afecb2d1dd18cff6b6dac95c65a6bb"><div class="ttname"><a href="config_8h.html#a22afecb2d1dd18cff6b6dac95c65a6bb">ANGULAR_KP</a></div><div class="ttdeci">#define ANGULAR_KP</div><div class="ttdoc">Angular kP.</div><div class="ttdef"><b>Definition:</b> config.h:430</div></div>
+<div class="ttc" id="aconfig_8h_html_a2878f395ee2ca22b557caa1621391db2"><div class="ttname"><a href="config_8h.html#a2878f395ee2ca22b557caa1621391db2">ANGULAR_EXIT_ERROR</a></div><div class="ttdeci">#define ANGULAR_EXIT_ERROR</div><div class="ttdoc">Angular Exit Error.</div><div class="ttdef"><b>Definition:</b> config.h:298</div></div>
 <div class="ttc" id="aconfig_8h_html_a2e60beeff7a71953041ffff21f206b3e"><div class="ttname"><a href="config_8h.html#a2e60beeff7a71953041ffff21f206b3e">LEFT_MOTORS</a></div><div class="ttdeci">#define LEFT_MOTORS</div><div class="ttdoc">Left chassis motors.</div><div class="ttdef"><b>Definition:</b> config.h:60</div></div>
 <div class="ttc" id="aconfig_8h_html_a3933db02ce1f56a330d5ac235ed5fc89"><div class="ttname"><a href="config_8h.html#a3933db02ce1f56a330d5ac235ed5fc89">ODOM_DEBUG</a></div><div class="ttdeci">#define ODOM_DEBUG</div><div class="ttdoc">Odom debug mode.</div><div class="ttdef"><b>Definition:</b> config.h:38</div></div>
-<div class="ttc" id="aconfig_8h_html_a3b2fa757042b25df3b72adfc22595886"><div class="ttname"><a href="config_8h.html#a3b2fa757042b25df3b72adfc22595886">TRACKING_KP</a></div><div class="ttdeci">#define TRACKING_KP</div><div class="ttdoc">Tracking kP.</div><div class="ttdef"><b>Definition:</b> config.h:413</div></div>
-<div class="ttc" id="aconfig_8h_html_a3da44afeba217135a680a7477b5e3ce3"><div class="ttname"><a href="config_8h.html#a3da44afeba217135a680a7477b5e3ce3">DEFAULT</a></div><div class="ttdeci">#define DEFAULT</div><div class="ttdoc">Autonomous Selctor Default Routine.</div><div class="ttdef"><b>Definition:</b> config.h:545</div></div>
-<div class="ttc" id="aconfig_8h_html_a4a4effc67b5655bd644a1e3f37bfb9ba"><div class="ttname"><a href="config_8h.html#a4a4effc67b5655bd644a1e3f37bfb9ba">IMU_PORT</a></div><div class="ttdeci">#define IMU_PORT</div><div class="ttdoc">IMU Port.</div><div class="ttdef"><b>Definition:</b> config.h:178</div></div>
-<div class="ttc" id="aconfig_8h_html_a4b71dde3e310f8c2f9fcff76f990ea0d"><div class="ttname"><a href="config_8h.html#a4b71dde3e310f8c2f9fcff76f990ea0d">SLEW_STEP</a></div><div class="ttdeci">#define SLEW_STEP</div><div class="ttdoc">Slew Step.</div><div class="ttdef"><b>Definition:</b> config.h:265</div></div>
-<div class="ttc" id="aconfig_8h_html_a4bc667e2e955d8fa3231a4512c48f674"><div class="ttname"><a href="config_8h.html#a4bc667e2e955d8fa3231a4512c48f674">LINEAR_KI</a></div><div class="ttdeci">#define LINEAR_KI</div><div class="ttdoc">Linear kI.</div><div class="ttdef"><b>Definition:</b> config.h:381</div></div>
-<div class="ttc" id="aconfig_8h_html_a4d2e07a7f5b2c23e59cdf1f59109a044"><div class="ttname"><a href="config_8h.html#a4d2e07a7f5b2c23e59cdf1f59109a044">SETTLE_THRESH_LINEAR</a></div><div class="ttdeci">#define SETTLE_THRESH_LINEAR</div><div class="ttdoc">Linear Settle Threshold.</div><div class="ttdef"><b>Definition:</b> config.h:314</div></div>
-<div class="ttc" id="aconfig_8h_html_a57b7dce77c54af308e3e05045e12189d"><div class="ttname"><a href="config_8h.html#a57b7dce77c54af308e3e05045e12189d">LINEAR_KP</a></div><div class="ttdeci">#define LINEAR_KP</div><div class="ttdoc">Linear kP.</div><div class="ttdef"><b>Definition:</b> config.h:365</div></div>
-<div class="ttc" id="aconfig_8h_html_a629a8fbfb3eef8f7a89a7cdfdea65ac6"><div class="ttname"><a href="config_8h.html#a629a8fbfb3eef8f7a89a7cdfdea65ac6">SETTLE_TIME</a></div><div class="ttdeci">#define SETTLE_TIME</div><div class="ttdoc">Settle Time.</div><div class="ttdef"><b>Definition:</b> config.h:349</div></div>
-<div class="ttc" id="aconfig_8h_html_a73b714d9cb2ce7ba3df02e1bf6d4b9b2"><div class="ttname"><a href="config_8h.html#a73b714d9cb2ce7ba3df02e1bf6d4b9b2">HUE</a></div><div class="ttdeci">#define HUE</div><div class="ttdoc">Autonomous Selctor Hue.</div><div class="ttdef"><b>Definition:</b> config.h:529</div></div>
-<div class="ttc" id="aconfig_8h_html_a7fa4edbbb404fa6046ecdc586f08d1f6"><div class="ttname"><a href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">ENCODER_TYPE</a></div><div class="ttdeci">#define ENCODER_TYPE</div><div class="ttdoc">Encoder Type.</div><div class="ttdef"><b>Definition:</b> config.h:249</div></div>
-<div class="ttc" id="aconfig_8h_html_a80c2c0cbab028b3b18d7c7c521815721"><div class="ttname"><a href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">MIN_ERROR</a></div><div class="ttdeci">#define MIN_ERROR</div><div class="ttdoc">Minimum Error.</div><div class="ttdef"><b>Definition:</b> config.h:494</div></div>
-<div class="ttc" id="aconfig_8h_html_a8b4dd00016aed25a0ea54e9a9acd1239"><div class="ttname"><a href="config_8h.html#a8b4dd00016aed25a0ea54e9a9acd1239">TPI</a></div><div class="ttdeci">#define TPI</div><div class="ttdoc">Ticks per Inch.</div><div class="ttdef"><b>Definition:</b> config.h:111</div></div>
-<div class="ttc" id="aconfig_8h_html_a9e38c96da70b3e9ac3d97e571cc79a70"><div class="ttname"><a href="config_8h.html#a9e38c96da70b3e9ac3d97e571cc79a70">ENCODER_PORTS</a></div><div class="ttdeci">#define ENCODER_PORTS</div><div class="ttdoc">Encoder Ports.</div><div class="ttdef"><b>Definition:</b> config.h:207</div></div>
-<div class="ttc" id="aconfig_8h_html_aaa2708101c6941b7f207ee73a7234350"><div class="ttname"><a href="config_8h.html#aaa2708101c6941b7f207ee73a7234350">TRACK_WIDTH</a></div><div class="ttdeci">#define TRACK_WIDTH</div><div class="ttdoc">Track Width.</div><div class="ttdef"><b>Definition:</b> config.h:142</div></div>
-<div class="ttc" id="aconfig_8h_html_ab3ea58dc1c2f5871997a5cc5e7916d03"><div class="ttname"><a href="config_8h.html#ab3ea58dc1c2f5871997a5cc5e7916d03">AUTONS</a></div><div class="ttdeci">#define AUTONS</div><div class="ttdoc">Auton Selector Routines.</div><div class="ttdef"><b>Definition:</b> config.h:513</div></div>
-<div class="ttc" id="aconfig_8h_html_abb795e3cc6ab99d205689e39ef042174"><div class="ttname"><a href="config_8h.html#abb795e3cc6ab99d205689e39ef042174">EXPANDER_PORT</a></div><div class="ttdeci">#define EXPANDER_PORT</div><div class="ttdoc">Encoder ADI Expander Port.</div><div class="ttdef"><b>Definition:</b> config.h:228</div></div>
-<div class="ttc" id="aconfig_8h_html_abdf82441d0c29e44532f62be7db57c2d"><div class="ttname"><a href="config_8h.html#abdf82441d0c29e44532f62be7db57c2d">ANGULAR_KD</a></div><div class="ttdeci">#define ANGULAR_KD</div><div class="ttdoc">Angular kD.</div><div class="ttdef"><b>Definition:</b> config.h:461</div></div>
-<div class="ttc" id="aconfig_8h_html_ac51945e0d198c31ec86504e6ab56091a"><div class="ttname"><a href="config_8h.html#ac51945e0d198c31ec86504e6ab56091a">LINEAR_KD</a></div><div class="ttdeci">#define LINEAR_KD</div><div class="ttdoc">Linear kD.</div><div class="ttdef"><b>Definition:</b> config.h:397</div></div>
-<div class="ttc" id="aconfig_8h_html_ac89e674e8f858f5f1aad45bb23b86c63"><div class="ttname"><a href="config_8h.html#ac89e674e8f858f5f1aad45bb23b86c63">ANGULAR_KI</a></div><div class="ttdeci">#define ANGULAR_KI</div><div class="ttdoc">Angular kI.</div><div class="ttdef"><b>Definition:</b> config.h:445</div></div>
-<div class="ttc" id="aconfig_8h_html_ad6bcc7877fc7d1b3b2cea63cb3bdb303"><div class="ttname"><a href="config_8h.html#ad6bcc7877fc7d1b3b2cea63cb3bdb303">GEARSET</a></div><div class="ttdeci">#define GEARSET</div><div class="ttdoc">Chassis gearset.</div><div class="ttdef"><b>Definition:</b> config.h:96</div></div>
-<div class="ttc" id="aconfig_8h_html_aee67e5b2ba2e050782b4e743b1263c11"><div class="ttname"><a href="config_8h.html#aee67e5b2ba2e050782b4e743b1263c11">LINEAR_EXIT_ERROR</a></div><div class="ttdeci">#define LINEAR_EXIT_ERROR</div><div class="ttdoc">Linear Exit Error.</div><div class="ttdef"><b>Definition:</b> config.h:281</div></div>
-<div class="ttc" id="aconfig_8h_html_afdd50cee75b22705fc0898a24d31a091"><div class="ttname"><a href="config_8h.html#afdd50cee75b22705fc0898a24d31a091">MIDDLE_DISTANCE</a></div><div class="ttdeci">#define MIDDLE_DISTANCE</div><div class="ttdoc">Middle Distance.</div><div class="ttdef"><b>Definition:</b> config.h:157</div></div>
-<div class="ttc" id="aconfig_8h_html_afff6b6b092bf0b931ae68ada63421323"><div class="ttname"><a href="config_8h.html#afff6b6b092bf0b931ae68ada63421323">RIGHT_MOTORS</a></div><div class="ttdeci">#define RIGHT_MOTORS</div><div class="ttdoc">Right chassis motors.</div><div class="ttdef"><b>Definition:</b> config.h:81</div></div>
+<div class="ttc" id="aconfig_8h_html_a3b2fa757042b25df3b72adfc22595886"><div class="ttname"><a href="config_8h.html#a3b2fa757042b25df3b72adfc22595886">TRACKING_KP</a></div><div class="ttdeci">#define TRACKING_KP</div><div class="ttdoc">Tracking kP.</div><div class="ttdef"><b>Definition:</b> config.h:414</div></div>
+<div class="ttc" id="aconfig_8h_html_a3da44afeba217135a680a7477b5e3ce3"><div class="ttname"><a href="config_8h.html#a3da44afeba217135a680a7477b5e3ce3">DEFAULT</a></div><div class="ttdeci">#define DEFAULT</div><div class="ttdoc">Autonomous Selctor Default Routine.</div><div class="ttdef"><b>Definition:</b> config.h:546</div></div>
+<div class="ttc" id="aconfig_8h_html_a4a4effc67b5655bd644a1e3f37bfb9ba"><div class="ttname"><a href="config_8h.html#a4a4effc67b5655bd644a1e3f37bfb9ba">IMU_PORT</a></div><div class="ttdeci">#define IMU_PORT</div><div class="ttdoc">IMU Port.</div><div class="ttdef"><b>Definition:</b> config.h:179</div></div>
+<div class="ttc" id="aconfig_8h_html_a4b71dde3e310f8c2f9fcff76f990ea0d"><div class="ttname"><a href="config_8h.html#a4b71dde3e310f8c2f9fcff76f990ea0d">SLEW_STEP</a></div><div class="ttdeci">#define SLEW_STEP</div><div class="ttdoc">Slew Step.</div><div class="ttdef"><b>Definition:</b> config.h:266</div></div>
+<div class="ttc" id="aconfig_8h_html_a4bc667e2e955d8fa3231a4512c48f674"><div class="ttname"><a href="config_8h.html#a4bc667e2e955d8fa3231a4512c48f674">LINEAR_KI</a></div><div class="ttdeci">#define LINEAR_KI</div><div class="ttdoc">Linear kI.</div><div class="ttdef"><b>Definition:</b> config.h:382</div></div>
+<div class="ttc" id="aconfig_8h_html_a4d2e07a7f5b2c23e59cdf1f59109a044"><div class="ttname"><a href="config_8h.html#a4d2e07a7f5b2c23e59cdf1f59109a044">SETTLE_THRESH_LINEAR</a></div><div class="ttdeci">#define SETTLE_THRESH_LINEAR</div><div class="ttdoc">Linear Settle Threshold.</div><div class="ttdef"><b>Definition:</b> config.h:315</div></div>
+<div class="ttc" id="aconfig_8h_html_a57b7dce77c54af308e3e05045e12189d"><div class="ttname"><a href="config_8h.html#a57b7dce77c54af308e3e05045e12189d">LINEAR_KP</a></div><div class="ttdeci">#define LINEAR_KP</div><div class="ttdoc">Linear kP.</div><div class="ttdef"><b>Definition:</b> config.h:366</div></div>
+<div class="ttc" id="aconfig_8h_html_a629a8fbfb3eef8f7a89a7cdfdea65ac6"><div class="ttname"><a href="config_8h.html#a629a8fbfb3eef8f7a89a7cdfdea65ac6">SETTLE_TIME</a></div><div class="ttdeci">#define SETTLE_TIME</div><div class="ttdoc">Settle Time.</div><div class="ttdef"><b>Definition:</b> config.h:350</div></div>
+<div class="ttc" id="aconfig_8h_html_a73b714d9cb2ce7ba3df02e1bf6d4b9b2"><div class="ttname"><a href="config_8h.html#a73b714d9cb2ce7ba3df02e1bf6d4b9b2">HUE</a></div><div class="ttdeci">#define HUE</div><div class="ttdoc">Autonomous Selctor Hue.</div><div class="ttdef"><b>Definition:</b> config.h:530</div></div>
+<div class="ttc" id="aconfig_8h_html_a7fa4edbbb404fa6046ecdc586f08d1f6"><div class="ttname"><a href="config_8h.html#a7fa4edbbb404fa6046ecdc586f08d1f6">ENCODER_TYPE</a></div><div class="ttdeci">#define ENCODER_TYPE</div><div class="ttdoc">Encoder Type.</div><div class="ttdef"><b>Definition:</b> config.h:250</div></div>
+<div class="ttc" id="aconfig_8h_html_a80c2c0cbab028b3b18d7c7c521815721"><div class="ttname"><a href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">MIN_ERROR</a></div><div class="ttdeci">#define MIN_ERROR</div><div class="ttdoc">Minimum Error.</div><div class="ttdef"><b>Definition:</b> config.h:495</div></div>
+<div class="ttc" id="aconfig_8h_html_a8b4dd00016aed25a0ea54e9a9acd1239"><div class="ttname"><a href="config_8h.html#a8b4dd00016aed25a0ea54e9a9acd1239">TPI</a></div><div class="ttdeci">#define TPI</div><div class="ttdoc">Ticks per Inch.</div><div class="ttdef"><b>Definition:</b> config.h:112</div></div>
+<div class="ttc" id="aconfig_8h_html_a9e38c96da70b3e9ac3d97e571cc79a70"><div class="ttname"><a href="config_8h.html#a9e38c96da70b3e9ac3d97e571cc79a70">ENCODER_PORTS</a></div><div class="ttdeci">#define ENCODER_PORTS</div><div class="ttdoc">Encoder Ports.</div><div class="ttdef"><b>Definition:</b> config.h:208</div></div>
+<div class="ttc" id="aconfig_8h_html_aaa2708101c6941b7f207ee73a7234350"><div class="ttname"><a href="config_8h.html#aaa2708101c6941b7f207ee73a7234350">TRACK_WIDTH</a></div><div class="ttdeci">#define TRACK_WIDTH</div><div class="ttdoc">Track Width.</div><div class="ttdef"><b>Definition:</b> config.h:143</div></div>
+<div class="ttc" id="aconfig_8h_html_ab3ea58dc1c2f5871997a5cc5e7916d03"><div class="ttname"><a href="config_8h.html#ab3ea58dc1c2f5871997a5cc5e7916d03">AUTONS</a></div><div class="ttdeci">#define AUTONS</div><div class="ttdoc">Auton Selector Routines.</div><div class="ttdef"><b>Definition:</b> config.h:514</div></div>
+<div class="ttc" id="aconfig_8h_html_abb795e3cc6ab99d205689e39ef042174"><div class="ttname"><a href="config_8h.html#abb795e3cc6ab99d205689e39ef042174">EXPANDER_PORT</a></div><div class="ttdeci">#define EXPANDER_PORT</div><div class="ttdoc">Encoder ADI Expander Port.</div><div class="ttdef"><b>Definition:</b> config.h:229</div></div>
+<div class="ttc" id="aconfig_8h_html_abdf82441d0c29e44532f62be7db57c2d"><div class="ttname"><a href="config_8h.html#abdf82441d0c29e44532f62be7db57c2d">ANGULAR_KD</a></div><div class="ttdeci">#define ANGULAR_KD</div><div class="ttdoc">Angular kD.</div><div class="ttdef"><b>Definition:</b> config.h:462</div></div>
+<div class="ttc" id="aconfig_8h_html_ac51945e0d198c31ec86504e6ab56091a"><div class="ttname"><a href="config_8h.html#ac51945e0d198c31ec86504e6ab56091a">LINEAR_KD</a></div><div class="ttdeci">#define LINEAR_KD</div><div class="ttdoc">Linear kD.</div><div class="ttdef"><b>Definition:</b> config.h:398</div></div>
+<div class="ttc" id="aconfig_8h_html_ac89e674e8f858f5f1aad45bb23b86c63"><div class="ttname"><a href="config_8h.html#ac89e674e8f858f5f1aad45bb23b86c63">ANGULAR_KI</a></div><div class="ttdeci">#define ANGULAR_KI</div><div class="ttdoc">Angular kI.</div><div class="ttdef"><b>Definition:</b> config.h:446</div></div>
+<div class="ttc" id="aconfig_8h_html_ad6bcc7877fc7d1b3b2cea63cb3bdb303"><div class="ttname"><a href="config_8h.html#ad6bcc7877fc7d1b3b2cea63cb3bdb303">GEARSET</a></div><div class="ttdeci">#define GEARSET</div><div class="ttdoc">Chassis gearset.</div><div class="ttdef"><b>Definition:</b> config.h:97</div></div>
+<div class="ttc" id="aconfig_8h_html_aee67e5b2ba2e050782b4e743b1263c11"><div class="ttname"><a href="config_8h.html#aee67e5b2ba2e050782b4e743b1263c11">LINEAR_EXIT_ERROR</a></div><div class="ttdeci">#define LINEAR_EXIT_ERROR</div><div class="ttdoc">Linear Exit Error.</div><div class="ttdef"><b>Definition:</b> config.h:282</div></div>
+<div class="ttc" id="aconfig_8h_html_afdd50cee75b22705fc0898a24d31a091"><div class="ttname"><a href="config_8h.html#afdd50cee75b22705fc0898a24d31a091">MIDDLE_DISTANCE</a></div><div class="ttdeci">#define MIDDLE_DISTANCE</div><div class="ttdoc">Middle Distance.</div><div class="ttdef"><b>Definition:</b> config.h:158</div></div>
+<div class="ttc" id="aconfig_8h_html_afff6b6b092bf0b931ae68ada63421323"><div class="ttname"><a href="config_8h.html#afff6b6b092bf0b931ae68ada63421323">RIGHT_MOTORS</a></div><div class="ttdeci">#define RIGHT_MOTORS</div><div class="ttdoc">Right chassis motors.</div><div class="ttdef"><b>Definition:</b> config.h:82</div></div>
 <div class="ttc" id="alib_8h_html"><div class="ttname"><a href="lib_8h.html">lib.h</a></div></div>
 <div class="ttc" id="anamespacearms_1_1pid_html_aa98a1d7125b65dd2b3f0a434f6bdbc2f"><div class="ttname"><a href="namespacearms_1_1pid.html#aa98a1d7125b65dd2b3f0a434f6bdbc2f">arms::pid::init</a></div><div class="ttdeci">void init(double linearKP, double linearKI, double linearKD, double angularKP, double angularKI, double angularKD, double trackingKP, double minError, double leadPct)</div></div>
 <div class="ttc" id="anamespacearms_html"><div class="ttname"><a href="namespacearms.html">arms</a></div></div>
-<div class="ttc" id="anamespacearms_html_add76d8ba7f744ca5950f152632b157fa"><div class="ttname"><a href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">arms::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Initialize ARMS using the user defined constants Example 1:</div><div class="ttdef"><b>Definition:</b> config.h:559</div></div>
+<div class="ttc" id="anamespacearms_html_add76d8ba7f744ca5950f152632b157fa"><div class="ttname"><a href="namespacearms.html#add76d8ba7f744ca5950f152632b157fa">arms::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Initialize ARMS using the user defined constants Example 1:</div><div class="ttdef"><b>Definition:</b> config.h:560</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c41e67f05e208ab265e31466ea90818c.html">ARMS</a></li><li class="navelem"><a class="el" href="dir_435cb78e5b80455c8531bf4aaa6ce74e.html">include</a></li><li class="navelem"><a class="el" href="dir_668b70942db42109031d14828f58d1b2.html">ARMS</a></li><li class="navelem"><a class="el" href="config_8h.html">config.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

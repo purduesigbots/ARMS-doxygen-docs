@@ -73,16 +73,16 @@ arms::odom
 This namespace deals with the odometry system\&. It is used to track the robot's position on the field\&. 
 .SH "Typedef Documentation"
 .PP 
-.SS "typedef enum \fBarms::odom::EncoderType\fP \fBarms::odom::EncoderType_e_t\fP"
-
+.SS "enum \fBarms::odom::EncoderType_e_t\fP"
+This enum is used to specify the type of encoder used\&. The options are: ENCODER_ADI or ENCODER_ROTATION
+.PP
+This is used for setup in \fBarms::config::ENCODER_TYPE\fP 
 .SS "typedef struct \fBarms::odom::config_data_s\fP \fBarms::odom::config_data_s_t\fP"
 
 .SH "Enumeration Type Documentation"
 .PP 
 .SS "enum \fBarms::odom::EncoderType\fP"
-This enum is used to specify the type of encoder used\&. The options are: ENCODER_ADI or ENCODER_ROTATION
-.PP
-This is used for setup in \fBarms::config::ENCODER_TYPE\fP 
+
 .PP
 \fBEnumerator\fP
 .in +1c
@@ -102,6 +102,13 @@ Return the middle encoder position
 Return a \fBPoint\fP representing the robot's position on the field 
 .SS "double arms::odom::getHeading (bool radians = \fCfalse\fP)"
 
+.PP
+\fBParameters\fP
+.RS 4
+\fIradians\fP If true, the heading will be returned in radians\&. If false, the heading will be returned in degrees\&.
+.RE
+.PP
+Return the robot's heading based in degrees or radians, depending on the \fIradians\fP option 
 .SS "void arms::odom::reset (\fBPoint\fP point = \fC{0, 0}\fP)"
 
 .PP

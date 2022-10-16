@@ -42,7 +42,22 @@ This namespace contains all of the functions and variables needed to control the
 \doxysubsubsection{\texorpdfstring{setBrakeMode()}{setBrakeMode()}}
 {\footnotesize\ttfamily void arms\+::chassis\+::set\+Brake\+Mode (\begin{DoxyParamCaption}\item[{pros\+::motor\+\_\+brake\+\_\+mode\+\_\+e\+\_\+t}]{b }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}\label{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}} 
+Sets the chassis\textquotesingle{}s brake mode
+
+
+\begin{DoxyParams}{Parameters}
+{\em brake\+Mode} & The chassis brake mode\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example 1\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//set the chassis's brake mode to coast}}
+\DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a7a0785e28613bbbe6a03a408e6ad1301}{chassis::setBrakeMode}}(pros::E\_MOTOR\_BRAKE\_COAST);}
+
+\end{DoxyCode}
+
+
+Sets the chassis\textquotesingle{}s brake mode to a valid \href{https://pros.cs.purdue.edu/v5/api/cpp/motors.html\#pros-motor-brake-mode-e-t}{\texttt{ PROS Brake Mode}} Options are coast, hold, and brake. \mbox{\Hypertarget{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}\label{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}} 
 \index{arms::chassis@{arms::chassis}!settled@{settled}}
 \index{settled@{settled}!arms::chassis@{arms::chassis}}
 \doxysubsubsection{\texorpdfstring{settled()}{settled()}}
@@ -57,6 +72,7 @@ True if the chassis is settled, false otherwise
 \DoxyCodeLine{\textcolor{keywordflow}{while}(!\mbox{\hyperlink{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}{chassis::settled}}()) \{}
 \DoxyCodeLine{   pros::delay(20);}
 \DoxyCodeLine{\}}
+
 \end{DoxyCode}
 
 
@@ -75,6 +91,7 @@ Checks if the chassis is settled. \mbox{\Hypertarget{namespacearms_1_1chassis_a9
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//wait for the chassis to finish a movement with a 1 inch error}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a957a311132c02e2cca3f4d757fabd578}{waitUntilFinished}}(1);}
+
 \end{DoxyCode}
 
 
@@ -103,6 +120,7 @@ Perform a 2D chassis movement based on the parameters provided.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis to coordinate \{50, 40\} at 100\% max speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_ab58f3b9d527fbefc313fc92797066dd8}{chassis::move}}(\{50, 40\}, 100);}
+
 \end{DoxyCode}
 
 
@@ -110,6 +128,7 @@ Perform a 2D chassis movement based on the parameters provided.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis to coordinate \{30, 72\} at 100\% max speed backwards}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_ab58f3b9d527fbefc313fc92797066dd8}{chassis::move}}(\{30, 72\}, 100, \mbox{\hyperlink{namespacearms_a338541fad748b1f1fa4e34a80aaac088}{arms::REVERSE}});}
+
 \end{DoxyCode}
 
 
@@ -118,6 +137,7 @@ Perform a 2D chassis movement based on the parameters provided.
 \DoxyCodeLine{\textcolor{comment}{//move the chassis to the pose \{48, 48, 90deg\} at 75\% max speed with a 2 inch exit error}}
 \DoxyCodeLine{\textcolor{comment}{//Movements to a pose will use our `Boomerang controller`, which uses trigonometry to move to the target point and angle}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_ab58f3b9d527fbefc313fc92797066dd8}{chassis::move}}(\{48, 48, 90\}, 75, 2);}
+
 \end{DoxyCode}
 
 
@@ -162,6 +182,7 @@ Almost all parameters are optional. Technically, only the {\itshape target} para
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis forwards 24 inches at 100\% max speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_ab58f3b9d527fbefc313fc92797066dd8}{chassis::move}}(24, 100);}
+
 \end{DoxyCode}
 
 
@@ -169,6 +190,7 @@ Almost all parameters are optional. Technically, only the {\itshape target} para
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis backwards 72 inches at 100\% max speed }}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_ab58f3b9d527fbefc313fc92797066dd8}{chassis::move}}(-\/72, 100, \mbox{\hyperlink{namespacearms_a338541fad748b1f1fa4e34a80aaac088}{arms::REVERSE}});}
+
 \end{DoxyCode}
 
 
@@ -176,6 +198,7 @@ Almost all parameters are optional. Technically, only the {\itshape target} para
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis forwards 48 inches at 75\% max speed with a 2 inch exit error with PID disabled}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_ab58f3b9d527fbefc313fc92797066dd8}{chassis::move}}(48, 75, 2, \mbox{\hyperlink{namespacearms_a82c9c0bde637a995cf7811d317dd7f21}{arms::THRU}});}
+
 \end{DoxyCode}
 
 
@@ -219,6 +242,7 @@ Almost all parameters are optional. Technically, only the {\itshape target} para
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//turn the chassis to face 90 degrees at 100\% max speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{chassis::turn}}(90, 100);}
+
 \end{DoxyCode}
 
 
@@ -226,6 +250,7 @@ Almost all parameters are optional. Technically, only the {\itshape target} para
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//turn the chassis 180 degrees clockwise at 100\% max speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{chassis::turn}}(-\/180, 100, \mbox{\hyperlink{namespacearms_a128e59e572e7e73567aa95537154c76f}{arms::RELATIVE}});}
+
 \end{DoxyCode}
 
 
@@ -233,6 +258,7 @@ Almost all parameters are optional. Technically, only the {\itshape target} para
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//turn the chassis to face 90 degrees at 75\% max speed with a 2 degree exit error with PID disabled}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{chassis::turn}}(90, 75, 2, \mbox{\hyperlink{namespacearms_a82c9c0bde637a995cf7811d317dd7f21}{arms::THRU}});}
+
 \end{DoxyCode}
 
 
@@ -271,6 +297,7 @@ turn the chassis to face a target point
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//turn the chassis to face the point (24, 24) at 100\% speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{chassis::turn}}(\{24, 24\}, 100);}
+
 \end{DoxyCode}
 
 
@@ -278,6 +305,7 @@ turn the chassis to face a target point
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//turn the chassis to face the point \{72, -\/48\} at 75\% speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{chassis::turn}}(\{72, -\/48\}, 75);}
+
 \end{DoxyCode}
 
 
@@ -285,6 +313,7 @@ turn the chassis to face a target point
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//turn the chassis to face the point (24, 24) at 100\% speed with a 2 degree exit error with PID disabled}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{chassis::turn}}(\{24, 24\}, 100, 2, \mbox{\hyperlink{namespacearms_a82c9c0bde637a995cf7811d317dd7f21}{arms::THRU}});}
+
 \end{DoxyCode}
 
 
@@ -317,6 +346,7 @@ move the chassis using tank drive
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis forward at 100\% speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}{chassis::tank}}(100, 100);}
+
 \end{DoxyCode}
 
 
@@ -324,6 +354,7 @@ move the chassis using tank drive
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis forward at 100 rpm}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}{chassis::tank}}(100, 100, \textcolor{keyword}{true});}
+
 \end{DoxyCode}
 
 
@@ -331,6 +362,7 @@ move the chassis using tank drive
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the left side of the chassis forward at 100\% speed, and the right side backwards at 50\% speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}{chassis::tank}}(100, -\/50);}
+
 \end{DoxyCode}
  \mbox{\Hypertarget{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}\label{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}} 
 \index{arms::chassis@{arms::chassis}!arcade@{arcade}}
@@ -355,6 +387,7 @@ move the chassis using arcade drive
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis forward at 100\% speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}{chassis::arcade}}(100, 0);}
+
 \end{DoxyCode}
 
 
@@ -362,6 +395,7 @@ move the chassis using arcade drive
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis forward at 100 rpm}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}{chassis::arcade}}(100, 0, \textcolor{keyword}{true});}
+
 \end{DoxyCode}
 
 
@@ -369,6 +403,7 @@ move the chassis using arcade drive
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\textcolor{comment}{//move the chassis forward at 100\% speed, and turn left at 50\% speed}}
 \DoxyCodeLine{\mbox{\hyperlink{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}{chassis::arcade}}(100, -\/50);}
+
 \end{DoxyCode}
  
 
