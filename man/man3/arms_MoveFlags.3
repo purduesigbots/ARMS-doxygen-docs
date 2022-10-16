@@ -1,4 +1,4 @@
-.TH "arms::MoveFlags" 3 "Thu Jul 28 2022" "ARMS" \" -*- nroff -*-
+.TH "arms::MoveFlags" 3 "Sun Oct 16 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -8,25 +8,6 @@ arms::MoveFlags
 .PP
 .PP
 \fC#include <flags\&.h>\fP
-.SS "Public Member Functions"
-
-.in +1c
-.ti -1c
-.RI "\fBMoveFlags\fP \fBoperator|\fP (\fBMoveFlags\fP &o)"
-.br
-.ti -1c
-.RI "\fBMoveFlags\fP \fBoperator&\fP (\fBMoveFlags\fP &o)"
-.br
-.ti -1c
-.RI "\fBMoveFlags\fP \fBoperator|\fP (const \fBMoveFlags\fP &o)"
-.br
-.ti -1c
-.RI "\fBMoveFlags\fP \fBoperator&\fP (const \fBMoveFlags\fP &o)"
-.br
-.ti -1c
-.RI "\fBoperator bool\fP ()"
-.br
-.in -1c
 .SS "Public Attributes"
 
 .in +1c
@@ -43,28 +24,51 @@ arms::MoveFlags
 .RI "bool \fBreverse\fP"
 .br
 .in -1c
-.SH "Member Function Documentation"
+.SH "Detailed Description"
 .PP 
-.SS "\fBMoveFlags\fP arms::MoveFlags::operator| (\fBMoveFlags\fP & o)\fC [inline]\fP"
+This struct contains the flags that are used to control the movement of the robot\&.
+.br
+There are 4 different flags for this struct, each of which is a boolean value\&.
+.br
+ The \fIASYNC\fP flag will cause the movement to be asynchronous, meaning that the robot will not wait for the movement to finish before continuing the code\&.
+.br
+The \fIRELATIVE\fP flag will cause the movement to be relative to the robot's current position, instead of global odom coordinates\&.
+.br
+The \fITHRU\fP flag will disable PID control for the movement, causing the robot to move at maximum speed for that movement\&.
+.br
+The \fIREVERSE\fP flag will cause the robot to move towards the movement using it's 'back' instead of it's 'front'\&. If you tell the robot to move to a point behind it without this flag, it will turn around and move to the point instead of moving backwards\&.
+.br
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+// create a MoveFlags object that is asynchronous and relative
+MoveFlags option_1 = {true, true, false, false}; // create with vector
+MoveFlags option_2 = arms::ASYNC | arms::RELATIVE; // create with flags
 
-.SS "\fBMoveFlags\fP arms::MoveFlags::operator& (\fBMoveFlags\fP & o)\fC [inline]\fP"
+.fi
+.PP
+.PP
+\fBExample 2:\fP 
+.PP
+.nf
+// perform a chassis movement that is reverse, relative, and asynchronous
+chassis\&.move({0, 0}, 100, {true, true, false, true}); // move with vector
+chassis\&.move({0, 0}, 100, arms::REVERSE | arms::RELATIVE | arms::ASYNC); // move with flags
 
-.SS "\fBMoveFlags\fP arms::MoveFlags::operator| (const \fBMoveFlags\fP & o)\fC [inline]\fP"
-
-.SS "\fBMoveFlags\fP arms::MoveFlags::operator& (const \fBMoveFlags\fP & o)\fC [inline]\fP"
-
-.SS "arms::MoveFlags::operator bool ()\fC [inline]\fP"
-
+.fi
+.PP
+ 
 .SH "Member Data Documentation"
 .PP 
-.SS "bool arms::MoveFlags::async"
-
-.SS "bool arms::MoveFlags::relative"
-
-.SS "bool arms::MoveFlags::thru"
-
-.SS "bool arms::MoveFlags::reverse"
-
+.SS "boolean arms::MoveFlags::async"
+Determines if the movement is asynchronous or not\&. 
+.SS "boolean arms::MoveFlags::relative"
+Determines if the movement is relative or not\&. 
+.SS "boolean arms::MoveFlags::thru"
+Determines if the movement should use PID or not\&. 
+.SS "boolean arms::MoveFlags::reverse"
+Determines if the movement is reverse or not\&. 
 
 .SH "Author"
 .PP 

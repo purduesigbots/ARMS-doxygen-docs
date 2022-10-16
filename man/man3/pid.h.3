@@ -1,4 +1,4 @@
-.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/pid.h" 3 "Thu Jul 28 2022" "ARMS" \" -*- nroff -*-
+.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/pid.h" 3 "Sun Oct 16 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -42,7 +42,7 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/pid.h
 .RI "std::array< double, 2 > \fBarms::pid::angular\fP ()"
 .br
 .ti -1c
-.RI "void \fBarms::pid::init\fP (double linearKP, double linearKI, double linearKD, double angularKP, double angularKI, double angularKD, double trackingKP, double minError)"
+.RI "void \fBarms::pid::init\fP (double linearKP, double linearKI, double linearKD, double angularKP, double angularKI, double angularKD, double trackingKP, double minError, double leadPct)"
 .br
 .in -1c
 .SS "Variables"
@@ -92,6 +92,9 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/pid.h
 .br
 .ti -1c
 .RI "bool \fBarms::pid::reverse\fP"
+.br
+.ti -1c
+.RI "bool \fBarms::pid::canReverse\fP"
 .br
 .in -1c
 .SH "Macro Definition Documentation"

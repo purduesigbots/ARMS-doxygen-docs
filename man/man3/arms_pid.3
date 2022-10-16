@@ -1,4 +1,4 @@
-.TH "arms::pid" 3 "Thu Jul 28 2022" "ARMS" \" -*- nroff -*-
+.TH "arms::pid" 3 "Sun Oct 16 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -16,7 +16,7 @@ arms::pid
 .RI "std::array< double, 2 > \fBangular\fP ()"
 .br
 .ti -1c
-.RI "void \fBinit\fP (double \fBlinearKP\fP, double \fBlinearKI\fP, double \fBlinearKD\fP, double \fBangularKP\fP, double \fBangularKI\fP, double \fBangularKD\fP, double \fBtrackingKP\fP, double \fBminError\fP)"
+.RI "void \fBinit\fP (double \fBlinearKP\fP, double \fBlinearKI\fP, double \fBlinearKD\fP, double \fBangularKP\fP, double \fBangularKI\fP, double \fBangularKD\fP, double \fBtrackingKP\fP, double \fBminError\fP, double leadPct)"
 .br
 .in -1c
 .SS "Variables"
@@ -67,6 +67,9 @@ arms::pid
 .ti -1c
 .RI "bool \fBreverse\fP"
 .br
+.ti -1c
+.RI "bool \fBcanReverse\fP"
+.br
 .in -1c
 .SH "Function Documentation"
 .PP 
@@ -74,7 +77,7 @@ arms::pid
 
 .SS "std::array< double, 2 > arms::pid::angular ()"
 
-.SS "void arms::pid::init (double linearKP, double linearKI, double linearKD, double angularKP, double angularKI, double angularKD, double trackingKP, double minError)"
+.SS "void arms::pid::init (double linearKP, double linearKI, double linearKD, double angularKP, double angularKI, double angularKD, double trackingKP, double minError, double leadPct)"
 
 .SH "Variable Documentation"
 .PP 
@@ -107,6 +110,8 @@ arms::pid
 .SS "bool arms::pid::thru\fC [extern]\fP"
 
 .SS "bool arms::pid::reverse\fC [extern]\fP"
+
+.SS "bool arms::pid::canReverse\fC [extern]\fP"
 
 .SH "Author"
 .PP 

@@ -1,4 +1,4 @@
-.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h" 3 "Thu Jul 28 2022" "ARMS" \" -*- nroff -*-
+.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h" 3 "Sun Oct 16 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,37 +10,26 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h
 .br
 \fC#include 'ARMS/point\&.h'\fP
 .br
-\fC#include 'okapi/api\&.hpp'\fP
+\fC#include <memory>\fP
+.br
+\fC#include '\&.\&./api\&.h'\fP
 .br
 
 .SS "Namespaces"
 
 .in +1c
 .ti -1c
-.RI "namespace \fBarms\fP"
-.br
-.ti -1c
 .RI "namespace \fBarms::chassis\fP"
 .br
-.RI "The chassis subsystem\&. "
+.ti -1c
+.RI "namespace \fBarms\fP"
+.br
 .in -1c
 .SS "Functions"
 
 .in +1c
 .ti -1c
-.RI "void \fBarms::chassis::motorMove\fP (std::shared_ptr< okapi::MotorGroup > motor, double speed, bool vel)"
-.br
-.ti -1c
-.RI "void \fBarms::chassis::setBrakeMode\fP (okapi::AbstractMotor::brakeMode b)"
-.br
-.ti -1c
-.RI "void \fBarms::chassis::resetAngle\fP (double angle=0)"
-.br
-.ti -1c
-.RI "double \fBarms::chassis::limitSpeed\fP (double speed, double max)"
-.br
-.ti -1c
-.RI "double \fBarms::chassis::slew\fP (double speed, double step, double prev)"
+.RI "void \fBarms::chassis::setBrakeMode\fP (pros::motor_brake_mode_e_t b)"
 .br
 .ti -1c
 .RI "bool \fBarms::chassis::settled\fP ()"
@@ -49,50 +38,28 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h
 .RI "void \fBarms::chassis::waitUntilFinished\fP (double exit_error)"
 .br
 .ti -1c
-.RI "void \fBarms::chassis::move\fP (Point target, double max, double exit_error, double lp, double ap, MoveFlags=NONE)"
+.RI "void \fBarms::chassis::move\fP (std::vector< double > target, double max, double exit_error, double lp, double ap, MoveFlags=NONE)"
 .br
 .ti -1c
-.RI "void \fBarms::chassis::move\fP (Point target, double max, double exit_error, MoveFlags=NONE)"
+.RI "void \fBarms::chassis::move\fP (double target, double max, double exit_error, double lp, double ap, MoveFlags=NONE)"
 .br
-.ti -1c
-.RI "void \fBarms::chassis::move\fP (Point target, double max, MoveFlags=NONE)"
-.br
-.ti -1c
-.RI "void \fBarms::chassis::move\fP (Point target, MoveFlags=NONE)"
-.br
+.RI "move the chassis a target distance forward "
 .ti -1c
 .RI "void \fBarms::chassis::turn\fP (double target, double max, double exit_error, double ap, MoveFlags=NONE)"
 .br
-.ti -1c
-.RI "void \fBarms::chassis::turn\fP (double target, double max, double exit_error, MoveFlags=NONE)"
-.br
-.ti -1c
-.RI "void \fBarms::chassis::turn\fP (double target, double max, MoveFlags=NONE)"
-.br
-.ti -1c
-.RI "void \fBarms::chassis::turn\fP (double target, MoveFlags=NONE)"
-.br
+.RI "turn the chassis a target angle "
 .ti -1c
 .RI "void \fBarms::chassis::turn\fP (Point target, double max, double exit_error, double ap, MoveFlags=NONE)"
 .br
-.ti -1c
-.RI "void \fBarms::chassis::turn\fP (Point target, double max, double exit_error, MoveFlags=NONE)"
-.br
-.ti -1c
-.RI "void \fBarms::chassis::turn\fP (Point target, double max, MoveFlags=NONE)"
-.br
-.ti -1c
-.RI "void \fBarms::chassis::turn\fP (Point target, MoveFlags=NONE)"
-.br
+.RI "turn the chassis to face a target point "
 .ti -1c
 .RI "void \fBarms::chassis::tank\fP (double left, double right, bool velocity=false)"
 .br
+.RI "move the chassis using tank drive "
 .ti -1c
 .RI "void \fBarms::chassis::arcade\fP (double vertical, double horizontal, bool velocity=false)"
 .br
-.ti -1c
-.RI "void \fBarms::chassis::init\fP (std::initializer_list< okapi::Motor > leftMotors, std::initializer_list< okapi::Motor > rightMotors, int gearset, double distance_constant, double degree_constant, double slew_step, double linear_exit_error, double angular_exit_error, double settle_thresh_linear, double settle_thresh_angular, int settle_time)"
-.br
+.RI "move the chassis using arcade drive "
 .in -1c
 .SS "Variables"
 
@@ -101,19 +68,10 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h
 .RI "double \fBarms::chassis::maxSpeed\fP"
 .br
 .ti -1c
-.RI "double \fBarms::chassis::leftPrev\fP"
+.RI "std::shared_ptr< pros::Motor_Group > \fBarms::chassis::leftMotors\fP"
 .br
 .ti -1c
-.RI "double \fBarms::chassis::rightPrev\fP"
-.br
-.ti -1c
-.RI "double \fBarms::chassis::slew_step\fP"
-.br
-.ti -1c
-.RI "std::shared_ptr< okapi::MotorGroup > \fBarms::chassis::leftMotors\fP"
-.br
-.ti -1c
-.RI "std::shared_ptr< okapi::MotorGroup > \fBarms::chassis::rightMotors\fP"
+.RI "std::shared_ptr< pros::Motor_Group > \fBarms::chassis::rightMotors\fP"
 .br
 .in -1c
 .SH "Author"

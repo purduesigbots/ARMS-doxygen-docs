@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['point_0',['Point',['../unionarms_1_1_point.html',1,'arms']]]
+  ['moveflags_0',['MoveFlags',['../structarms_1_1_move_flags.html',1,'arms']]]
 ];

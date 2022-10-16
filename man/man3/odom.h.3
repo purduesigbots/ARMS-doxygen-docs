@@ -1,4 +1,4 @@
-.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h" 3 "Thu Jul 28 2022" "ARMS" \" -*- nroff -*-
+.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h" 3 "Sun Oct 16 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -8,15 +8,34 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h
 .PP
 \fC#include 'ARMS/point\&.h'\fP
 .br
+\fC#include <memory>\fP
+.br
 
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBarms::odom::config_data_s\fP"
+.br
+.in -1c
 .SS "Namespaces"
 
 .in +1c
 .ti -1c
-.RI "namespace \fBarms\fP"
+.RI "namespace \fBarms::odom\fP"
 .br
 .ti -1c
-.RI "namespace \fBarms::odom\fP"
+.RI "namespace \fBarms\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBarms::odom::EncoderType\fP \fBarms::odom::EncoderType_e_t\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBarms::odom::config_data_s\fP \fBarms::odom::config_data_s_t\fP"
 .br
 .in -1c
 .SS "Enumerations"
@@ -29,6 +48,15 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h
 .SS "Functions"
 
 .in +1c
+.ti -1c
+.RI "double \fBarms::odom::getLeftEncoder\fP ()"
+.br
+.ti -1c
+.RI "double \fBarms::odom::getRightEncoder\fP ()"
+.br
+.ti -1c
+.RI "double \fBarms::odom::getMiddleEncoder\fP ()"
+.br
 .ti -1c
 .RI "Point \fBarms::odom::getPosition\fP ()"
 .br
@@ -47,22 +75,10 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h
 .ti -1c
 .RI "double \fBarms::odom::getDistanceError\fP (Point point)"
 .br
-.ti -1c
-.RI "void \fBarms::odom::init\fP (bool debug, int encoderType, std::array< int, 3 > encoderPorts, int expanderPort, int imuPort, double left_right_distance, double middle_distance, double left_right_tpi, double middle_tpi)"
-.br
 .in -1c
 .SS "Variables"
 
 .in +1c
-.ti -1c
-.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBarms::odom::leftEncoder\fP"
-.br
-.ti -1c
-.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBarms::odom::rightEncoder\fP"
-.br
-.ti -1c
-.RI "std::shared_ptr< okapi::ContinuousRotarySensor > \fBarms::odom::middleEncoder\fP"
-.br
 .ti -1c
 .RI "std::shared_ptr< pros::Imu > \fBarms::odom::imu\fP"
 .br

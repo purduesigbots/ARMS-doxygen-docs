@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['getangleerror_0',['getAngleError',['../namespacearms_1_1odom.html#a3b2219fefea35a2253b175dc0859a57d',1,'arms::odom']]],
-  ['getdistanceerror_1',['getDistanceError',['../namespacearms_1_1odom.html#ab27a6c5acaf34ee089c969e23bce9ba4',1,'arms::odom']]],
-  ['getheading_2',['getHeading',['../namespacearms_1_1odom.html#a3c93c929fa68dd28cd6f11b2d30a2e7f',1,'arms::odom']]],
-  ['getposition_3',['getPosition',['../namespacearms_1_1odom.html#a62475e8febf63d60ad6f18e9c78b9798',1,'arms::odom']]]
+  ['init_0',['init',['../namespacearms.html#add76d8ba7f744ca5950f152632b157fa',1,'arms::init()'],['../namespacearms_1_1pid.html#aa98a1d7125b65dd2b3f0a434f6bdbc2f',1,'arms::pid::init()']]]
 ];

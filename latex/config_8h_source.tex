@@ -6,99 +6,92 @@
 \DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_ARMS\_CONFIG\_H\_}}
 \DoxyCodeLine{3 }
 \DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{lib_8h}{ARMS/lib.h}}"{}}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}okapi/api.hpp"{}}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{pid_8h}{pid.h}}"{}}}
-\DoxyCodeLine{9 }
-\DoxyCodeLine{10 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacearms}{arms}} \{}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacearms}{arms}} \{}
 \DoxyCodeLine{19 \textcolor{comment}{// Debug}}
-\DoxyCodeLine{38 \textcolor{comment}{}\textcolor{preprocessor}{\#define ODOM\_DEBUG db}}
+\DoxyCodeLine{38 \textcolor{comment}{}\textcolor{preprocessor}{\#define ODOM\_DEBUG 0}}
 \DoxyCodeLine{39 }
 \DoxyCodeLine{40 \textcolor{comment}{// Negative numbers mean reversed motor}}
-\DoxyCodeLine{60 \textcolor{comment}{}\textcolor{preprocessor}{\#define LEFT\_MOTORS ports}}
+\DoxyCodeLine{60 \textcolor{comment}{}\textcolor{preprocessor}{\#define LEFT\_MOTORS 0}}
 \DoxyCodeLine{61 }
-\DoxyCodeLine{81 \textcolor{preprocessor}{\#define RIGHT\_MOTORS ports}}
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#define RIGHT\_MOTORS 0}}
 \DoxyCodeLine{82 }
-\DoxyCodeLine{96 \textcolor{preprocessor}{\#define GEARSET rpm }\textcolor{comment}{// RPM of chassis motors}}
+\DoxyCodeLine{96 \textcolor{preprocessor}{\#define GEARSET pros::E\_MOTOR\_GEAR\_200 }\textcolor{comment}{// RPM of chassis motors}}
 \DoxyCodeLine{97 }
-\DoxyCodeLine{111 \textcolor{preprocessor}{\#define DISTANCE\_CONSTANT dist }\textcolor{comment}{// Ticks per distance unit}}
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#define TPI 0                 }\textcolor{comment}{// Encoder ticks per inch of forward robot movement}}
 \DoxyCodeLine{112 }
-\DoxyCodeLine{113 \textcolor{comment}{// Unit constants}}
-\DoxyCodeLine{132 \textcolor{comment}{}\textcolor{preprocessor}{\#define DEGREE\_CONSTANT deg   }\textcolor{comment}{// Ticks per degree (should be 1 if using an IMU)}}
-\DoxyCodeLine{133 }
-\DoxyCodeLine{134 \textcolor{comment}{// Sensors}}
-\DoxyCodeLine{153 \textcolor{comment}{}\textcolor{preprocessor}{\#define IMU\_PORT port                           }\textcolor{comment}{// Port 0 for disabled}}
-\DoxyCodeLine{154 }
-\DoxyCodeLine{182 \textcolor{preprocessor}{\#define ENCODER\_PORTS left, middle, right    }\textcolor{comment}{// Port 0 for disabled}}
-\DoxyCodeLine{183 }
-\DoxyCodeLine{203 \textcolor{preprocessor}{\#define EXPANDER\_PORT port                     }\textcolor{comment}{// Port 0 for disabled}}
-\DoxyCodeLine{204 }
-\DoxyCodeLine{224 \textcolor{preprocessor}{\#define ENCODER\_TYPE type }\textcolor{comment}{// The type of encoders}}
-\DoxyCodeLine{225 }
-\DoxyCodeLine{226 \textcolor{comment}{// Odometry}}
-\DoxyCodeLine{227 }
-\DoxyCodeLine{242 \textcolor{preprocessor}{\#define LEFT\_RIGHT\_DISTANCE dist }\textcolor{comment}{// Distance between left and right tracking wheels}}
-\DoxyCodeLine{243 }
-\DoxyCodeLine{258 \textcolor{preprocessor}{\#define MIDDLE\_DISTANCE dist     }\textcolor{comment}{// Distance from middle wheel to turning center}}
-\DoxyCodeLine{259 }
-\DoxyCodeLine{274 \textcolor{preprocessor}{\#define MIDDLE\_TPI tpi          }\textcolor{comment}{// Ticks per inch of middle wheel}}
-\DoxyCodeLine{275 }
-\DoxyCodeLine{276 \textcolor{comment}{// Movement tuning}}
-\DoxyCodeLine{291 \textcolor{comment}{}\textcolor{preprocessor}{\#define SLEW\_STEP step         }\textcolor{comment}{// Encoder ticks to move at each step}}
-\DoxyCodeLine{292 }
-\DoxyCodeLine{307 \textcolor{preprocessor}{\#define LINEAR\_EXIT\_ERROR error }\textcolor{comment}{// Error to use when exiting linear movement}}
-\DoxyCodeLine{308 }
-\DoxyCodeLine{323 \textcolor{preprocessor}{\#define ANGULAR\_EXIT\_ERROR error }\textcolor{comment}{// default exit distance for angular movements}}
-\DoxyCodeLine{324 }
-\DoxyCodeLine{340 \textcolor{preprocessor}{\#define SETTLE\_THRESH\_LINEAR .5      }\textcolor{comment}{// amount of linear movement for settling}}
-\DoxyCodeLine{341 }
-\DoxyCodeLine{357 \textcolor{preprocessor}{\#define SETTLE\_THRESH\_ANGULAR 1      }\textcolor{comment}{// amount of angular movement for settling}}
-\DoxyCodeLine{358 }
-\DoxyCodeLine{375 \textcolor{preprocessor}{\#define SETTLE\_TIME time      }\textcolor{comment}{// amount of time to count as settled}}
-\DoxyCodeLine{376 }
-\DoxyCodeLine{391 \textcolor{preprocessor}{\#define LINEAR\_KP kp}}
-\DoxyCodeLine{392 }
-\DoxyCodeLine{407 \textcolor{preprocessor}{\#define LINEAR\_KI ki}}
-\DoxyCodeLine{408 }
-\DoxyCodeLine{423 \textcolor{preprocessor}{\#define LINEAR\_KD kd}}
-\DoxyCodeLine{424 }
-\DoxyCodeLine{425 }
-\DoxyCodeLine{426 \textcolor{preprocessor}{\#define TRACKING\_KP 60       }\textcolor{comment}{// point tracking turning strength}}
-\DoxyCodeLine{427 }
-\DoxyCodeLine{442 \textcolor{preprocessor}{\#define ANGULAR\_KP kp}}
-\DoxyCodeLine{443 }
-\DoxyCodeLine{458 \textcolor{preprocessor}{\#define ANGULAR\_KI ki}}
-\DoxyCodeLine{459 }
-\DoxyCodeLine{474 \textcolor{preprocessor}{\#define ANGULAR\_KD kd}}
-\DoxyCodeLine{475 }
-\DoxyCodeLine{490 \textcolor{preprocessor}{\#define MIN\_ERROR error}}
-\DoxyCodeLine{491 }
-\DoxyCodeLine{492 \textcolor{comment}{// Auton selector configuration constants}}
-\DoxyCodeLine{509 \textcolor{comment}{}\textcolor{preprocessor}{\#define AUTONS auton\_names }\textcolor{comment}{// Names of autonomous routines, up to 10}}
-\DoxyCodeLine{510 }
-\DoxyCodeLine{527 \textcolor{preprocessor}{\#define HUE hue     }\textcolor{comment}{// Color of theme from 0-\/359(H part of HSV)}}
-\DoxyCodeLine{528 }
-\DoxyCodeLine{543 \textcolor{preprocessor}{\#define DEFAULT index }\textcolor{comment}{// Default auton selected}}
-\DoxyCodeLine{544 }
-\DoxyCodeLine{545 \textcolor{comment}{// Initializer}}
-\DoxyCodeLine{557 \textcolor{comment}{}\textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{init}}() \{}
-\DoxyCodeLine{558 }
-\DoxyCodeLine{559     \mbox{\hyperlink{namespacearms_1_1chassis_a29da4d3878dc33fdb40c14e683b49966}{chassis::init}}(\{\mbox{\hyperlink{config_8h_a2e60beeff7a71953041ffff21f206b3e}{LEFT\_MOTORS}}\}, \{\mbox{\hyperlink{config_8h_afff6b6b092bf0b931ae68ada63421323}{RIGHT\_MOTORS}}\}, \mbox{\hyperlink{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}{GEARSET}}, \mbox{\hyperlink{config_8h_a4c62861b9004c412afcddd5106aebdb8}{DISTANCE\_CONSTANT}},}
-\DoxyCodeLine{560                   \mbox{\hyperlink{config_8h_a706e95b2206b89cf34997d7876bf1969}{DEGREE\_CONSTANT}}, \mbox{\hyperlink{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}{SLEW\_STEP}}, \mbox{\hyperlink{config_8h_aee67e5b2ba2e050782b4e743b1263c11}{LINEAR\_EXIT\_ERROR}},}
-\DoxyCodeLine{561                   \mbox{\hyperlink{config_8h_a2878f395ee2ca22b557caa1621391db2}{ANGULAR\_EXIT\_ERROR}}, \mbox{\hyperlink{config_8h_a4d2e07a7f5b2c23e59cdf1f59109a044}{SETTLE\_THRESH\_LINEAR}}, \mbox{\hyperlink{config_8h_a037c0fd6c971b10cffeefdf11650ada1}{SETTLE\_THRESH\_ANGULAR}}, \mbox{\hyperlink{config_8h_a629a8fbfb3eef8f7a89a7cdfdea65ac6}{SETTLE\_TIME}});}
-\DoxyCodeLine{562 }
-\DoxyCodeLine{563     \mbox{\hyperlink{namespacearms_1_1odom_aab9427d851e49af68d483b0a9a2df71b}{odom::init}}(\mbox{\hyperlink{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}{ODOM\_DEBUG}}, \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{ENCODER\_TYPE}}, \{\mbox{\hyperlink{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}{ENCODER\_PORTS}}\}, \mbox{\hyperlink{config_8h_abb795e3cc6ab99d205689e39ef042174}{EXPANDER\_PORT}}, \mbox{\hyperlink{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}{IMU\_PORT}},}
-\DoxyCodeLine{564                \mbox{\hyperlink{config_8h_a675ab365112468a3fa5f9a0e1e0a1294}{LEFT\_RIGHT\_DISTANCE}}, \mbox{\hyperlink{config_8h_afdd50cee75b22705fc0898a24d31a091}{MIDDLE\_DISTANCE}}, \mbox{\hyperlink{config_8h_a4c62861b9004c412afcddd5106aebdb8}{DISTANCE\_CONSTANT}},}
-\DoxyCodeLine{565                \mbox{\hyperlink{config_8h_a1b9d08eb0eec6a4a0e52a2ea68120ec2}{MIDDLE\_TPI}});}
-\DoxyCodeLine{566 }
-\DoxyCodeLine{567     \mbox{\hyperlink{namespacearms_1_1pid_a307d258e0c4b836853633edcf66767d0}{pid::init}}(\mbox{\hyperlink{config_8h_a57b7dce77c54af308e3e05045e12189d}{LINEAR\_KP}}, \mbox{\hyperlink{config_8h_a4bc667e2e955d8fa3231a4512c48f674}{LINEAR\_KI}}, \mbox{\hyperlink{config_8h_ac51945e0d198c31ec86504e6ab56091a}{LINEAR\_KD}}, \mbox{\hyperlink{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}{ANGULAR\_KP}}, \mbox{\hyperlink{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}{ANGULAR\_KI}}, \mbox{\hyperlink{config_8h_abdf82441d0c29e44532f62be7db57c2d}{ANGULAR\_KD}}, \mbox{\hyperlink{config_8h_a3b2fa757042b25df3b72adfc22595886}{TRACKING\_KP}}, \mbox{\hyperlink{config_8h_a80c2c0cbab028b3b18d7c7c521815721}{MIN\_ERROR}});}
-\DoxyCodeLine{568 }
-\DoxyCodeLine{569     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* b[] = \{\mbox{\hyperlink{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}{AUTONS}}, \textcolor{stringliteral}{"{}"{}}\};}
-\DoxyCodeLine{570     \mbox{\hyperlink{namespacearms_1_1selector_aa3b45b0bbb989a1fe5280589b9e10aaf}{selector::init}}(\mbox{\hyperlink{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}{HUE}}, \mbox{\hyperlink{config_8h_a3da44afeba217135a680a7477b5e3ce3}{DEFAULT}}, b);}
-\DoxyCodeLine{571 }
-\DoxyCodeLine{572 \}}
-\DoxyCodeLine{573 }
-\DoxyCodeLine{574 \} \textcolor{comment}{// namespace arms}}
-\DoxyCodeLine{575 }
-\DoxyCodeLine{576 \textcolor{preprocessor}{\#endif}}
-
+\DoxyCodeLine{126 \textcolor{preprocessor}{\#define MIDDLE\_TPI 0          }\textcolor{comment}{// Ticks per inch for the middle wheel}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128 \textcolor{comment}{// Tracking wheel distances}}
+\DoxyCodeLine{142 \textcolor{comment}{}\textcolor{preprocessor}{\#define TRACK\_WIDTH 0         }\textcolor{comment}{// The distance between left and right wheels (or tracker wheels)}}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{157 \textcolor{preprocessor}{\#define MIDDLE\_DISTANCE 0     }\textcolor{comment}{// Distance from middle wheel to the robot turning center}}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{159 \textcolor{comment}{// Sensors}}
+\DoxyCodeLine{178 \textcolor{comment}{}\textcolor{preprocessor}{\#define IMU\_PORT 0                         }\textcolor{comment}{// Port 0 for disabled}}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{207 \textcolor{preprocessor}{\#define ENCODER\_PORTS 0, 0, 0    }\textcolor{comment}{// Port 0 for disabled}}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{228 \textcolor{preprocessor}{\#define EXPANDER\_PORT 0                     }\textcolor{comment}{// Port 0 for disabled}}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{249 \textcolor{preprocessor}{\#define ENCODER\_TYPE arms::odom::ENCODER\_ADI }\textcolor{comment}{// The type of encoders}}
+\DoxyCodeLine{250 \textcolor{comment}{// Movement tuning}}
+\DoxyCodeLine{265 \textcolor{comment}{}\textcolor{preprocessor}{\#define SLEW\_STEP 0         }\textcolor{comment}{// Encoder ticks to move at each step}}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{281 \textcolor{preprocessor}{\#define LINEAR\_EXIT\_ERROR 0 }\textcolor{comment}{// Error to use when exiting linear movement}}
+\DoxyCodeLine{282 }
+\DoxyCodeLine{297 \textcolor{preprocessor}{\#define ANGULAR\_EXIT\_ERROR 0 }\textcolor{comment}{// default exit distance for angular movements}}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{314 \textcolor{preprocessor}{\#define SETTLE\_THRESH\_LINEAR 0      }\textcolor{comment}{// amount of linear movement for settling}}
+\DoxyCodeLine{315 }
+\DoxyCodeLine{331 \textcolor{preprocessor}{\#define SETTLE\_THRESH\_ANGULAR 0     }\textcolor{comment}{// amount of angular movement for settling}}
+\DoxyCodeLine{332 }
+\DoxyCodeLine{349 \textcolor{preprocessor}{\#define SETTLE\_TIME 0      }\textcolor{comment}{// amount of time to count as settled}}
+\DoxyCodeLine{350 }
+\DoxyCodeLine{365 \textcolor{preprocessor}{\#define LINEAR\_KP 0}}
+\DoxyCodeLine{366 }
+\DoxyCodeLine{381 \textcolor{preprocessor}{\#define LINEAR\_KI 0}}
+\DoxyCodeLine{382 }
+\DoxyCodeLine{397 \textcolor{preprocessor}{\#define LINEAR\_KD 0}}
+\DoxyCodeLine{398 }
+\DoxyCodeLine{413 \textcolor{preprocessor}{\#define TRACKING\_KP 0        }\textcolor{comment}{// point tracking turning strength}}
+\DoxyCodeLine{414 }
+\DoxyCodeLine{429 \textcolor{preprocessor}{\#define ANGULAR\_KP 0}}
+\DoxyCodeLine{430 }
+\DoxyCodeLine{445 \textcolor{preprocessor}{\#define ANGULAR\_KI 0}}
+\DoxyCodeLine{446 }
+\DoxyCodeLine{461 \textcolor{preprocessor}{\#define ANGULAR\_KD 0}}
+\DoxyCodeLine{462 }
+\DoxyCodeLine{478 \textcolor{preprocessor}{\#define LEAD\_PCT 0           }\textcolor{comment}{// Go-\/to-\/pose lead distance ratio (0-\/1)}}
+\DoxyCodeLine{479 }
+\DoxyCodeLine{494 \textcolor{preprocessor}{\#define MIN\_ERROR 0}}
+\DoxyCodeLine{495 }
+\DoxyCodeLine{496 \textcolor{comment}{// Auton selector configuration constants}}
+\DoxyCodeLine{513 \textcolor{comment}{}\textcolor{preprocessor}{\#define AUTONS 0 }\textcolor{comment}{// Names of autonomous routines, up to 10}}
+\DoxyCodeLine{514 }
+\DoxyCodeLine{529 \textcolor{preprocessor}{\#define HUE 0     }\textcolor{comment}{// Color of theme from 0-\/359(H part of HSV)}}
+\DoxyCodeLine{530 }
+\DoxyCodeLine{545 \textcolor{preprocessor}{\#define DEFAULT 0 }\textcolor{comment}{// Default auton selected}}
+\DoxyCodeLine{546 }
+\DoxyCodeLine{547 \textcolor{comment}{// Initializer}}
+\DoxyCodeLine{559 \textcolor{comment}{}\textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{init}}() \{}
+\DoxyCodeLine{560 }
+\DoxyCodeLine{561     \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{chassis::init}}(\{\mbox{\hyperlink{config_8h_a2e60beeff7a71953041ffff21f206b3e}{LEFT\_MOTORS}}\}, \{\mbox{\hyperlink{config_8h_afff6b6b092bf0b931ae68ada63421323}{RIGHT\_MOTORS}}\}, \mbox{\hyperlink{config_8h_ad6bcc7877fc7d1b3b2cea63cb3bdb303}{GEARSET}}, \mbox{\hyperlink{config_8h_a4b71dde3e310f8c2f9fcff76f990ea0d}{SLEW\_STEP}}, \mbox{\hyperlink{config_8h_aee67e5b2ba2e050782b4e743b1263c11}{LINEAR\_EXIT\_ERROR}},}
+\DoxyCodeLine{562                   \mbox{\hyperlink{config_8h_a2878f395ee2ca22b557caa1621391db2}{ANGULAR\_EXIT\_ERROR}}, \mbox{\hyperlink{config_8h_a4d2e07a7f5b2c23e59cdf1f59109a044}{SETTLE\_THRESH\_LINEAR}}, \mbox{\hyperlink{config_8h_a037c0fd6c971b10cffeefdf11650ada1}{SETTLE\_THRESH\_ANGULAR}}, \mbox{\hyperlink{config_8h_a629a8fbfb3eef8f7a89a7cdfdea65ac6}{SETTLE\_TIME}});}
+\DoxyCodeLine{563 }
+\DoxyCodeLine{564     \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{odom::init}}(\mbox{\hyperlink{config_8h_a3933db02ce1f56a330d5ac235ed5fc89}{ODOM\_DEBUG}}, \mbox{\hyperlink{config_8h_a7fa4edbbb404fa6046ecdc586f08d1f6}{ENCODER\_TYPE}}, \{\mbox{\hyperlink{config_8h_a9e38c96da70b3e9ac3d97e571cc79a70}{ENCODER\_PORTS}}\}, \mbox{\hyperlink{config_8h_abb795e3cc6ab99d205689e39ef042174}{EXPANDER\_PORT}}, \mbox{\hyperlink{config_8h_a4a4effc67b5655bd644a1e3f37bfb9ba}{IMU\_PORT}},}
+\DoxyCodeLine{565                \mbox{\hyperlink{config_8h_aaa2708101c6941b7f207ee73a7234350}{TRACK\_WIDTH}}, \mbox{\hyperlink{config_8h_afdd50cee75b22705fc0898a24d31a091}{MIDDLE\_DISTANCE}}, \mbox{\hyperlink{config_8h_a8b4dd00016aed25a0ea54e9a9acd1239}{TPI}},}
+\DoxyCodeLine{566                \mbox{\hyperlink{config_8h_a1b9d08eb0eec6a4a0e52a2ea68120ec2}{MIDDLE\_TPI}});}
+\DoxyCodeLine{567 }
+\DoxyCodeLine{568     \mbox{\hyperlink{namespacearms_1_1pid_aa98a1d7125b65dd2b3f0a434f6bdbc2f}{pid::init}}(\mbox{\hyperlink{config_8h_a57b7dce77c54af308e3e05045e12189d}{LINEAR\_KP}}, \mbox{\hyperlink{config_8h_a4bc667e2e955d8fa3231a4512c48f674}{LINEAR\_KI}}, \mbox{\hyperlink{config_8h_ac51945e0d198c31ec86504e6ab56091a}{LINEAR\_KD}}, \mbox{\hyperlink{config_8h_a22afecb2d1dd18cff6b6dac95c65a6bb}{ANGULAR\_KP}}, \mbox{\hyperlink{config_8h_ac89e674e8f858f5f1aad45bb23b86c63}{ANGULAR\_KI}}, \mbox{\hyperlink{config_8h_abdf82441d0c29e44532f62be7db57c2d}{ANGULAR\_KD}}, \mbox{\hyperlink{config_8h_a3b2fa757042b25df3b72adfc22595886}{TRACKING\_KP}}, \mbox{\hyperlink{config_8h_a80c2c0cbab028b3b18d7c7c521815721}{MIN\_ERROR}}, \mbox{\hyperlink{config_8h_a1bf20ca2e21bf8aea295dd37bdf11e70}{LEAD\_PCT}});}
+\DoxyCodeLine{569 }
+\DoxyCodeLine{570     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* b[] = \{\mbox{\hyperlink{config_8h_ab3ea58dc1c2f5871997a5cc5e7916d03}{AUTONS}}, \textcolor{stringliteral}{"{}"{}}\};}
+\DoxyCodeLine{571     \mbox{\hyperlink{namespacearms_add76d8ba7f744ca5950f152632b157fa}{selector::init}}(\mbox{\hyperlink{config_8h_a73b714d9cb2ce7ba3df02e1bf6d4b9b2}{HUE}}, \mbox{\hyperlink{config_8h_a3da44afeba217135a680a7477b5e3ce3}{DEFAULT}}, b);}
+\DoxyCodeLine{572 }
+\DoxyCodeLine{573 \}}
+\DoxyCodeLine{574 }
+\DoxyCodeLine{575 \} \textcolor{comment}{// namespace arms}}
+\DoxyCodeLine{576 }
+\DoxyCodeLine{577 \textcolor{preprocessor}{\#endif}}
 \end{DoxyCode}

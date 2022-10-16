@@ -79,8 +79,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5abebb1ebeb00ced5f29d85a95aa1943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4fabc3bf9cc0b3b7bb91d564ee14f05"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1pid.html#aa4fabc3bf9cc0b3b7bb91d564ee14f05">angular</a> ()</td></tr>
 <tr class="separator:aa4fabc3bf9cc0b3b7bb91d564ee14f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a307d258e0c4b836853633edcf66767d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1pid.html#a307d258e0c4b836853633edcf66767d0">init</a> (double <a class="el" href="namespacearms_1_1pid.html#ac7f6883f11262eed1c85f03712a66cba">linearKP</a>, double <a class="el" href="namespacearms_1_1pid.html#a481c2bbcd2e70765c9c3fd1e900a03b7">linearKI</a>, double <a class="el" href="namespacearms_1_1pid.html#a9a0bc28699f1aa611af86995dad3ccca">linearKD</a>, double <a class="el" href="namespacearms_1_1pid.html#a0bf1cf85e337308087d4f87a7a7ec41c">angularKP</a>, double <a class="el" href="namespacearms_1_1pid.html#add105d040d0a8ae607b49bb17fa44b72">angularKI</a>, double <a class="el" href="namespacearms_1_1pid.html#a9d57f5256ca809804950fbb76e7f0aaa">angularKD</a>, double <a class="el" href="namespacearms_1_1pid.html#abe0e73a5dca669907b406f25b035e517">trackingKP</a>, double <a class="el" href="namespacearms_1_1pid.html#a750ff9584176a795bfdd7b1c9695c127">minError</a>)</td></tr>
-<tr class="separator:a307d258e0c4b836853633edcf66767d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98a1d7125b65dd2b3f0a434f6bdbc2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1pid.html#aa98a1d7125b65dd2b3f0a434f6bdbc2f">init</a> (double <a class="el" href="namespacearms_1_1pid.html#ac7f6883f11262eed1c85f03712a66cba">linearKP</a>, double <a class="el" href="namespacearms_1_1pid.html#a481c2bbcd2e70765c9c3fd1e900a03b7">linearKI</a>, double <a class="el" href="namespacearms_1_1pid.html#a9a0bc28699f1aa611af86995dad3ccca">linearKD</a>, double <a class="el" href="namespacearms_1_1pid.html#a0bf1cf85e337308087d4f87a7a7ec41c">angularKP</a>, double <a class="el" href="namespacearms_1_1pid.html#add105d040d0a8ae607b49bb17fa44b72">angularKI</a>, double <a class="el" href="namespacearms_1_1pid.html#a9d57f5256ca809804950fbb76e7f0aaa">angularKD</a>, double <a class="el" href="namespacearms_1_1pid.html#abe0e73a5dca669907b406f25b035e517">trackingKP</a>, double <a class="el" href="namespacearms_1_1pid.html#a750ff9584176a795bfdd7b1c9695c127">minError</a>, double leadPct)</td></tr>
+<tr class="separator:aa98a1d7125b65dd2b3f0a434f6bdbc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -114,6 +114,8 @@ Variables</h2></td></tr>
 <tr class="separator:a7932df7d0154357dc0222a73e4e9b324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e2098f3e1906adef5b1cdae1f230cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1pid.html#a19e2098f3e1906adef5b1cdae1f230cf">reverse</a></td></tr>
 <tr class="separator:a19e2098f3e1906adef5b1cdae1f230cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298c4f09f4354e40c4a45b8621859db9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1pid.html#a298c4f09f4354e40c4a45b8621859db9">canReverse</a></td></tr>
+<tr class="separator:a298c4f09f4354e40c4a45b8621859db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5abebb1ebeb00ced5f29d85a95aa1943" name="a5abebb1ebeb00ced5f29d85a95aa1943"></a>
@@ -150,8 +152,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a307d258e0c4b836853633edcf66767d0" name="a307d258e0c4b836853633edcf66767d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a307d258e0c4b836853633edcf66767d0">&#9670;&nbsp;</a></span>init()</h2>
+<a id="aa98a1d7125b65dd2b3f0a434f6bdbc2f" name="aa98a1d7125b65dd2b3f0a434f6bdbc2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98a1d7125b65dd2b3f0a434f6bdbc2f">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +204,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>minError</em>&#160;</td>
+          <td class="paramname"><em>minError</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>leadPct</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -534,6 +542,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool arms::pid::reverse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a298c4f09f4354e40c4a45b8621859db9" name="a298c4f09f4354e40c4a45b8621859db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298c4f09f4354e40c4a45b8621859db9">&#9670;&nbsp;</a></span>canReverse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool arms::pid::canReverse</td>
         </tr>
       </table>
   </td>

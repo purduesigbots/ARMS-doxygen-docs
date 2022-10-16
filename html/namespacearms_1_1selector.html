@@ -67,58 +67,63 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">arms::selector Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aa3b45b0bbb989a1fe5280589b9e10aaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1selector.html#aa3b45b0bbb989a1fe5280589b9e10aaf">init</a> (int hue, int default_auton, const char **autons)</td></tr>
-<tr class="separator:aa3b45b0bbb989a1fe5280589b9e10aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a7ac45fdc38fc1895f2a35a3ca50d06e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1selector.html#a7ac45fdc38fc1895f2a35a3ca50d06e5">auton</a></td></tr>
 <tr class="separator:a7ac45fdc38fc1895f2a35a3ca50d06e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="aa3b45b0bbb989a1fe5280589b9e10aaf" name="aa3b45b0bbb989a1fe5280589b9e10aaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3b45b0bbb989a1fe5280589b9e10aaf">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::selector::init </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>hue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>default_auton</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char **&#160;</td>
-          <td class="paramname"><em>autons</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This namespace deals with setting up and displaying the autonomous selector. Almost all of it's variables and functions are private, with the exception being the <em>auton</em> variables.</p>
+<p >The arms selector will handle everything in the back end, so all you need to worry about is which autonomous is selected. Below is a recommended format to use the ARMS autonomous selector used by Purdue SIGBots (BLRS).</p>
+<div class="fragment"><div class="line"><span class="comment">// example functions for the autonomous routes</span></div>
+<div class="line"><span class="keywordtype">void</span> redSideAuton1() {</div>
+<div class="line">    <span class="comment">// code for red side autonomous 1</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> redSideAuton2() {</div>
+<div class="line">    <span class="comment">// code for red side autonomous 2</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> blueSideAuton1() {</div>
+<div class="line">    <span class="comment">// code for blue side autonomous 1</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> blueSideAuton2() {</div>
+<div class="line">    <span class="comment">// code for blue side autonomous 2</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> skillsAuton() {</div>
+<div class="line">    <span class="comment">// code for skills autonomous</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// inside of main.cpp</span></div>
+<div class="line"><span class="keywordtype">void</span> autonomous() {</div>
+<div class="line">  <span class="keywordflow">switch</span> (<a class="code hl_variable" href="namespacearms_1_1selector.html#a7ac45fdc38fc1895f2a35a3ca50d06e5">arms::selector::auton</a>) {</div>
+<div class="line">    <span class="keywordflow">case</span> 1:</div>
+<div class="line">      runRedSideAuton1(); <span class="comment">//runs red side autonomous 1 code</span></div>
+<div class="line">      <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> 2:</div>
+<div class="line">      runRedSideAuton2(); <span class="comment">//runs red side autonomous 2 code</span></div>
+<div class="line">      <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> -1:</div>
+<div class="line">      runBlueSideAuton1(); <span class="comment">//runs blue side autonomous 1 code</span></div>
+<div class="line">      <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> -2:</div>
+<div class="line">      runBlueSideAuton2(); <span class="comment">//runs blue side autonomous 2 code</span></div>
+<div class="line">      <span class="keywordflow">break</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> 0:</div>
+<div class="line">      runSkillsAuton(); <span class="comment">//runs skills autonomous code</span></div>
+<div class="line">      <span class="keywordflow">break</span>;</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespacearms_1_1selector_html_a7ac45fdc38fc1895f2a35a3ca50d06e5"><div class="ttname"><a href="namespacearms_1_1selector.html#a7ac45fdc38fc1895f2a35a3ca50d06e5">arms::selector::auton</a></div><div class="ttdeci">int auton</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Variable Documentation</h2>
 <a id="a7ac45fdc38fc1895f2a35a3ca50d06e5" name="a7ac45fdc38fc1895f2a35a3ca50d06e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ac45fdc38fc1895f2a35a3ca50d06e5">&#9670;&nbsp;</a></span>auton</h2>
 
@@ -138,6 +143,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This int stores the currently selected autonomous.<br  />
+The value will be positive if you are using the red side, and negative if you are using the blue side.<br  />
+The value will be 0 if you are using the skills autonomous.<br  />
+</p>
 
 </div>
 </div>

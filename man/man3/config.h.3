@@ -1,4 +1,4 @@
-.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h" 3 "Thu Jul 28 2022" "ARMS" \" -*- nroff -*-
+.TH "C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h" 3 "Sun Oct 16 2022" "ARMS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -18,122 +18,123 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h \- 
 
 .in +1c
 .ti -1c
-.RI "#define \fBODOM_DEBUG\fP   db"
+.RI "#define \fBODOM_DEBUG\fP   0"
 .br
 .RI "Odom debug mode\&. "
 .ti -1c
-.RI "#define \fBLEFT_MOTORS\fP   ports"
+.RI "#define \fBLEFT_MOTORS\fP   0"
 .br
 .RI "Left chassis motors\&. "
 .ti -1c
-.RI "#define \fBRIGHT_MOTORS\fP   ports"
+.RI "#define \fBRIGHT_MOTORS\fP   0"
 .br
 .RI "Right chassis motors\&. "
 .ti -1c
-.RI "#define \fBGEARSET\fP   rpm"
+.RI "#define \fBGEARSET\fP   pros::E_MOTOR_GEAR_200"
 .br
 .RI "Chassis gearset\&. "
 .ti -1c
-.RI "#define \fBDISTANCE_CONSTANT\fP   dist"
+.RI "#define \fBTPI\fP   0"
 .br
-.RI "Distance Constant\&. "
+.RI "Ticks per Inch\&. "
 .ti -1c
-.RI "#define \fBDEGREE_CONSTANT\fP   deg"
+.RI "#define \fBMIDDLE_TPI\fP   0"
 .br
-.RI "Degree Constant\&. "
+.RI "Middle Ticks Per Inch\&. "
 .ti -1c
-.RI "#define \fBIMU_PORT\fP   port"
+.RI "#define \fBTRACK_WIDTH\fP   0"
 .br
-.RI "IMU Port\&. "
+.RI "Track Width\&. "
 .ti -1c
-.RI "#define \fBENCODER_PORTS\fP   left, middle, right"
-.br
-.RI "Encoder Ports\&. "
-.ti -1c
-.RI "#define \fBEXPANDER_PORT\fP   port"
-.br
-.RI "Encoder ADI Expander Port\&. "
-.ti -1c
-.RI "#define \fBENCODER_TYPE\fP   type"
-.br
-.RI "Encoder Type\&. "
-.ti -1c
-.RI "#define \fBLEFT_RIGHT_DISTANCE\fP   dist"
-.br
-.RI "Left Right Distance\&. "
-.ti -1c
-.RI "#define \fBMIDDLE_DISTANCE\fP   dist"
+.RI "#define \fBMIDDLE_DISTANCE\fP   0"
 .br
 .RI "Middle Distance\&. "
 .ti -1c
-.RI "#define \fBMIDDLE_TPI\fP   tpi"
+.RI "#define \fBIMU_PORT\fP   0"
 .br
-.RI "Middle TPI\&. "
+.RI "IMU Port\&. "
 .ti -1c
-.RI "#define \fBSLEW_STEP\fP   step"
+.RI "#define \fBENCODER_PORTS\fP   0, 0, 0"
+.br
+.RI "Encoder Ports\&. "
+.ti -1c
+.RI "#define \fBEXPANDER_PORT\fP   0"
+.br
+.RI "Encoder ADI Expander Port\&. "
+.ti -1c
+.RI "#define \fBENCODER_TYPE\fP   \fBarms::odom::ENCODER_ADI\fP"
+.br
+.RI "Encoder Type\&. "
+.ti -1c
+.RI "#define \fBSLEW_STEP\fP   0"
 .br
 .RI "Slew Step\&. "
 .ti -1c
-.RI "#define \fBLINEAR_EXIT_ERROR\fP   error"
+.RI "#define \fBLINEAR_EXIT_ERROR\fP   0"
 .br
 .RI "Linear Exit Error\&. "
 .ti -1c
-.RI "#define \fBANGULAR_EXIT_ERROR\fP   error"
+.RI "#define \fBANGULAR_EXIT_ERROR\fP   0"
 .br
 .RI "Angular Exit Error\&. "
 .ti -1c
-.RI "#define \fBSETTLE_THRESH_LINEAR\fP   \&.5"
+.RI "#define \fBSETTLE_THRESH_LINEAR\fP   0"
 .br
 .RI "Linear Settle Threshold\&. "
 .ti -1c
-.RI "#define \fBSETTLE_THRESH_ANGULAR\fP   1"
+.RI "#define \fBSETTLE_THRESH_ANGULAR\fP   0"
 .br
 .RI "Angular settle threshold\&. "
 .ti -1c
-.RI "#define \fBSETTLE_TIME\fP   time"
+.RI "#define \fBSETTLE_TIME\fP   0"
 .br
 .RI "Settle Time\&. "
 .ti -1c
-.RI "#define \fBLINEAR_KP\fP   kp"
+.RI "#define \fBLINEAR_KP\fP   0"
 .br
 .RI "Linear kP\&. "
 .ti -1c
-.RI "#define \fBLINEAR_KI\fP   ki"
+.RI "#define \fBLINEAR_KI\fP   0"
 .br
 .RI "Linear kI\&. "
 .ti -1c
-.RI "#define \fBLINEAR_KD\fP   kd"
+.RI "#define \fBLINEAR_KD\fP   0"
 .br
 .RI "Linear kD\&. "
 .ti -1c
-.RI "#define \fBTRACKING_KP\fP   60"
+.RI "#define \fBTRACKING_KP\fP   0"
 .br
+.RI "Tracking kP\&. "
 .ti -1c
-.RI "#define \fBANGULAR_KP\fP   kp"
+.RI "#define \fBANGULAR_KP\fP   0"
 .br
 .RI "Angular kP\&. "
 .ti -1c
-.RI "#define \fBANGULAR_KI\fP   ki"
+.RI "#define \fBANGULAR_KI\fP   0"
 .br
 .RI "Angular kI\&. "
 .ti -1c
-.RI "#define \fBANGULAR_KD\fP   kd"
+.RI "#define \fBANGULAR_KD\fP   0"
 .br
 .RI "Angular kD\&. "
 .ti -1c
-.RI "#define \fBMIN_ERROR\fP   error"
+.RI "#define \fBLEAD_PCT\fP   0"
+.br
+.RI "Lead Percent\&. "
+.ti -1c
+.RI "#define \fBMIN_ERROR\fP   0"
 .br
 .RI "Minimum Error\&. "
 .ti -1c
-.RI "#define \fBAUTONS\fP   auton_names"
+.RI "#define \fBAUTONS\fP   0"
 .br
 .RI "Auton Selector Routines\&. "
 .ti -1c
-.RI "#define \fBHUE\fP   hue"
+.RI "#define \fBHUE\fP   0"
 .br
 .RI "Autonomous Selctor Hue\&. "
 .ti -1c
-.RI "#define \fBDEFAULT\fP   index"
+.RI "#define \fBDEFAULT\fP   0"
 .br
 .RI "Autonomous Selctor Default Routine\&. "
 .in -1c
@@ -149,10 +150,10 @@ C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h \- 
 .PP 
 \fBThe ARMS configuration file\&. This file is where you setup everything about your chassis, including the motors, the sensors, and constants\&. This is also where you will setup autonomous selector\&.\fP 
 
-
+\fBYOU NEED TO REPLACE ALL OF THESE VALUES WITH THE CORRECT VALUES FOR YOUR ROBOT\&.\fP 
 .SH "Macro Definition Documentation"
 .PP 
-.SS "#define ODOM_DEBUG   db"
+.SS "#define ODOM_DEBUG   0"
 
 .PP
 Odom debug mode\&. 
@@ -180,7 +181,7 @@ Odom debug mode\&.
 .PP
 .PP
 Enable/disable odometry debugging messages being sent to the terminal\&. This can be useful when trying to troubleshoot chassis movements\&. 
-.SS "#define LEFT_MOTORS   ports"
+.SS "#define LEFT_MOTORS   0"
 
 .PP
 Left chassis motors\&. 
@@ -202,43 +203,42 @@ Left chassis motors\&.
 \fB Example 2: \fP 
 .PP
 .nf
-// three motors on the left side of the chassis in ports 4, 5, and 6\&. the motor in port 5 is reversed
+// three motors on the left side of the chassis in ports 4, 5, and 6\&. The motor in port 5 is reversed
 #define LEFT_MOTORS 4, -5, 6
 
 .fi
 .PP
 .PP
 Comma seperated ports that the chassis's left motors are in\&. Negative values reverse the motor on that port\&. 
-.SS "#define RIGHT_MOTORS   ports"
+.SS "#define RIGHT_MOTORS   0"
 
 .PP
 Right chassis motors\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIports\fP the motor ports on the right side of the chassis
-.RE
-.PP
-\fB Example 1: \fP 
+\fIports\fP the motor ports on the right side of the chassis 
 .PP
 .nf
+<b> Example 1: </b>
 // two motors on the right side of the chassis in ports 1 and 2
 #define RIGHT_MOTORS 1, 2
 
 .fi
 .PP
+.RE
 .PP
 \fB Example 2: \fP 
 .PP
 .nf
-// three motors on the right side of the chassis in ports 1, 2, and 3\&. the motor in port 2 is reversed
+// three motors on the right side of the chassis in ports 1, 2, and 3\&. The motor in port 2 is reversed
 #define RIGHT_MOTORS 1, -2, 3
 
 .fi
 .PP
 .PP
 Comma seperated ports that the chassis's right motors are in\&. Negative values reverse the motor on that port\&. 
-.SS "#define GEARSET   rpm"
+.SS "#define GEARSET   pros::E_MOTOR_GEAR_200"
 
 .PP
 Chassis gearset\&. 
@@ -252,61 +252,92 @@ Chassis gearset\&.
 .PP
 .nf
 //using 200 rpm cartridges
-#define GEARSET 200
+#define GEARSET pros::E_MOTOR_GEAR_200
 
 .fi
 .PP
 .PP
 Sets the robot's chassis gearset to \fIrpm\fP\&. 
-.SS "#define DISTANCE_CONSTANT   dist"
+.SS "#define TPI   0"
 
 .PP
-Distance Constant\&. 
+Ticks per Inch\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIdist\fP the robot's distance constant
+\fItpi\fP the number of encoder ticks per inch of forward robot movement\&.
 .RE
 .PP
 \fBExample 1:\fP 
 .PP
 .nf
-//use 60 encoder ticks per unit
-#define DISTANCE_CONSTANT 60
+//using a tpi of 10\&.
+#define TPI 10
 
 .fi
 .PP
 .PP
-Sets the robot's distance constant to \fIdist\fP\&. 
-.SS "#define DEGREE_CONSTANT   deg"
+Sets the number of encoder ticks per inch of forward robot movement to \fItpi\fP\&. 
+.SS "#define MIDDLE_TPI   0"
 
 .PP
-Degree Constant\&. 
+Middle Ticks Per Inch\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIdeg\fP the robot's degree constant
+\fImtpi\fP encoder ticks per inch of robot movement for the perpendicular middle wheel
 .RE
 .PP
 \fBExample 1:\fP 
 .PP
 .nf
-//using an IMU for robot's heading
-#define DEGREE_CONSTANT 1
+//using a middle tpi of 10\&.
+#define MIDDLE_TPI
 
 .fi
 .PP
- \fBExample 2:\fP 
+.PP
+Sets the number of middle encoder ticks per inch of perpendicular robot movement to \fItpi\fP\&. 
+.SS "#define TRACK_WIDTH   0"
+
+.PP
+Track Width\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItwidth\fP The track width of the robot (distance between left and right weels)
+.RE
+.PP
+\fBExample 1:\fP 
 .PP
 .nf
-//use 15 encoder ticks per degree
-#define DEGREE_CONSTANT 15
+//using a track width of 16 inches\&.
+#define TRACK_WIDTH 16
 
 .fi
 .PP
 .PP
-Sets the robot's degree constant to \fIdeg\fP\&. 
-.SS "#define IMU_PORT   port"
+Sets the number of encoder ticks per inch of forward robot movement to \fItpi\fP\&. 
+.SS "#define MIDDLE_DISTANCE   0"
+
+.PP
+Middle Distance\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdist\fP the distance between the middle wheel and the center of the robot
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using a middle distance of 2 inches\&.
+#define MIDDLE_DISTANCE 2
+
+.fi
+.PP
+ 
+.SS "#define IMU_PORT   0"
 
 .PP
 IMU Port\&. 
@@ -334,7 +365,7 @@ IMU Port\&.
 .PP
 .PP
 Sets the chassis' imu to the sensor in port \fIport\fP\&. 
-.SS "#define ENCODER_PORTS   left, middle, right"
+.SS "#define ENCODER_PORTS   0, 0, 0"
 
 .PP
 Encoder Ports\&. 
@@ -343,9 +374,9 @@ Encoder Ports\&.
 .RS 4
 \fIleft\fP the port the left encoder is plugged into\&. 0 for disabled\&.
 .br
-\fImiddle\fP the port the middle encoder is plugged into\&. 0 for disabled\&.
-.br
 \fIright\fP the port the right encoder is plugged into\&. 0 for disabled\&.
+.br
+\fImiddle\fP the port the middle encoder is plugged into\&. 0 for disabled\&.
 .RE
 .PP
 \fBExample 1:\fP 
@@ -366,7 +397,7 @@ Encoder Ports\&.
 .PP
 .PP
 Sets up the 1-3 encoders being used on the bot\&. At least 1 encoder parrallel to the chassis must be used for odometry to work\&. If either left or right encoder is set to 0, an IMU must also be used\&. An encoder perpindicular to the chassis (middle) should be used if the robot is expected to be pushed sideways\&. Negative values reverse the direction of the encoder\&. A value of 0 disables the encoder\&. The values should be valid smart ports if using the V5 rotation sensor, or odd numbered adi ports if using the optical shaft encoders\&. This is configured at \fBENCODER_TYPE\fP If all encoders are disabled, the integrated encoders in the chassis motors will be used\&. 
-.SS "#define EXPANDER_PORT   port"
+.SS "#define EXPANDER_PORT   0"
 
 .PP
 Encoder ADI Expander Port\&. 
@@ -380,7 +411,7 @@ Encoder ADI Expander Port\&.
 .PP
 .nf
 //using an ADI expander in port 1
-#define ADI_PORT 1
+#define EXPANDER_PORT 1
 
 .fi
 .PP
@@ -388,13 +419,13 @@ Encoder ADI Expander Port\&.
 .PP
 .nf
 //don't use an ADI expander
-#define ADI_PORT 0
+#define EXPANDER_PORT 0
 
 .fi
 .PP
 .PP
 Uses the expander port in port \fIport\fP for the encoder's configured at \fBENCODER_PORTS\fP\&. 
-.SS "#define ENCODER_TYPE   type"
+.SS "#define ENCODER_TYPE   \fBarms::odom::ENCODER_ADI\fP"
 
 .PP
 Encoder Type\&. 
@@ -423,67 +454,7 @@ Encoder Type\&.
 .PP
 .PP
 Which type of vex encoder is being used on the chassis\&. Using a mixture of encoder types is not currently supported\&. This influences what the valid values for \fBENCODER_PORTS\fP are\&. 
-.SS "#define LEFT_RIGHT_DISTANCE   dist"
-
-.PP
-Left Right Distance\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fIdist\fP the distance between the left and right tracking wheels
-.RE
-.PP
-\fBExample 1:\fP 
-.PP
-.nf
-//using a distance of 10 inches between the left and right tracking wheels
-#define LEFT_RIGHT_DISTANCE 10
-
-.fi
-.PP
-.PP
-Sets the distance between the left and right tracking wheels to \fIdist\fP\&. Should be set to 0 if only using 1 tracker wheel 
-.SS "#define MIDDLE_DISTANCE   dist"
-
-.PP
-Middle Distance\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fIdist\fP the distance between the middle tracking wheel and the turning center of the chassis
-.RE
-.PP
-\fBExample 1:\fP 
-.PP
-.nf
-//using a distance of 7 inches between the middle tracking wheel and the turning center of the chassis
-#define MIDDLE_DISTANCE 7
-
-.fi
-.PP
-.PP
-Sets the distance between the middle tracking wheel and the turning center of the chassis to \fIdist\fP\&. Should be set to 0 if not using a middle tracker wheel\&. 
-.SS "#define MIDDLE_TPI   tpi"
-
-.PP
-Middle TPI\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fItpi\fP the ticks per inch of the middle encoder wheel
-.RE
-.PP
-\fBExample 1:\fP 
-.PP
-.nf
-//using a TPI of 100
-#define MIDDLE_TPI 100
-
-.fi
-.PP
-.PP
-Sets the TPI of the middle encoder wheel\&. 
-.SS "#define SLEW_STEP   step"
+.SS "#define SLEW_STEP   0"
 
 .PP
 Slew Step\&. 
@@ -503,7 +474,7 @@ Slew Step\&.
 .PP
 .PP
 Sets the slew step to \fIstep\fP\&. A smaller value results more slew\&. 
-.SS "#define LINEAR_EXIT_ERROR   error"
+.SS "#define LINEAR_EXIT_ERROR   0"
 
 .PP
 Linear Exit Error\&. 
@@ -523,7 +494,7 @@ Linear Exit Error\&.
 .PP
 .PP
 Sets the error to use when exiting linear movement to \fIerror\fP\&. 
-.SS "#define ANGULAR_EXIT_ERROR   error"
+.SS "#define ANGULAR_EXIT_ERROR   0"
 
 .PP
 Angular Exit Error\&. 
@@ -543,7 +514,7 @@ Angular Exit Error\&.
 .PP
 .PP
 Sets the error to use when exiting angular movement to \fIerror\fP\&. 
-.SS "#define SETTLE_THRESH_LINEAR   \&.5"
+.SS "#define SETTLE_THRESH_LINEAR   0"
 
 .PP
 Linear Settle Threshold\&. 
@@ -557,13 +528,13 @@ Linear Settle Threshold\&.
 .PP
 .nf
 //using a threshold of 1 units
-#define LINEAR_SETTLE_THRESHOLD 1
+#define SETTLE_THRESH_LINEAR 1
 
 .fi
 .PP
 .PP
 Sets the threshold to use when settling linear movement to \fIthreshold\fP\&. The robot is considered settled if it does not move this many units within the duration of \fBSETTLE_TIME\fP\&. 
-.SS "#define SETTLE_THRESH_ANGULAR   1"
+.SS "#define SETTLE_THRESH_ANGULAR   0"
 
 .PP
 Angular settle threshold\&. 
@@ -577,13 +548,13 @@ Angular settle threshold\&.
 .PP
 .nf
 //using a threshold of 1 units
-#define ANGULAR_SETTLE_THRESHOLD 1
+#define SETTLE_THRESH_ANGULAR 1
 
 .fi
 .PP
 .PP
 Sets the threshold to use when settling angular movement to \fIthreshold\fP\&. The robot is considered settled if it does not move this many units within the duration of \fBSETTLE_TIME\fP\&. 
-.SS "#define SETTLE_TIME   time"
+.SS "#define SETTLE_TIME   0"
 
 .PP
 Settle Time\&. 
@@ -603,7 +574,7 @@ Settle Time\&.
 .PP
 .PP
 Sets the time the chassis must be still to be considered settled to \fItime\fP in milliseconds\&. A high settle time may make movements take too long to complete, where as a low settle time may cause the robot to exit its movement prematurely\&. 
-.SS "#define LINEAR_KP   kp"
+.SS "#define LINEAR_KP   0"
 
 .PP
 Linear kP\&. 
@@ -623,7 +594,7 @@ Linear kP\&.
 .PP
 .PP
 Sets the proportional constant for the linear motion PID controller to \fIkp\fP\&. 
-.SS "#define LINEAR_KI   ki"
+.SS "#define LINEAR_KI   0"
 
 .PP
 Linear kI\&. 
@@ -643,7 +614,7 @@ Linear kI\&.
 .PP
 .PP
 Sets the integral constant for the linear motion PID controller to \fIki\fP\&. 
-.SS "#define LINEAR_KD   kd"
+.SS "#define LINEAR_KD   0"
 
 .PP
 Linear kD\&. 
@@ -663,9 +634,27 @@ Linear kD\&.
 .PP
 .PP
 Sets the derivative constant for the linear motion PID controller to \fIkd\fP\&. 
-.SS "#define TRACKING_KP   60"
+.SS "#define TRACKING_KP   0"
 
-.SS "#define ANGULAR_KP   kp"
+.PP
+Tracking kP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItrackkp\fP the proportional constant for turning strength during point to point movements
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using a Tracking kP of 60
+#define TRACKING_KP 60
+
+.fi
+.PP
+.PP
+sets the proportional constant for turning strength during point to point movements to \fItrackkp\fP 
+.SS "#define ANGULAR_KP   0"
 
 .PP
 Angular kP\&. 
@@ -685,7 +674,7 @@ Angular kP\&.
 .PP
 .PP
 Sets the proportional constant for the angular motion PID controller to \fIkp\fP\&. 
-.SS "#define ANGULAR_KI   ki"
+.SS "#define ANGULAR_KI   0"
 
 .PP
 Angular kI\&. 
@@ -705,7 +694,7 @@ Angular kI\&.
 .PP
 .PP
 Sets the integral constant for the angular motion PID controller to \fIki\fP\&. 
-.SS "#define ANGULAR_KD   kd"
+.SS "#define ANGULAR_KD   0"
 
 .PP
 Angular kD\&. 
@@ -725,7 +714,27 @@ Angular kD\&.
 .PP
 .PP
 Sets the derivative constant for the angular motion PID controller to \fIkd\fP\&. 
-.SS "#define MIN_ERROR   error"
+.SS "#define LEAD_PCT   0"
+
+.PP
+Lead Percent\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpct\fP the lead percent to use for go to pose movements (boomerang controller)
+.RE
+.PP
+\fBExample 1:\fP 
+.PP
+.nf
+//using a pct of 0\&.3
+#define LEAD_PCT 0\&.3
+
+.fi
+.PP
+.PP
+Sets the lead percent to use for go to pose movements to \fIpct\fP\&. In theory, lower percents will be more linear movements, while higher percents will be more curvy\&. 
+.SS "#define MIN_ERROR   0"
 
 .PP
 Minimum Error\&. 
@@ -745,7 +754,7 @@ Minimum Error\&.
 .PP
 .PP
 Sets the minimum error for the robot to be considered at the target position to \fIerror\fP\&. 
-.SS "#define AUTONS   auton_names"
+.SS "#define AUTONS   0"
 
 .PP
 Auton Selector Routines\&. 
@@ -759,33 +768,31 @@ Auton Selector Routines\&.
 .PP
 .nf
 //using the autons "left", "middle", "right", and "nothing"
-#define AUTON_NAMES "left", "middle", "right", "nothing", ""
+#define AUTONS "left", "middle", "right", "nothing"
 
 .fi
 .PP
 .PP
 Sets the auton names to run\&. The names should be seprated by commas\&. The maximum number of autons is 10\&. This is part of the autonomous selector configuration\&. More details can be found at \fBselector\&.h\fP 
-.SS "#define HUE   hue"
+.SS "#define HUE   0"
 
 .PP
 Autonomous Selctor Hue\&. 
 .PP
 \fBParameters\fP
 .RS 4
-\fIhue\fP the names of your autonomous routines\&.
-.RE
-.PP
-\fBExample 1:\fP 
+\fIhue\fP the hue of your autonomous selector \fBExample 1:\fP 
 .PP
 .nf
-//using the autons "left", "middle", "right", and "nothing"
-#define AUTON_NAMES "left", "middle", "right", "nothing", ""
+//using a hue of 60 (yellow)
+#define HUE 0
 
 .fi
 .PP
+.RE
 .PP
-Sets the auton names to run\&. The names should be seprated by commas\&. The maximum number of autons is 10\&. YOU MUST PUT AN EMPTY STRING AT THE END OF THE LIST\&. This is part of the autonomous selector configuration\&. More details can be found at \fBselector\&.h\fP 
-.SS "#define DEFAULT   index"
+S This is part of the autonomous selector configuration\&. More details can be found at \fBselector\&.h\fP 
+.SS "#define DEFAULT   0"
 
 .PP
 Autonomous Selctor Default Routine\&. 

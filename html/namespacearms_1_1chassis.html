@@ -72,113 +72,47 @@ $(function() {
   <div class="headertitle"><div class="title">arms::chassis Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The chassis subsystem.  
-<a href="namespacearms_1_1chassis.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5353af955fcc2ebde42619446419149a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a5353af955fcc2ebde42619446419149a">motorMove</a> (std::shared_ptr&lt; okapi::MotorGroup &gt; motor, double speed, bool vel)</td></tr>
-<tr class="separator:a5353af955fcc2ebde42619446419149a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a198bb953528b09c362efae6d5ca09f85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a198bb953528b09c362efae6d5ca09f85">setBrakeMode</a> (okapi::AbstractMotor::brakeMode b)</td></tr>
-<tr class="separator:a198bb953528b09c362efae6d5ca09f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18102e095cb8afdc46c39a178c4973cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a18102e095cb8afdc46c39a178c4973cd">resetAngle</a> (double angle=0)</td></tr>
-<tr class="separator:a18102e095cb8afdc46c39a178c4973cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aabecd3fd1b26896dfab122e335abc3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a3aabecd3fd1b26896dfab122e335abc3">limitSpeed</a> (double speed, double max)</td></tr>
-<tr class="separator:a3aabecd3fd1b26896dfab122e335abc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e3685526c1117f29634441966af7237"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a7e3685526c1117f29634441966af7237">slew</a> (double speed, double step, double prev)</td></tr>
-<tr class="separator:a7e3685526c1117f29634441966af7237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0785e28613bbbe6a03a408e6ad1301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a7a0785e28613bbbe6a03a408e6ad1301">setBrakeMode</a> (pros::motor_brake_mode_e_t b)</td></tr>
+<tr class="separator:a7a0785e28613bbbe6a03a408e6ad1301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae596453708b28b60af7b44168c634e41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#ae596453708b28b60af7b44168c634e41">settled</a> ()</td></tr>
 <tr class="separator:ae596453708b28b60af7b44168c634e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a957a311132c02e2cca3f4d757fabd578"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a957a311132c02e2cca3f4d757fabd578">waitUntilFinished</a> (double exit_error)</td></tr>
 <tr class="separator:a957a311132c02e2cca3f4d757fabd578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74cd9f37c44d46fe5c0da805b7cc6042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a74cd9f37c44d46fe5c0da805b7cc6042">move</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, double max, double exit_error, double lp, double ap, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a74cd9f37c44d46fe5c0da805b7cc6042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a1dd2568a274db99b6897a3f57561e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a91a1dd2568a274db99b6897a3f57561e">move</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, double max, double exit_error, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a91a1dd2568a274db99b6897a3f57561e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f8293649879058fa8f11e3f7e8bf97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a34f8293649879058fa8f11e3f7e8bf97">move</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, double max, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a34f8293649879058fa8f11e3f7e8bf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a257e3aa65b8efc4132bc697bd11e9b06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a257e3aa65b8efc4132bc697bd11e9b06">move</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a257e3aa65b8efc4132bc697bd11e9b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58f3b9d527fbefc313fc92797066dd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">move</a> (std::vector&lt; double &gt; target, double max, double exit_error, double lp, double ap, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
+<tr class="separator:ab58f3b9d527fbefc313fc92797066dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204b6f80410e5bc7b2a056fb34fe612f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a204b6f80410e5bc7b2a056fb34fe612f">move</a> (double target, double max, double exit_error, double lp, double ap, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
+<tr class="memdesc:a204b6f80410e5bc7b2a056fb34fe612f"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the chassis a target distance forward  <a href="namespacearms_1_1chassis.html#a204b6f80410e5bc7b2a056fb34fe612f">More...</a><br /></td></tr>
+<tr class="separator:a204b6f80410e5bc7b2a056fb34fe612f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff05c9e3aa1421fbb537c5657081471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">turn</a> (double target, double max, double exit_error, double ap, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
+<tr class="memdesc:aeff05c9e3aa1421fbb537c5657081471"><td class="mdescLeft">&#160;</td><td class="mdescRight">turn the chassis a target angle  <a href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">More...</a><br /></td></tr>
 <tr class="separator:aeff05c9e3aa1421fbb537c5657081471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5c9c2d226a4835fe39ea39e3d7d88dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#ae5c9c2d226a4835fe39ea39e3d7d88dc">turn</a> (double target, double max, double exit_error, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:ae5c9c2d226a4835fe39ea39e3d7d88dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad54988739cb0b48698ebb572d62c954f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#ad54988739cb0b48698ebb572d62c954f">turn</a> (double target, double max, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:ad54988739cb0b48698ebb572d62c954f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60f6c4c77b0cef8dae6c28fd5bba542e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a60f6c4c77b0cef8dae6c28fd5bba542e">turn</a> (double target, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a60f6c4c77b0cef8dae6c28fd5bba542e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca716269f54a0c101dd8540359987be6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#aca716269f54a0c101dd8540359987be6">turn</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, double max, double exit_error, double ap, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
+<tr class="memdesc:aca716269f54a0c101dd8540359987be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">turn the chassis to face a target point  <a href="namespacearms_1_1chassis.html#aca716269f54a0c101dd8540359987be6">More...</a><br /></td></tr>
 <tr class="separator:aca716269f54a0c101dd8540359987be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a515f520a99bcb83c9d0a478741413cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a515f520a99bcb83c9d0a478741413cee">turn</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, double max, double exit_error, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a515f520a99bcb83c9d0a478741413cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cfb44988d781a357d7c9ae4650ef0cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a0cfb44988d781a357d7c9ae4650ef0cb">turn</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, double max, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a0cfb44988d781a357d7c9ae4650ef0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40fe32ff2fb3707ff18594b5f968be68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a40fe32ff2fb3707ff18594b5f968be68">turn</a> (<a class="el" href="unionarms_1_1_point.html">Point</a> target, <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>=<a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a>)</td></tr>
-<tr class="separator:a40fe32ff2fb3707ff18594b5f968be68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5f53e5cae3eb5f6f07cfb67e253a1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a4d5f53e5cae3eb5f6f07cfb67e253a1d">tank</a> (double left, double right, bool velocity=false)</td></tr>
+<tr class="memdesc:a4d5f53e5cae3eb5f6f07cfb67e253a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the chassis using tank drive  <a href="namespacearms_1_1chassis.html#a4d5f53e5cae3eb5f6f07cfb67e253a1d">More...</a><br /></td></tr>
 <tr class="separator:a4d5f53e5cae3eb5f6f07cfb67e253a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c8ef43d23b13f4248ad0c5d2a88767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a32c8ef43d23b13f4248ad0c5d2a88767">arcade</a> (double vertical, double horizontal, bool velocity=false)</td></tr>
+<tr class="memdesc:a32c8ef43d23b13f4248ad0c5d2a88767"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the chassis using arcade drive  <a href="namespacearms_1_1chassis.html#a32c8ef43d23b13f4248ad0c5d2a88767">More...</a><br /></td></tr>
 <tr class="separator:a32c8ef43d23b13f4248ad0c5d2a88767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29da4d3878dc33fdb40c14e683b49966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a29da4d3878dc33fdb40c14e683b49966">init</a> (std::initializer_list&lt; okapi::Motor &gt; <a class="el" href="namespacearms_1_1chassis.html#a6c6ea8360c1feafe6472bb8207f24176">leftMotors</a>, std::initializer_list&lt; okapi::Motor &gt; <a class="el" href="namespacearms_1_1chassis.html#af4ce4fa16227da9afcf9500684672164">rightMotors</a>, int gearset, double distance_constant, double degree_constant, double <a class="el" href="namespacearms_1_1chassis.html#a1f27dda0cdad307f8441321b9cd37f56">slew_step</a>, double linear_exit_error, double angular_exit_error, double settle_thresh_linear, double settle_thresh_angular, int settle_time)</td></tr>
-<tr class="separator:a29da4d3878dc33fdb40c14e683b49966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a802f92d38221fce32bd5c79ce488ed7f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a802f92d38221fce32bd5c79ce488ed7f">maxSpeed</a></td></tr>
 <tr class="separator:a802f92d38221fce32bd5c79ce488ed7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed6e6d0a9c15d6e63bd44a0658ed81c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a9ed6e6d0a9c15d6e63bd44a0658ed81c">leftPrev</a></td></tr>
-<tr class="separator:a9ed6e6d0a9c15d6e63bd44a0658ed81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5164c7a5aa17196f2ae0f49401c4f379"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a5164c7a5aa17196f2ae0f49401c4f379">rightPrev</a></td></tr>
-<tr class="separator:a5164c7a5aa17196f2ae0f49401c4f379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f27dda0cdad307f8441321b9cd37f56"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a1f27dda0cdad307f8441321b9cd37f56">slew_step</a></td></tr>
-<tr class="separator:a1f27dda0cdad307f8441321b9cd37f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c6ea8360c1feafe6472bb8207f24176"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; okapi::MotorGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a6c6ea8360c1feafe6472bb8207f24176">leftMotors</a></td></tr>
-<tr class="separator:a6c6ea8360c1feafe6472bb8207f24176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ce4fa16227da9afcf9500684672164"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; okapi::MotorGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#af4ce4fa16227da9afcf9500684672164">rightMotors</a></td></tr>
-<tr class="separator:af4ce4fa16227da9afcf9500684672164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad429af8676d0c9a91962c990035e1d8f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; pros::Motor_Group &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#ad429af8676d0c9a91962c990035e1d8f">leftMotors</a></td></tr>
+<tr class="separator:ad429af8676d0c9a91962c990035e1d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dff9e2e9e5032d73fdbf483df0e2262"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; pros::Motor_Group &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacearms_1_1chassis.html#a5dff9e2e9e5032d73fdbf483df0e2262">rightMotors</a></td></tr>
+<tr class="separator:a5dff9e2e9e5032d73fdbf483df0e2262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The chassis subsystem. </p>
-<p >This namespace stores all functions and motors used to control the chassis. </p>
+<div class="textblock"><p >This namespace contains all of the functions and variables needed to control the chassis. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a5353af955fcc2ebde42619446419149a" name="a5353af955fcc2ebde42619446419149a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5353af955fcc2ebde42619446419149a">&#9670;&nbsp;</a></span>motorMove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::motorMove </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; okapi::MotorGroup &gt;&#160;</td>
-          <td class="paramname"><em>motor</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>vel</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the speed of target motor </p>
-
-</div>
-</div>
-<a id="a198bb953528b09c362efae6d5ca09f85" name="a198bb953528b09c362efae6d5ca09f85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a198bb953528b09c362efae6d5ca09f85">&#9670;&nbsp;</a></span>setBrakeMode()</h2>
+<a id="a7a0785e28613bbbe6a03a408e6ad1301" name="a7a0785e28613bbbe6a03a408e6ad1301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0785e28613bbbe6a03a408e6ad1301">&#9670;&nbsp;</a></span>setBrakeMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,96 +120,12 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void arms::chassis::setBrakeMode </td>
           <td>(</td>
-          <td class="paramtype">okapi::AbstractMotor::brakeMode&#160;</td>
+          <td class="paramtype">pros::motor_brake_mode_e_t&#160;</td>
           <td class="paramname"><em>b</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Set the brake mode for all chassis motors </p>
-
-</div>
-</div>
-<a id="a18102e095cb8afdc46c39a178c4973cd" name="a18102e095cb8afdc46c39a178c4973cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18102e095cb8afdc46c39a178c4973cd">&#9670;&nbsp;</a></span>resetAngle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::resetAngle </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angle</em> = <code>0</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Reset imu if it is being used </p>
-
-</div>
-</div>
-<a id="a3aabecd3fd1b26896dfab122e335abc3" name="a3aabecd3fd1b26896dfab122e335abc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aabecd3fd1b26896dfab122e335abc3">&#9670;&nbsp;</a></span>limitSpeed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double arms::chassis::limitSpeed </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Reduce an input speed if it exceeds the max value </p>
-
-</div>
-</div>
-<a id="a7e3685526c1117f29634441966af7237" name="a7e3685526c1117f29634441966af7237"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e3685526c1117f29634441966af7237">&#9670;&nbsp;</a></span>slew()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double arms::chassis::slew </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>speed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>step</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>prev</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Get a gradually accelerating speed towards the target input </p>
 
 </div>
 </div>
@@ -293,7 +143,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Return true of the chassis is not moving </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the chassis is settled, false otherwise</dd></dl>
+<p><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//wait until the chassis is settled</span></div>
+<div class="line"><span class="keywordflow">while</span>(!<a class="code hl_function" href="namespacearms_1_1chassis.html#ae596453708b28b60af7b44168c634e41">chassis::settled</a>()) {</div>
+<div class="line">   pros::delay(20);</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespacearms_1_1chassis_html_ae596453708b28b60af7b44168c634e41"><div class="ttname"><a href="namespacearms_1_1chassis.html#ae596453708b28b60af7b44168c634e41">arms::chassis::settled</a></div><div class="ttdeci">bool settled()</div></div>
+</div><!-- fragment --><p >Checks if the chassis is settled. </p>
 
 </div>
 </div>
@@ -312,12 +168,21 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Wait for the chassis to complete the current movement </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exit_error</td><td>The minimum error from the target point to exit the wait</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//wait for the chassis to finish a movement with a 1 inch error</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#a957a311132c02e2cca3f4d757fabd578">waitUntilFinished</a>(1);</div>
+<div class="ttc" id="anamespacearms_1_1chassis_html_a957a311132c02e2cca3f4d757fabd578"><div class="ttname"><a href="namespacearms_1_1chassis.html#a957a311132c02e2cca3f4d757fabd578">arms::chassis::waitUntilFinished</a></div><div class="ttdeci">void waitUntilFinished(double exit_error)</div></div>
+</div><!-- fragment --><p >Waits for the chassis to reach a target point within a certain <em>exit_error</em>. This function should not be required, as <a class="el" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a> is already a blocking function by default. However, this may need to be used if the <a class="el" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a> function is called with the <a class="el" href="structarms_1_1_move_flags.html#a7814cb14fa00067cc6b862d89f9aa817">MoveFlags::async</a> flag. </p>
 
 </div>
 </div>
-<a id="a74cd9f37c44d46fe5c0da805b7cc6042" name="a74cd9f37c44d46fe5c0da805b7cc6042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74cd9f37c44d46fe5c0da805b7cc6042">&#9670;&nbsp;</a></span>move() <span class="overload">[1/4]</span></h2>
+<a id="ab58f3b9d527fbefc313fc92797066dd8" name="ab58f3b9d527fbefc313fc92797066dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58f3b9d527fbefc313fc92797066dd8">&#9670;&nbsp;</a></span>move() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +190,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void arms::chassis::move </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
+          <td class="paramtype">std::vector&lt; double &gt;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
@@ -365,12 +230,39 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Perform a chassis movement </p>
+<p >Perform a 2D chassis movement based on the parameters provided. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The target point to move to. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum speed to move at. </td></tr>
+    <tr><td class="paramname">exit_error</td><td>The minimum distance from the target point to exit the movement. </td></tr>
+    <tr><td class="paramname">lp</td><td>The linear kP for the movement. </td></tr>
+    <tr><td class="paramname">ap</td><td>The angular kP for the movement. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags to use when moving the chassis.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis to coordinate {50, 40} at 100% max speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a>({50, 40}, 100);</div>
+<div class="ttc" id="anamespacearms_1_1chassis_html_ab58f3b9d527fbefc313fc92797066dd8"><div class="ttname"><a href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">arms::chassis::move</a></div><div class="ttdeci">void move(std::vector&lt; double &gt; target, double max, double exit_error, double lp, double ap, MoveFlags=NONE)</div></div>
+</div><!-- fragment --><p ><b>Example 2:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis to coordinate {30, 72} at 100% max speed backwards</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a>({30, 72}, 100, <a class="code hl_variable" href="namespacearms.html#a338541fad748b1f1fa4e34a80aaac088">arms::REVERSE</a>);</div>
+<div class="ttc" id="anamespacearms_html_a338541fad748b1f1fa4e34a80aaac088"><div class="ttname"><a href="namespacearms.html#a338541fad748b1f1fa4e34a80aaac088">arms::REVERSE</a></div><div class="ttdeci">const MoveFlags REVERSE</div><div class="ttdoc">This is a constant that can be used to specify that the reverse flag is used.</div><div class="ttdef"><b>Definition:</b> flags.h:145</div></div>
+</div><!-- fragment --><p ><b>Example 3:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis to the pose {48, 48, 90deg} at 75% max speed with a 2 inch exit error</span></div>
+<div class="line"><span class="comment">//Movements to a pose will use our `Boomerang controller`, which uses trigonometry to move to the target point and angle</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a>({48, 48, 90}, 75, 2);</div>
+</div><!-- fragment --><p >Moves the chassis to a target point. Almost all parameters are optional. Technically, only the <em>target</em> parameter is required. However, it is recommended to provide the max parameter aswell so that you have control over the maximum speed of the chassis.</p>
+<p >The <em>target</em> parameter is a vector of doubles that represents the target point (x, y), or pose (x, y, theta). For a target point, our standard point-point odometry motion is used. For a target pose, our Boomerang controller is used. More information on these can be seen at MotionControl.<br  />
+ The <em>max</em> parameter can be used to set the maximum speed of the movement. It will default to 100% if not provided.<br  />
+The <em>exit_error</em> parameter can be used to set the minimum error from the target point to exit the movement. It will default to what is provided in <a class="el" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">config::h::MIN_ERROR</a> if not provided.<br  />
+The <em>lp</em> parameter can be used to set the linear kP for the movement. It will default to what is provided in <a class="el" href="config_8h.html">config.h</a> if not provided.<br  />
+The <em>ap</em> parameter can be used to set the angular kP for the movement. It will default to what is provided in <a class="el" href="config_8h.html">config.h</a> if not provided.<br  />
+The <em>flags</em> parameter can be used to set the flags for the movement. A list of them and their descriptions can be found in the <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a> enum.<br  />
+</p>
 
 </div>
 </div>
-<a id="a91a1dd2568a274db99b6897a3f57561e" name="a91a1dd2568a274db99b6897a3f57561e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91a1dd2568a274db99b6897a3f57561e">&#9670;&nbsp;</a></span>move() <span class="overload">[2/4]</span></h2>
+<a id="a204b6f80410e5bc7b2a056fb34fe612f" name="a204b6f80410e5bc7b2a056fb34fe612f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204b6f80410e5bc7b2a056fb34fe612f">&#9670;&nbsp;</a></span>move() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +270,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void arms::chassis::move </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
@@ -396,36 +288,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a34f8293649879058fa8f11e3f7e8bf97" name="a34f8293649879058fa8f11e3f7e8bf97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f8293649879058fa8f11e3f7e8bf97">&#9670;&nbsp;</a></span>move() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::move </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
+          <td class="paramname"><em>ap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -441,38 +311,39 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a257e3aa65b8efc4132bc697bd11e9b06" name="a257e3aa65b8efc4132bc697bd11e9b06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a257e3aa65b8efc4132bc697bd11e9b06">&#9670;&nbsp;</a></span>move() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::move </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>move the chassis a target distance forward </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The target distance to move to. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags to use when moving the chassis. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum speed to move at. </td></tr>
+    <tr><td class="paramname">exit_error</td><td>The minimum distance from the target point to exit the movement. </td></tr>
+    <tr><td class="paramname">lp</td><td>The linear kP for the movement. </td></tr>
+    <tr><td class="paramname">ap</td><td>The angular kP for the movement. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags to use when moving the chassis.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Almost all parameters are optional. Technically, only the <em>target</em> parameter is required. However, it is recommended to provide the max parameter aswell so that you have control over the maximum speed of the chassis.</p>
+<p ><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis forwards 24 inches at 100% max speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a>(24, 100);</div>
+</div><!-- fragment --><p ><b>Example 2:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis backwards 72 inches at 100% max speed </span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a>(-72, 100, <a class="code hl_variable" href="namespacearms.html#a338541fad748b1f1fa4e34a80aaac088">arms::REVERSE</a>);</div>
+</div><!-- fragment --><p ><b>Example 3:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis forwards 48 inches at 75% max speed with a 2 inch exit error with PID disabled</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8">chassis::move</a>(48, 75, 2, <a class="code hl_variable" href="namespacearms.html#a82c9c0bde637a995cf7811d317dd7f21">arms::THRU</a>);</div>
+<div class="ttc" id="anamespacearms_html_a82c9c0bde637a995cf7811d317dd7f21"><div class="ttname"><a href="namespacearms.html#a82c9c0bde637a995cf7811d317dd7f21">arms::THRU</a></div><div class="ttdeci">const MoveFlags THRU</div><div class="ttdoc">This is a constant that can be used to specify that the thru flag is used.</div><div class="ttdef"><b>Definition:</b> flags.h:141</div></div>
+</div><!-- fragment --><p >Moves the chassis a target distance. Almost all parameters are optional. Technically, only the <em>target</em> parameter is required. However, it is recommended to provide the max parameter aswell so that you have control over the maximum speed of the chassis.</p>
+<p >The <em>target</em> parameter is used to specify how far the chassis should move. The <em>max</em> parameter can be used to set the maximum speed of the movement. It will default to 100% if not provided.<br  />
+The <em>exit_error</em> parameter can be used to set the minimum error from the target point to exit the movement. It will default to what is provided in <a class="el" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">config::h::MIN_ERROR</a> if not provided.<br  />
+The <em>lp</em> parameter can be used to set the linear kP for the movement. It will default to what is provided in <a class="el" href="config_8h.html">config.h</a> if not provided.<br  />
+The <em>ap</em> parameter can be used to set the angular kP for the movement. It will default to what is provided in <a class="el" href="config_8h.html">config.h</a> if not provided.<br  />
+The <em>flags</em> parameter can be used to set the flags for the movement. A list of them and their descriptions can be found in the <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a> enum. The <a class="el" href="namespacearms.html#a128e59e572e7e73567aa95537154c76f" title="This is a constant that can be used to specify that the relative flag is used.">arms::RELATIVE</a> flag is always enabled for this, as you should only use this to move a relative distance straight with the bot.<br  />
+</p>
 
 </div>
 </div>
 <a id="aeff05c9e3aa1421fbb537c5657081471" name="aeff05c9e3aa1421fbb537c5657081471"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeff05c9e3aa1421fbb537c5657081471">&#9670;&nbsp;</a></span>turn() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff05c9e3aa1421fbb537c5657081471">&#9670;&nbsp;</a></span>turn() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,114 +385,40 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Perform a turn movement </p>
 
-</div>
-</div>
-<a id="ae5c9c2d226a4835fe39ea39e3d7d88dc" name="ae5c9c2d226a4835fe39ea39e3d7d88dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5c9c2d226a4835fe39ea39e3d7d88dc">&#9670;&nbsp;</a></span>turn() <span class="overload">[2/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::turn </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>exit_error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad54988739cb0b48698ebb572d62c954f" name="ad54988739cb0b48698ebb572d62c954f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad54988739cb0b48698ebb572d62c954f">&#9670;&nbsp;</a></span>turn() <span class="overload">[3/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::turn </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60f6c4c77b0cef8dae6c28fd5bba542e" name="a60f6c4c77b0cef8dae6c28fd5bba542e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60f6c4c77b0cef8dae6c28fd5bba542e">&#9670;&nbsp;</a></span>turn() <span class="overload">[4/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::turn </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>turn the chassis a target angle </p>
+<p >Perform a turn movement</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The target angle to turn to. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags to use when moving the chassis. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum speed to move at. </td></tr>
+    <tr><td class="paramname">exit_error</td><td>The minimum distance from the target point to exit the movement. </td></tr>
+    <tr><td class="paramname">ap</td><td>The angular kP for the movement. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags to use when moving the chassis.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Almost all parameters are optional. Technically, only the <em>target</em> parameter is required. However, it is recommended to provide the max parameter aswell so that you have control over the maximum speed of the chassis.</p>
+<p ><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//turn the chassis to face 90 degrees at 100% max speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">chassis::turn</a>(90, 100);</div>
+<div class="ttc" id="anamespacearms_1_1chassis_html_aeff05c9e3aa1421fbb537c5657081471"><div class="ttname"><a href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">arms::chassis::turn</a></div><div class="ttdeci">void turn(double target, double max, double exit_error, double ap, MoveFlags=NONE)</div><div class="ttdoc">turn the chassis a target angle</div></div>
+</div><!-- fragment --><p ><b>Example 2:</b> </p><div class="fragment"><div class="line"><span class="comment">//turn the chassis 180 degrees clockwise at 100% max speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">chassis::turn</a>(-180, 100, <a class="code hl_variable" href="namespacearms.html#a128e59e572e7e73567aa95537154c76f">arms::RELATIVE</a>);</div>
+<div class="ttc" id="anamespacearms_html_a128e59e572e7e73567aa95537154c76f"><div class="ttname"><a href="namespacearms.html#a128e59e572e7e73567aa95537154c76f">arms::RELATIVE</a></div><div class="ttdeci">const MoveFlags RELATIVE</div><div class="ttdoc">This is a constant that can be used to specify that the relative flag is used.</div><div class="ttdef"><b>Definition:</b> flags.h:137</div></div>
+</div><!-- fragment --><p ><b>Example 3:</b> </p><div class="fragment"><div class="line"><span class="comment">//turn the chassis to face 90 degrees at 75% max speed with a 2 degree exit error with PID disabled</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">chassis::turn</a>(90, 75, 2, <a class="code hl_variable" href="namespacearms.html#a82c9c0bde637a995cf7811d317dd7f21">arms::THRU</a>);</div>
+</div><!-- fragment --><p >Turns the chassis a target angle. Almost all parameters are optional. Technically, only the <em>target</em> parameter is required. However, it is recommended to provide the max parameter aswell so that you have control over the maximum speed of the chassis.</p>
+<p >The <em>target</em> parameter is a double that represents the target angle (theta). We use our PID controller to turn to the target angle. More information on this can be seen at MotionControl.<br  />
+ The <em>max</em> parameter can be used to set the maximum speed of the movement. It will default to 100% if not provided.<br  />
+The <em>exit_error</em> parameter can be used to set the minimum error from the target point to exit the movement. It will default to what is provided in <a class="el" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">config::h::MIN_ERROR</a> if not provided.<br  />
+The <em>ap</em> parameter can be used to set the angular kP for the movement. It will default to what is provided in <a class="el" href="config_8h.html">config.h</a> if not provided.<br  />
+The <em>flags</em> parameter can be used to set the flags for the movement. A list of them and their descriptions can be found in the <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a> enum. </p>
 
 </div>
 </div>
 <a id="aca716269f54a0c101dd8540359987be6" name="aca716269f54a0c101dd8540359987be6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca716269f54a0c101dd8540359987be6">&#9670;&nbsp;</a></span>turn() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aca716269f54a0c101dd8540359987be6">&#9670;&nbsp;</a></span>turn() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,109 +460,31 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Turn to face a point </p>
 
-</div>
-</div>
-<a id="a515f520a99bcb83c9d0a478741413cee" name="a515f520a99bcb83c9d0a478741413cee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a515f520a99bcb83c9d0a478741413cee">&#9670;&nbsp;</a></span>turn() <span class="overload">[6/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::turn </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>exit_error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0cfb44988d781a357d7c9ae4650ef0cb" name="a0cfb44988d781a357d7c9ae4650ef0cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cfb44988d781a357d7c9ae4650ef0cb">&#9670;&nbsp;</a></span>turn() <span class="overload">[7/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::turn </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a40fe32ff2fb3707ff18594b5f968be68" name="a40fe32ff2fb3707ff18594b5f968be68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40fe32ff2fb3707ff18594b5f968be68">&#9670;&nbsp;</a></span>turn() <span class="overload">[8/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::turn </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="unionarms_1_1_point.html">Point</a>&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a>&#160;</td>
-          <td class="paramname"> = <code><a class="el" href="namespacearms.html#ada4fc846ef04eaf7d63bf332d7bd315e">NONE</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>turn the chassis to face a target point </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The target point to turn to. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags to use when moving the chassis. </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum speed to move at. </td></tr>
+    <tr><td class="paramname">exit_error</td><td>The minimum distance from the target point to exit the movement. </td></tr>
+    <tr><td class="paramname">ap</td><td>The angular kP for the movement. </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags to use when moving the chassis.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//turn the chassis to face the point (24, 24) at 100% speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">chassis::turn</a>({24, 24}, 100);</div>
+</div><!-- fragment --><p ><b>Example 2:</b> </p><div class="fragment"><div class="line"><span class="comment">//turn the chassis to face the point {72, -48} at 75% speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">chassis::turn</a>({72, -48}, 75);</div>
+</div><!-- fragment --><p ><b>Example 3:</b> </p><div class="fragment"><div class="line"><span class="comment">//turn the chassis to face the point (24, 24) at 100% speed with a 2 degree exit error with PID disabled</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#aeff05c9e3aa1421fbb537c5657081471">chassis::turn</a>({24, 24}, 100, 2, <a class="code hl_variable" href="namespacearms.html#a82c9c0bde637a995cf7811d317dd7f21">arms::THRU</a>);</div>
+</div><!-- fragment --><p >Turns the chassis a target angle. Almost all parameters are optional. Technically, only the <em>target</em> parameter is required. However, it is recommended to provide the max parameter aswell so that you have control over the maximum speed of the chassis.</p>
+<p >The <em>target</em> parameter is a <a class="el" href="unionarms_1_1_point.html">Point</a> that represents the point we want to turn to face. We use our PID controller to turn to the target angle. More information on this can be seen at MotionControl.<br  />
+ The <em>max</em> parameter can be used to set the maximum speed of the movement. It will default to 100% if not provided.<br  />
+The <em>exit_error</em> parameter can be used to set the minimum error from the target point to exit the movement. It will default to what is provided in <a class="el" href="config_8h.html#a80c2c0cbab028b3b18d7c7c521815721">config::h::MIN_ERROR</a> if not provided.<br  />
+The <em>ap</em> parameter can be used to set the angular kP for the movement. It will default to what is provided in <a class="el" href="config_8h.html">config.h</a> if not provided.<br  />
+The <em>flags</em> parameter can be used to set the flags for the movement. A list of them and their descriptions can be found in the <a class="el" href="structarms_1_1_move_flags.html">MoveFlags</a> enum. </p>
 
 </div>
 </div>
@@ -800,8 +519,24 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Assign a power to the left and right motors </p>
 
+<p>move the chassis using tank drive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>The left side velocity or percentage (0%-100%). </td></tr>
+    <tr><td class="paramname">right</td><td>The right side velocity or percentage (0%-100%). </td></tr>
+    <tr><td class="paramname">velocity</td><td>Whether the values are velocities or percentages. Defaults to false for percentage mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis forward at 100% speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#a4d5f53e5cae3eb5f6f07cfb67e253a1d">chassis::tank</a>(100, 100);</div>
+<div class="ttc" id="anamespacearms_1_1chassis_html_a4d5f53e5cae3eb5f6f07cfb67e253a1d"><div class="ttname"><a href="namespacearms_1_1chassis.html#a4d5f53e5cae3eb5f6f07cfb67e253a1d">arms::chassis::tank</a></div><div class="ttdeci">void tank(double left, double right, bool velocity=false)</div><div class="ttdoc">move the chassis using tank drive</div></div>
+</div><!-- fragment --><p ><b>Example 2:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis forward at 100 rpm</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#a4d5f53e5cae3eb5f6f07cfb67e253a1d">chassis::tank</a>(100, 100, <span class="keyword">true</span>);</div>
+</div><!-- fragment --><p ><b>Example 3:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the left side of the chassis forward at 100% speed, and the right side backwards at 50% speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#a4d5f53e5cae3eb5f6f07cfb67e253a1d">chassis::tank</a>(100, -50);</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a32c8ef43d23b13f4248ad0c5d2a88767" name="a32c8ef43d23b13f4248ad0c5d2a88767"></a>
@@ -814,13 +549,13 @@ Variables</h2></td></tr>
           <td class="memname">void arms::chassis::arcade </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>vertical</em>, </td>
+          <td class="paramname"><em>forward</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>horizontal</em>, </td>
+          <td class="paramname"><em>turn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -835,91 +570,24 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Assign a vertical and horizontal power to the motors </p>
 
-</div>
-</div>
-<a id="a29da4d3878dc33fdb40c14e683b49966" name="a29da4d3878dc33fdb40c14e683b49966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29da4d3878dc33fdb40c14e683b49966">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void arms::chassis::init </td>
-          <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; okapi::Motor &gt;&#160;</td>
-          <td class="paramname"><em>leftMotors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::initializer_list&lt; okapi::Motor &gt;&#160;</td>
-          <td class="paramname"><em>rightMotors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>gearset</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>distance_constant</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>degree_constant</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>slew_step</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>linear_exit_error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angular_exit_error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>settle_thresh_linear</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>settle_thresh_angular</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>settle_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >initialize the chassis </p>
-
+<p>move the chassis using arcade drive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">forward</td><td>The forward velocity or percentage (0%-100%). </td></tr>
+    <tr><td class="paramname">turn</td><td>The turn velocity or percentage (0%-100%). </td></tr>
+    <tr><td class="paramname">velocity</td><td>Whether the values are velocities or percentages. Defaults to false for percentage mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><b>Example 1:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis forward at 100% speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#a32c8ef43d23b13f4248ad0c5d2a88767">chassis::arcade</a>(100, 0);</div>
+<div class="ttc" id="anamespacearms_1_1chassis_html_a32c8ef43d23b13f4248ad0c5d2a88767"><div class="ttname"><a href="namespacearms_1_1chassis.html#a32c8ef43d23b13f4248ad0c5d2a88767">arms::chassis::arcade</a></div><div class="ttdeci">void arcade(double vertical, double horizontal, bool velocity=false)</div><div class="ttdoc">move the chassis using arcade drive</div></div>
+</div><!-- fragment --><p ><b>Example 2:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis forward at 100 rpm</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#a32c8ef43d23b13f4248ad0c5d2a88767">chassis::arcade</a>(100, 0, <span class="keyword">true</span>);</div>
+</div><!-- fragment --><p ><b>Example 3:</b> </p><div class="fragment"><div class="line"><span class="comment">//move the chassis forward at 100% speed, and turn left at 50% speed</span></div>
+<div class="line"><a class="code hl_function" href="namespacearms_1_1chassis.html#a32c8ef43d23b13f4248ad0c5d2a88767">chassis::arcade</a>(100, -50);</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -942,33 +610,12 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This variable is used to set the maximum speed of the chassis. </p>
 
 </div>
 </div>
-<a id="a9ed6e6d0a9c15d6e63bd44a0658ed81c" name="a9ed6e6d0a9c15d6e63bd44a0658ed81c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ed6e6d0a9c15d6e63bd44a0658ed81c">&#9670;&nbsp;</a></span>leftPrev</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double arms::chassis::leftPrev</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5164c7a5aa17196f2ae0f49401c4f379" name="a5164c7a5aa17196f2ae0f49401c4f379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5164c7a5aa17196f2ae0f49401c4f379">&#9670;&nbsp;</a></span>rightPrev</h2>
+<a id="ad429af8676d0c9a91962c990035e1d8f" name="ad429af8676d0c9a91962c990035e1d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad429af8676d0c9a91962c990035e1d8f">&#9670;&nbsp;</a></span>leftMotors</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -977,7 +624,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double arms::chassis::rightPrev</td>
+          <td class="memname">std::shared_ptr&lt; pros::Motor_Group &gt; arms::chassis::leftMotors</td>
         </tr>
       </table>
   </td>
@@ -986,11 +633,12 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >This variable is a pointer to a Motor_Group object that contains all of the left motors. </p>
 
 </div>
 </div>
-<a id="a1f27dda0cdad307f8441321b9cd37f56" name="a1f27dda0cdad307f8441321b9cd37f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f27dda0cdad307f8441321b9cd37f56">&#9670;&nbsp;</a></span>slew_step</h2>
+<a id="a5dff9e2e9e5032d73fdbf483df0e2262" name="a5dff9e2e9e5032d73fdbf483df0e2262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dff9e2e9e5032d73fdbf483df0e2262">&#9670;&nbsp;</a></span>rightMotors</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -999,7 +647,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double arms::chassis::slew_step</td>
+          <td class="memname">std::shared_ptr&lt; pros::Motor_Group &gt; arms::chassis::rightMotors</td>
         </tr>
       </table>
   </td>
@@ -1008,50 +656,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6c6ea8360c1feafe6472bb8207f24176" name="a6c6ea8360c1feafe6472bb8207f24176"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c6ea8360c1feafe6472bb8207f24176">&#9670;&nbsp;</a></span>leftMotors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;okapi::MotorGroup&gt; arms::chassis::leftMotors</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af4ce4fa16227da9afcf9500684672164" name="af4ce4fa16227da9afcf9500684672164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ce4fa16227da9afcf9500684672164">&#9670;&nbsp;</a></span>rightMotors</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;okapi::MotorGroup&gt; arms::chassis::rightMotors</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p >This variable is a pointer to a Motor_Group object that contains all of the right motors. </p>
 
 </div>
 </div>

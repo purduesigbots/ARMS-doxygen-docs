@@ -1,12 +1,25 @@
 \hypertarget{odom_8h}{}\doxysection{C\+:/\+Users/btdav/\+Documents/\+COURSES/\+SIGBOTS/\+SOFTWARE/\+ARMS/include/\+ARMS/odom.h File Reference}
 \label{odom_8h}\index{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h@{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/odom.h}}
 {\ttfamily \#include \char`\"{}ARMS/point.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structarms_1_1odom_1_1config__data__s}{arms\+::odom\+::config\+\_\+data\+\_\+s}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \mbox{\hyperlink{namespacearms}{arms}}
-\item 
 namespace \mbox{\hyperlink{namespacearms_1_1odom}{arms\+::odom}}
+\item 
+namespace \mbox{\hyperlink{namespacearms}{arms}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661}{arms\+::odom\+::\+Encoder\+Type}} \mbox{\hyperlink{namespacearms_1_1odom_a089433a5fa5fac27931c8b893d3cb3e6}{arms\+::odom\+::\+Encoder\+Type\+\_\+e\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structarms_1_1odom_1_1config__data__s}{arms\+::odom\+::config\+\_\+data\+\_\+s}} \mbox{\hyperlink{namespacearms_1_1odom_aa48205a9f15c59fccf2e32ed2bdb64e7}{arms\+::odom\+::config\+\_\+data\+\_\+s\+\_\+t}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -17,6 +30,12 @@ enum \mbox{\hyperlink{namespacearms_1_1odom_aadbff82dd390afb0759b9584c4cd8661}{a
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespacearms_1_1odom_ac53d1bf493971017901340fc0a79e27a}{arms\+::odom\+::get\+Left\+Encoder}} ()
+\item 
+double \mbox{\hyperlink{namespacearms_1_1odom_a0186e976d3e278164d2ab84e58c391da}{arms\+::odom\+::get\+Right\+Encoder}} ()
+\item 
+double \mbox{\hyperlink{namespacearms_1_1odom_af8aa553428d28217b5f24ec302aa0db3}{arms\+::odom\+::get\+Middle\+Encoder}} ()
 \item 
 Point \mbox{\hyperlink{namespacearms_1_1odom_a62475e8febf63d60ad6f18e9c78b9798}{arms\+::odom\+::get\+Position}} ()
 \item 
@@ -29,17 +48,9 @@ void \mbox{\hyperlink{namespacearms_1_1odom_a04f9212b0b768f8a8afdcdee793180a9}{a
 double \mbox{\hyperlink{namespacearms_1_1odom_a3b2219fefea35a2253b175dc0859a57d}{arms\+::odom\+::get\+Angle\+Error}} (Point point)
 \item 
 double \mbox{\hyperlink{namespacearms_1_1odom_ab27a6c5acaf34ee089c969e23bce9ba4}{arms\+::odom\+::get\+Distance\+Error}} (Point point)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1odom_aab9427d851e49af68d483b0a9a2df71b}{arms\+::odom\+::init}} (bool debug, int encoder\+Type, std\+::array$<$ int, 3 $>$ encoder\+Ports, int expander\+Port, int imu\+Port, double left\+\_\+right\+\_\+distance, double middle\+\_\+distance, double left\+\_\+right\+\_\+tpi, double middle\+\_\+tpi)
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ okapi\+::\+Continuous\+Rotary\+Sensor $>$ \mbox{\hyperlink{namespacearms_1_1odom_af830ed6caff5c8cebb5b779c376405ac}{arms\+::odom\+::left\+Encoder}}
-\item 
-std\+::shared\+\_\+ptr$<$ okapi\+::\+Continuous\+Rotary\+Sensor $>$ \mbox{\hyperlink{namespacearms_1_1odom_a56f7f8be7a34876b917edee1de3828b7}{arms\+::odom\+::right\+Encoder}}
-\item 
-std\+::shared\+\_\+ptr$<$ okapi\+::\+Continuous\+Rotary\+Sensor $>$ \mbox{\hyperlink{namespacearms_1_1odom_a45f0eb97d78573950f4a23f215ee5a35}{arms\+::odom\+::middle\+Encoder}}
-\item 
-std\+::shared\+\_\+ptr$<$ pros\+::\+Imu $>$ \mbox{\hyperlink{namespacearms_1_1odom_aa8b803bcb9c0ecba9313c4b169f25445}{arms\+::odom\+::imu}}
+std\+::shared\+\_\+ptr$<$ pros\+::\+Imu $>$ \mbox{\hyperlink{namespacearms_1_1odom_a3e5678e1cce9e4d0f61f9052609631a2}{arms\+::odom\+::imu}}
 \end{DoxyCompactItemize}

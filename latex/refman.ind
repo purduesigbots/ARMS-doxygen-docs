@@ -1,0 +1,245 @@
+\begin{theindex}
+
+  \item {angular}
+    \subitem {arms::pid}, \hyperpage{22}
+  \item {angularKD}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {angularKI}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {angularKP}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {angularTarget}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {arcade}
+    \subitem {arms::chassis}, \hyperpage{16}
+  \item {arms}, \hyperpage{9}
+    \subitem {ASYNC}, \hyperpage{10}
+    \subitem {init}, \hyperpage{10}
+    \subitem {NONE}, \hyperpage{10}
+    \subitem {RELATIVE}, \hyperpage{10}
+    \subitem {REVERSE}, \hyperpage{10}
+    \subitem {THRU}, \hyperpage{10}
+  \item {arms::chassis}, \hyperpage{11}
+    \subitem {arcade}, \hyperpage{16}
+    \subitem {leftMotors}, \hyperpage{17}
+    \subitem {maxSpeed}, \hyperpage{17}
+    \subitem {move}, \hyperpage{12, 13}
+    \subitem {rightMotors}, \hyperpage{17}
+    \subitem {setBrakeMode}, \hyperpage{11}
+    \subitem {settled}, \hyperpage{11}
+    \subitem {tank}, \hyperpage{16}
+    \subitem {turn}, \hyperpage{14, 15}
+    \subitem {waitUntilFinished}, \hyperpage{12}
+  \item {arms::MoveFlags}, \hyperpage{28}
+    \subitem {async}, \hyperpage{29}
+    \subitem {relative}, \hyperpage{29}
+    \subitem {reverse}, \hyperpage{29}
+    \subitem {thru}, \hyperpage{29}
+  \item {arms::odom}, \hyperpage{17}
+    \subitem {config\_data\_s\_t}, \hyperpage{18}
+    \subitem {ENCODER\_ADI}, \hyperpage{19}
+    \subitem {ENCODER\_ROTATION}, \hyperpage{19}
+    \subitem {EncoderType}, \hyperpage{18}
+    \subitem {EncoderType\_e\_t}, \hyperpage{18}
+    \subitem {getAngleError}, \hyperpage{20}
+    \subitem {getDistanceError}, \hyperpage{20}
+    \subitem {getHeading}, \hyperpage{19}
+    \subitem {getLeftEncoder}, \hyperpage{19}
+    \subitem {getMiddleEncoder}, \hyperpage{19}
+    \subitem {getPosition}, \hyperpage{19}
+    \subitem {getRightEncoder}, \hyperpage{19}
+    \subitem {imu}, \hyperpage{21}
+    \subitem {reset}, \hyperpage{19, 20}
+  \item {arms::odom::config\_data\_s}, \hyperpage{27}
+    \subitem {encoderType}, \hyperpage{28}
+    \subitem {expanderPort}, \hyperpage{27}
+    \subitem {imuPort}, \hyperpage{28}
+    \subitem {leftEncoderPort}, \hyperpage{27}
+    \subitem {middleEncoderPort}, \hyperpage{28}
+    \subitem {rightEncoderPort}, \hyperpage{27}
+  \item {arms::pid}, \hyperpage{21}
+    \subitem {angular}, \hyperpage{22}
+    \subitem {angularKD}, \hyperpage{23}
+    \subitem {angularKI}, \hyperpage{23}
+    \subitem {angularKP}, \hyperpage{23}
+    \subitem {angularTarget}, \hyperpage{23}
+    \subitem {canReverse}, \hyperpage{24}
+    \subitem {in\_ang}, \hyperpage{23}
+    \subitem {in\_lin}, \hyperpage{23}
+    \subitem {init}, \hyperpage{22}
+    \subitem {linearKD}, \hyperpage{22}
+    \subitem {linearKI}, \hyperpage{22}
+    \subitem {linearKP}, \hyperpage{22}
+    \subitem {minError}, \hyperpage{23}
+    \subitem {mode}, \hyperpage{22}
+    \subitem {pointTarget}, \hyperpage{24}
+    \subitem {reverse}, \hyperpage{24}
+    \subitem {thru}, \hyperpage{24}
+    \subitem {trackingKP}, \hyperpage{23}
+    \subitem {translational}, \hyperpage{21}
+  \item {arms::Point}, \hyperpage{30}
+  \item {arms::selector}, \hyperpage{24}
+    \subitem {auton}, \hyperpage{25}
+  \item {ASYNC}
+    \subitem {arms}, \hyperpage{10}
+  \item {async}
+    \subitem {arms::MoveFlags}, \hyperpage{29}
+  \item {auton}
+    \subitem {arms::selector}, \hyperpage{25}
+
+  \indexspace
+
+  \item {C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/api.h}, 
+		\hyperpage{31}
+  \item {C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h}, 
+		\hyperpage{31, 32}
+  \item {C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/config.h}, 
+		\hyperpage{33}
+  \item {canReverse}
+    \subitem {arms::pid}, \hyperpage{24}
+  \item {config.h}
+    \subitem {LEFT\_MOTORS}, \hyperpage{35}
+    \subitem {ODOM\_DEBUG}, \hyperpage{35}
+    \subitem {RIGHT\_MOTORS}, \hyperpage{35}
+  \item {config\_data\_s\_t}
+    \subitem {arms::odom}, \hyperpage{18}
+
+  \indexspace
+
+  \item {ENCODER\_ADI}
+    \subitem {arms::odom}, \hyperpage{19}
+  \item {ENCODER\_ROTATION}
+    \subitem {arms::odom}, \hyperpage{19}
+  \item {EncoderType}
+    \subitem {arms::odom}, \hyperpage{18}
+  \item {encoderType}
+    \subitem {arms::odom::config\_data\_s}, \hyperpage{28}
+  \item {EncoderType\_e\_t}
+    \subitem {arms::odom}, \hyperpage{18}
+  \item {expanderPort}
+    \subitem {arms::odom::config\_data\_s}, \hyperpage{27}
+
+  \indexspace
+
+  \item {getAngleError}
+    \subitem {arms::odom}, \hyperpage{20}
+  \item {getDistanceError}
+    \subitem {arms::odom}, \hyperpage{20}
+  \item {getHeading}
+    \subitem {arms::odom}, \hyperpage{19}
+  \item {getLeftEncoder}
+    \subitem {arms::odom}, \hyperpage{19}
+  \item {getMiddleEncoder}
+    \subitem {arms::odom}, \hyperpage{19}
+  \item {getPosition}
+    \subitem {arms::odom}, \hyperpage{19}
+  \item {getRightEncoder}
+    \subitem {arms::odom}, \hyperpage{19}
+
+  \indexspace
+
+  \item {imu}
+    \subitem {arms::odom}, \hyperpage{21}
+  \item {imuPort}
+    \subitem {arms::odom::config\_data\_s}, \hyperpage{28}
+  \item {in\_ang}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {in\_lin}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {init}
+    \subitem {arms}, \hyperpage{10}
+    \subitem {arms::pid}, \hyperpage{22}
+
+  \indexspace
+
+  \item {LEFT\_MOTORS}
+    \subitem {config.h}, \hyperpage{35}
+  \item {leftEncoderPort}
+    \subitem {arms::odom::config\_data\_s}, \hyperpage{27}
+  \item {leftMotors}
+    \subitem {arms::chassis}, \hyperpage{17}
+  \item {linearKD}
+    \subitem {arms::pid}, \hyperpage{22}
+  \item {linearKI}
+    \subitem {arms::pid}, \hyperpage{22}
+  \item {linearKP}
+    \subitem {arms::pid}, \hyperpage{22}
+
+  \indexspace
+
+  \item {maxSpeed}
+    \subitem {arms::chassis}, \hyperpage{17}
+  \item {middleEncoderPort}
+    \subitem {arms::odom::config\_data\_s}, \hyperpage{28}
+  \item {minError}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {mode}
+    \subitem {arms::pid}, \hyperpage{22}
+  \item {move}
+    \subitem {arms::chassis}, \hyperpage{12, 13}
+
+  \indexspace
+
+  \item {NONE}
+    \subitem {arms}, \hyperpage{10}
+
+  \indexspace
+
+  \item {ODOM\_DEBUG}
+    \subitem {config.h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {pointTarget}
+    \subitem {arms::pid}, \hyperpage{24}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{31}
+  \item {RELATIVE}
+    \subitem {arms}, \hyperpage{10}
+  \item {relative}
+    \subitem {arms::MoveFlags}, \hyperpage{29}
+  \item {reset}
+    \subitem {arms::odom}, \hyperpage{19, 20}
+  \item {REVERSE}
+    \subitem {arms}, \hyperpage{10}
+  \item {reverse}
+    \subitem {arms::MoveFlags}, \hyperpage{29}
+    \subitem {arms::pid}, \hyperpage{24}
+  \item {RIGHT\_MOTORS}
+    \subitem {config.h}, \hyperpage{35}
+  \item {rightEncoderPort}
+    \subitem {arms::odom::config\_data\_s}, \hyperpage{27}
+  \item {rightMotors}
+    \subitem {arms::chassis}, \hyperpage{17}
+
+  \indexspace
+
+  \item {setBrakeMode}
+    \subitem {arms::chassis}, \hyperpage{11}
+  \item {settled}
+    \subitem {arms::chassis}, \hyperpage{11}
+
+  \indexspace
+
+  \item {tank}
+    \subitem {arms::chassis}, \hyperpage{16}
+  \item {THRU}
+    \subitem {arms}, \hyperpage{10}
+  \item {thru}
+    \subitem {arms::MoveFlags}, \hyperpage{29}
+    \subitem {arms::pid}, \hyperpage{24}
+  \item {trackingKP}
+    \subitem {arms::pid}, \hyperpage{23}
+  \item {translational}
+    \subitem {arms::pid}, \hyperpage{21}
+  \item {turn}
+    \subitem {arms::chassis}, \hyperpage{14, 15}
+
+  \indexspace
+
+  \item {waitUntilFinished}
+    \subitem {arms::chassis}, \hyperpage{12}
+
+\end{theindex}

@@ -7,98 +7,95 @@
 \DoxyCodeLine{3 }
 \DoxyCodeLine{4 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacearms}{arms}} \{}
 \DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{keyword}{struct }\mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \{}
-\DoxyCodeLine{7 }
-\DoxyCodeLine{8     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{9     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{10     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{11     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{structarms_1_1_move_flags_a120806238193c2fc1691f6b64e1ddf3d}{operator|}}(\mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{14         \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{15         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = \mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{16         ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = \mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{17         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = \mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{18         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = \mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{19         \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{20     \}}
-\DoxyCodeLine{21 }
-\DoxyCodeLine{22     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{structarms_1_1_move_flags_a5c0c9c3eebb2123ce9ffee3b24472394}{operator\&}}(\mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{23         \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{24         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = \mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{25         ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = \mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{26         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = \mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{27         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = \mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{28         \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{29     \}}
-\DoxyCodeLine{30 }
-\DoxyCodeLine{31     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{structarms_1_1_move_flags_a0a48f7e7ba208f0b2a0aa49c8223015b}{operator|}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{32         \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{33         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = \mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{34         ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = \mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{35         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = \mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{36         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = \mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{37         \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{38     \}}
-\DoxyCodeLine{39 }
-\DoxyCodeLine{40     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{structarms_1_1_move_flags_a7804bc89e3e0046243195e20178251c1}{operator\&}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{41         \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{42         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = \mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{43         ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = \mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{44         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = \mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{45         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = \mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{46         \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{47     \}}
-\DoxyCodeLine{48 }
-\DoxyCodeLine{49     \textcolor{keyword}{operator} bool() \{}
-\DoxyCodeLine{50         \textcolor{keywordflow}{return} \mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} || \mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} || \mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} || \mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{51     \}}
-\DoxyCodeLine{52 \};}
-\DoxyCodeLine{53 }
-\DoxyCodeLine{54 \textcolor{keyword}{inline} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a1037af635b64545aabfafb4129ffce19}{operator|}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& f, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{55     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{56     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{57     ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{58     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{59     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{60     \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{61 \}}
-\DoxyCodeLine{62 }
-\DoxyCodeLine{63 \textcolor{keyword}{inline} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a30d10a019baf5e307e12eeee65954446}{operator\&}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& f, \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{64     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{65     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{66     ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{67     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{68     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{69     \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{70 \}}
-\DoxyCodeLine{71 }
-\DoxyCodeLine{72 \textcolor{keyword}{inline} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a1037af635b64545aabfafb4129ffce19}{operator|}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& f, \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{73     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{74     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{75     ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{76     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{77     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{78     \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{79 \}}
-\DoxyCodeLine{80 }
-\DoxyCodeLine{81 \textcolor{keyword}{inline} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a30d10a019baf5e307e12eeee65954446}{operator\&}}(\textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& f, \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
-\DoxyCodeLine{82     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
-\DoxyCodeLine{83     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a7b22b4fc711642348229134363de154d}{async}};}
-\DoxyCodeLine{84     ret.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_afa479f8aa082be8d0ad9374e1180e4fb}{relative}};}
-\DoxyCodeLine{85     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a64ea02501645e48a3b7c2091ab80708b}{thru}};}
-\DoxyCodeLine{86     ret.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} = f.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a69a183842fa579a339db8249db06b878}{reverse}};}
-\DoxyCodeLine{87     \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{88 \}}
-\DoxyCodeLine{89 }
-\DoxyCodeLine{90 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}\};}
-\DoxyCodeLine{91 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a29f692834f466360bb95433c896bc3f6}{ASYNC}} = \{\textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}\};}
-\DoxyCodeLine{92 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a128e59e572e7e73567aa95537154c76f}{RELATIVE}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{false}\};}
-\DoxyCodeLine{93 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a82c9c0bde637a995cf7811d317dd7f21}{THRU}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{true}, \textcolor{keyword}{false}\};}
-\DoxyCodeLine{94 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a338541fad748b1f1fa4e34a80aaac088}{REVERSE}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{true}\};}
-\DoxyCodeLine{95 }
-\DoxyCodeLine{96 \} \textcolor{comment}{// namespace arms}}
+\DoxyCodeLine{40 \textcolor{keyword}{struct }\mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \{}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}};}
+\DoxyCodeLine{43     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}};}
+\DoxyCodeLine{44     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}};}
+\DoxyCodeLine{45     \textcolor{keywordtype}{bool} \mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}};}
+\DoxyCodeLine{47     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} operator|(\mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
+\DoxyCodeLine{48         \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
+\DoxyCodeLine{49         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} = \mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}};}
+\DoxyCodeLine{50         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}} = \mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}};}
+\DoxyCodeLine{51         ret.\mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}} = \mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}};}
+\DoxyCodeLine{52         ret.\mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}} = \mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}} || o.\mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}};}
+\DoxyCodeLine{53         \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{54     \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} operator\&(\mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}}\& o) \{}
+\DoxyCodeLine{57         \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} ret;}
+\DoxyCodeLine{58         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} = \mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}};}
+\DoxyCodeLine{59         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}} = \mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}};}
+\DoxyCodeLine{60         ret.\mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}} = \mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}};}
+\DoxyCodeLine{61         ret.\mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}} = \mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}} \&\& o.\mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}};}
+\DoxyCodeLine{62         \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     MoveFlags operator|(\textcolor{keyword}{const} MoveFlags\& o) \{}
+\DoxyCodeLine{66         MoveFlags ret;}
+\DoxyCodeLine{67         ret.\mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} = \mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} || o.async;}
+\DoxyCodeLine{68         ret.relative = \mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}} || o.relative;}
+\DoxyCodeLine{69         ret.thru = \mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}} || o.thru;}
+\DoxyCodeLine{70         ret.reverse = \mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}} || o.reverse;}
+\DoxyCodeLine{71         \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{72     \}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     MoveFlags operator\&(\textcolor{keyword}{const} MoveFlags\& o) \{}
+\DoxyCodeLine{75         MoveFlags ret;}
+\DoxyCodeLine{76         ret.async = \mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} \&\& o.async;}
+\DoxyCodeLine{77         ret.relative = \mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}} \&\& o.relative;}
+\DoxyCodeLine{78         ret.thru = \mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}} \&\& o.thru;}
+\DoxyCodeLine{79         ret.reverse = \mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}} \&\& o.reverse;}
+\DoxyCodeLine{80         \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keyword}{operator} bool() \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} \mbox{\hyperlink{structarms_1_1_move_flags_a7814cb14fa00067cc6b862d89f9aa817}{async}} || \mbox{\hyperlink{structarms_1_1_move_flags_a3e1198251d40305c5a41d3fbb41327f9}{relative}} || \mbox{\hyperlink{structarms_1_1_move_flags_aff8c9f030b9f93e7b30915e56e61eed0}{thru}} || \mbox{\hyperlink{structarms_1_1_move_flags_ae87ecd5a7bc0dc3e2cfe81acfcef4b9d}{reverse}};}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{87 \};}
+\DoxyCodeLine{89 \textcolor{keyword}{inline} MoveFlags operator|(\textcolor{keyword}{const} MoveFlags\& f, MoveFlags\& o) \{}
+\DoxyCodeLine{90     MoveFlags ret;}
+\DoxyCodeLine{91     ret.async = f.async || o.async;}
+\DoxyCodeLine{92     ret.relative = f.relative || o.relative;}
+\DoxyCodeLine{93     ret.thru = f.thru || o.thru;}
+\DoxyCodeLine{94     ret.reverse = f.reverse || o.reverse;}
+\DoxyCodeLine{95     \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{96 \}}
 \DoxyCodeLine{97 }
-\DoxyCodeLine{98 \textcolor{preprocessor}{\#endif}}
-
+\DoxyCodeLine{98 \textcolor{keyword}{inline} MoveFlags operator\&(\textcolor{keyword}{const} MoveFlags\& f, MoveFlags\& o) \{}
+\DoxyCodeLine{99     MoveFlags ret;}
+\DoxyCodeLine{100     ret.async = f.async \&\& o.async;}
+\DoxyCodeLine{101     ret.relative = f.relative \&\& o.relative;}
+\DoxyCodeLine{102     ret.thru = f.thru \&\& o.thru;}
+\DoxyCodeLine{103     ret.reverse = f.reverse \&\& o.reverse;}
+\DoxyCodeLine{104     \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{105 \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 \textcolor{keyword}{inline} MoveFlags operator|(\textcolor{keyword}{const} MoveFlags\& f, \textcolor{keyword}{const} MoveFlags\& o) \{}
+\DoxyCodeLine{108     MoveFlags ret;}
+\DoxyCodeLine{109     ret.async = f.async || o.async;}
+\DoxyCodeLine{110     ret.relative = f.relative || o.relative;}
+\DoxyCodeLine{111     ret.thru = f.thru || o.thru;}
+\DoxyCodeLine{112     ret.reverse = f.reverse || o.reverse;}
+\DoxyCodeLine{113     \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{114 \}}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 \textcolor{keyword}{inline} MoveFlags operator\&(\textcolor{keyword}{const} MoveFlags\& f, \textcolor{keyword}{const} MoveFlags\& o) \{}
+\DoxyCodeLine{117     MoveFlags ret;}
+\DoxyCodeLine{118     ret.async = f.async \&\& o.async;}
+\DoxyCodeLine{119     ret.relative = f.relative \&\& o.relative;}
+\DoxyCodeLine{120     ret.thru = f.thru \&\& o.thru;}
+\DoxyCodeLine{121     ret.reverse = f.reverse \&\& o.reverse;}
+\DoxyCodeLine{122     \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{123 \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{129 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_ada4fc846ef04eaf7d63bf332d7bd315e}{NONE}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}\};}
+\DoxyCodeLine{133 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a29f692834f466360bb95433c896bc3f6}{ASYNC}} = \{\textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}\};}
+\DoxyCodeLine{137 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a128e59e572e7e73567aa95537154c76f}{RELATIVE}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{true}, \textcolor{keyword}{false}, \textcolor{keyword}{false}\};}
+\DoxyCodeLine{141 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a82c9c0bde637a995cf7811d317dd7f21}{THRU}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{true}, \textcolor{keyword}{false}\};}
+\DoxyCodeLine{145 \textcolor{keyword}{const} \mbox{\hyperlink{structarms_1_1_move_flags}{MoveFlags}} \mbox{\hyperlink{namespacearms_a338541fad748b1f1fa4e34a80aaac088}{REVERSE}} = \{\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{true}\};}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147 \} \textcolor{comment}{// namespace arms}}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149 \textcolor{preprocessor}{\#endif}}
 \end{DoxyCode}

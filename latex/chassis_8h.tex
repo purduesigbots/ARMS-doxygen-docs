@@ -2,73 +2,42 @@
 \label{chassis_8h}\index{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h@{C:/Users/btdav/Documents/COURSES/SIGBOTS/SOFTWARE/ARMS/include/ARMS/chassis.h}}
 {\ttfamily \#include \char`\"{}ARMS/flags.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}ARMS/point.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}okapi/api.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}../api.\+h\char`\"{}}\newline
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
-namespace \mbox{\hyperlink{namespacearms}{arms}}
-\item 
 namespace \mbox{\hyperlink{namespacearms_1_1chassis}{arms\+::chassis}}
-\begin{DoxyCompactList}\small\item\em The chassis subsystem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacearms}{arms}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a5353af955fcc2ebde42619446419149a}{arms\+::chassis\+::motor\+Move}} (std\+::shared\+\_\+ptr$<$ okapi\+::\+Motor\+Group $>$ motor, double speed, bool vel)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a198bb953528b09c362efae6d5ca09f85}{arms\+::chassis\+::set\+Brake\+Mode}} (okapi\+::\+Abstract\+Motor\+::brake\+Mode b)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a18102e095cb8afdc46c39a178c4973cd}{arms\+::chassis\+::reset\+Angle}} (double angle=0)
-\item 
-double \mbox{\hyperlink{namespacearms_1_1chassis_a3aabecd3fd1b26896dfab122e335abc3}{arms\+::chassis\+::limit\+Speed}} (double speed, double max)
-\item 
-double \mbox{\hyperlink{namespacearms_1_1chassis_a7e3685526c1117f29634441966af7237}{arms\+::chassis\+::slew}} (double speed, double step, double prev)
+void \mbox{\hyperlink{namespacearms_1_1chassis_a7a0785e28613bbbe6a03a408e6ad1301}{arms\+::chassis\+::set\+Brake\+Mode}} (pros\+::motor\+\_\+brake\+\_\+mode\+\_\+e\+\_\+t b)
 \item 
 bool \mbox{\hyperlink{namespacearms_1_1chassis_ae596453708b28b60af7b44168c634e41}{arms\+::chassis\+::settled}} ()
 \item 
 void \mbox{\hyperlink{namespacearms_1_1chassis_a957a311132c02e2cca3f4d757fabd578}{arms\+::chassis\+::wait\+Until\+Finished}} (double exit\+\_\+error)
 \item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a74cd9f37c44d46fe5c0da805b7cc6042}{arms\+::chassis\+::move}} (Point target, double max, double exit\+\_\+error, double lp, double ap, Move\+Flags=NONE)
+void \mbox{\hyperlink{namespacearms_1_1chassis_ab58f3b9d527fbefc313fc92797066dd8}{arms\+::chassis\+::move}} (std\+::vector$<$ double $>$ target, double max, double exit\+\_\+error, double lp, double ap, Move\+Flags=NONE)
 \item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a91a1dd2568a274db99b6897a3f57561e}{arms\+::chassis\+::move}} (Point target, double max, double exit\+\_\+error, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a34f8293649879058fa8f11e3f7e8bf97}{arms\+::chassis\+::move}} (Point target, double max, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a257e3aa65b8efc4132bc697bd11e9b06}{arms\+::chassis\+::move}} (Point target, Move\+Flags=NONE)
-\item 
+void \mbox{\hyperlink{namespacearms_1_1chassis_a204b6f80410e5bc7b2a056fb34fe612f}{arms\+::chassis\+::move}} (double target, double max, double exit\+\_\+error, double lp, double ap, Move\+Flags=NONE)
+\begin{DoxyCompactList}\small\item\em move the chassis a target distance forward \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacearms_1_1chassis_aeff05c9e3aa1421fbb537c5657081471}{arms\+::chassis\+::turn}} (double target, double max, double exit\+\_\+error, double ap, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_ae5c9c2d226a4835fe39ea39e3d7d88dc}{arms\+::chassis\+::turn}} (double target, double max, double exit\+\_\+error, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_ad54988739cb0b48698ebb572d62c954f}{arms\+::chassis\+::turn}} (double target, double max, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a60f6c4c77b0cef8dae6c28fd5bba542e}{arms\+::chassis\+::turn}} (double target, Move\+Flags=NONE)
-\item 
+\begin{DoxyCompactList}\small\item\em turn the chassis a target angle \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacearms_1_1chassis_aca716269f54a0c101dd8540359987be6}{arms\+::chassis\+::turn}} (Point target, double max, double exit\+\_\+error, double ap, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a515f520a99bcb83c9d0a478741413cee}{arms\+::chassis\+::turn}} (Point target, double max, double exit\+\_\+error, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a0cfb44988d781a357d7c9ae4650ef0cb}{arms\+::chassis\+::turn}} (Point target, double max, Move\+Flags=NONE)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a40fe32ff2fb3707ff18594b5f968be68}{arms\+::chassis\+::turn}} (Point target, Move\+Flags=NONE)
-\item 
+\begin{DoxyCompactList}\small\item\em turn the chassis to face a target point \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacearms_1_1chassis_a4d5f53e5cae3eb5f6f07cfb67e253a1d}{arms\+::chassis\+::tank}} (double left, double right, bool velocity=false)
-\item 
+\begin{DoxyCompactList}\small\item\em move the chassis using tank drive \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{namespacearms_1_1chassis_a32c8ef43d23b13f4248ad0c5d2a88767}{arms\+::chassis\+::arcade}} (double vertical, double horizontal, bool velocity=false)
-\item 
-void \mbox{\hyperlink{namespacearms_1_1chassis_a29da4d3878dc33fdb40c14e683b49966}{arms\+::chassis\+::init}} (std\+::initializer\+\_\+list$<$ okapi\+::\+Motor $>$ left\+Motors, std\+::initializer\+\_\+list$<$ okapi\+::\+Motor $>$ right\+Motors, int gearset, double distance\+\_\+constant, double degree\+\_\+constant, double slew\+\_\+step, double linear\+\_\+exit\+\_\+error, double angular\+\_\+exit\+\_\+error, double settle\+\_\+thresh\+\_\+linear, double settle\+\_\+thresh\+\_\+angular, int settle\+\_\+time)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em move the chassis using arcade drive \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 double \mbox{\hyperlink{namespacearms_1_1chassis_a802f92d38221fce32bd5c79ce488ed7f}{arms\+::chassis\+::max\+Speed}}
 \item 
-double \mbox{\hyperlink{namespacearms_1_1chassis_a9ed6e6d0a9c15d6e63bd44a0658ed81c}{arms\+::chassis\+::left\+Prev}}
+std\+::shared\+\_\+ptr$<$ pros\+::\+Motor\+\_\+\+Group $>$ \mbox{\hyperlink{namespacearms_1_1chassis_ad429af8676d0c9a91962c990035e1d8f}{arms\+::chassis\+::left\+Motors}}
 \item 
-double \mbox{\hyperlink{namespacearms_1_1chassis_a5164c7a5aa17196f2ae0f49401c4f379}{arms\+::chassis\+::right\+Prev}}
-\item 
-double \mbox{\hyperlink{namespacearms_1_1chassis_a1f27dda0cdad307f8441321b9cd37f56}{arms\+::chassis\+::slew\+\_\+step}}
-\item 
-std\+::shared\+\_\+ptr$<$ okapi\+::\+Motor\+Group $>$ \mbox{\hyperlink{namespacearms_1_1chassis_a6c6ea8360c1feafe6472bb8207f24176}{arms\+::chassis\+::left\+Motors}}
-\item 
-std\+::shared\+\_\+ptr$<$ okapi\+::\+Motor\+Group $>$ \mbox{\hyperlink{namespacearms_1_1chassis_af4ce4fa16227da9afcf9500684672164}{arms\+::chassis\+::right\+Motors}}
+std\+::shared\+\_\+ptr$<$ pros\+::\+Motor\+\_\+\+Group $>$ \mbox{\hyperlink{namespacearms_1_1chassis_a5dff9e2e9e5032d73fdbf483df0e2262}{arms\+::chassis\+::right\+Motors}}
 \end{DoxyCompactItemize}

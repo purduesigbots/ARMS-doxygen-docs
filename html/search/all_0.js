@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['angular_0',['angular',['../namespacearms_1_1pid.html#aa4fabc3bf9cc0b3b7bb91d564ee14f05',1,'arms::pid']]],
-  ['angular_1',['ANGULAR',['../pid_8h.html#af26c4f0b98c9590e6e0ff6dc45b22a93',1,'pid.h']]],
+  ['angular_0',['ANGULAR',['../pid_8h.html#af26c4f0b98c9590e6e0ff6dc45b22a93',1,'pid.h']]],
+  ['angular_1',['angular',['../namespacearms_1_1pid.html#aa4fabc3bf9cc0b3b7bb91d564ee14f05',1,'arms::pid']]],
   ['angular_5fexit_5ferror_2',['ANGULAR_EXIT_ERROR',['../config_8h.html#a2878f395ee2ca22b557caa1621391db2',1,'config.h']]],
   ['angular_5fkd_3',['ANGULAR_KD',['../config_8h.html#abdf82441d0c29e44532f62be7db57c2d',1,'config.h']]],
   ['angular_5fki_4',['ANGULAR_KI',['../config_8h.html#ac89e674e8f858f5f1aad45bb23b86c63',1,'config.h']]],
@@ -14,7 +14,7 @@ var searchData=
   ['arcade_11',['arcade',['../namespacearms_1_1chassis.html#a32c8ef43d23b13f4248ad0c5d2a88767',1,'arms::chassis']]],
   ['arms_12',['arms',['../namespacearms.html',1,'']]],
   ['arms_2ddoxygen_2ddocs_13',['ARMS-doxygen-docs',['../index.html',1,'']]],
-  ['async_14',['async',['../structarms_1_1_move_flags.html#a7b22b4fc711642348229134363de154d',1,'arms::MoveFlags']]],
+  ['async_14',['async',['../structarms_1_1_move_flags.html#a7814cb14fa00067cc6b862d89f9aa817',1,'arms::MoveFlags']]],
   ['async_15',['ASYNC',['../namespacearms.html#a29f692834f466360bb95433c896bc3f6',1,'arms']]],
   ['auton_16',['auton',['../namespacearms_1_1selector.html#a7ac45fdc38fc1895f2a35a3ca50d06e5',1,'arms::selector']]],
   ['autons_17',['AUTONS',['../config_8h.html#ab3ea58dc1c2f5871997a5cc5e7916d03',1,'config.h']]],
