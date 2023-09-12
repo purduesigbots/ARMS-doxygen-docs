@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waituntilfinished_0',['waitUntilFinished',['../namespacearms_1_1chassis.html#a957a311132c02e2cca3f4d757fabd578',1,'arms::chassis']]]
+  ['y_75',['y',['../unionarms_1_1_point.html#ae65afdac816f4c27212ced9f3b2cca21',1,'arms::Point']]]
 ];

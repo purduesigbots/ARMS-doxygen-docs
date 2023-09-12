@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['lead_5fpct_0',['LEAD_PCT',['../config_8h.html#a1bf20ca2e21bf8aea295dd37bdf11e70',1,'config.h']]],
-  ['left_5fmotors_1',['LEFT_MOTORS',['../config_8h.html#a2e60beeff7a71953041ffff21f206b3e',1,'config.h']]],
-  ['leftencoderport_2',['leftEncoderPort',['../structarms_1_1odom_1_1config__data__s.html#afd2ec5d4ba9fe2eed83ea76aa1699478',1,'arms::odom::config_data_s']]],
-  ['leftmotors_3',['leftMotors',['../namespacearms_1_1chassis.html#ad429af8676d0c9a91962c990035e1d8f',1,'arms::chassis']]],
-  ['lib_2eh_4',['lib.h',['../lib_8h.html',1,'']]],
-  ['linear_5fexit_5ferror_5',['LINEAR_EXIT_ERROR',['../config_8h.html#aee67e5b2ba2e050782b4e743b1263c11',1,'config.h']]],
-  ['linear_5fkd_6',['LINEAR_KD',['../config_8h.html#ac51945e0d198c31ec86504e6ab56091a',1,'config.h']]],
-  ['linear_5fki_7',['LINEAR_KI',['../config_8h.html#a4bc667e2e955d8fa3231a4512c48f674',1,'config.h']]],
-  ['linear_5fkp_8',['LINEAR_KP',['../config_8h.html#a57b7dce77c54af308e3e05045e12189d',1,'config.h']]],
-  ['linearkd_9',['linearKD',['../namespacearms_1_1pid.html#a9a0bc28699f1aa611af86995dad3ccca',1,'arms::pid']]],
-  ['linearki_10',['linearKI',['../namespacearms_1_1pid.html#a481c2bbcd2e70765c9c3fd1e900a03b7',1,'arms::pid']]],
-  ['linearkp_11',['linearKP',['../namespacearms_1_1pid.html#ac7f6883f11262eed1c85f03712a66cba',1,'arms::pid']]]
+  ['main_20page_42',['Main Page',['../index.html',1,'']]],
+  ['maxspeed_43',['maxSpeed',['../namespacearms_1_1chassis.html#a802f92d38221fce32bd5c79ce488ed7f',1,'arms::chassis']]],
+  ['middle_5fdistance_44',['MIDDLE_DISTANCE',['../config_8h.html#afdd50cee75b22705fc0898a24d31a091',1,'config.h']]],
+  ['middle_5ftpi_45',['MIDDLE_TPI',['../config_8h.html#a1b9d08eb0eec6a4a0e52a2ea68120ec2',1,'config.h']]],
+  ['middleencoderport_46',['middleEncoderPort',['../structarms_1_1odom_1_1config__data__s.html#a3fbab665d2d0f0a0c5183d75ce390455',1,'arms::odom::config_data_s']]],
+  ['min_5ferror_47',['MIN_ERROR',['../config_8h.html#a80c2c0cbab028b3b18d7c7c521815721',1,'config.h']]],
+  ['motion_20control_20explanation_48',['Motion Control Explanation',['../motion_control.html',1,'']]],
+  ['move_49',['move',['../namespacearms_1_1chassis.html#ab58f3b9d527fbefc313fc92797066dd8',1,'arms::chassis::move(std::vector&lt; double &gt; target, double max, double exit_error, double lp, double ap, MoveFlags=NONE)'],['../namespacearms_1_1chassis.html#a204b6f80410e5bc7b2a056fb34fe612f',1,'arms::chassis::move(double target, double max, double exit_error, double lp, double ap, MoveFlags=NONE)']]],
+  ['moveflags_50',['MoveFlags',['../structarms_1_1_move_flags.html',1,'arms']]]
 ];
